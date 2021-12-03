@@ -26,12 +26,12 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
       <Head>
-        <title>Kaustubh Odak</title>
+        <title>Ndongo Tonux</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-        <Component {...pageProps} setTheme={setTheme}/>
+        <Component {...pageProps} setTheme={setTheme} />
       </MuiThemeProvider>
     </React.Fragment>
   );
