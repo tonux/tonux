@@ -8,6 +8,7 @@ import About from '../src/About';
 import data from '../data.json';
 import { darkTheme, lightTheme } from '../src/theme';
 import { Brightness4, Brightness7 } from '@material-ui/icons';
+import { createTheme } from '@material-ui/core/styles'
 const { name, projects } = data
 
 const useStyles = makeStyles(theme => ({
@@ -23,7 +24,7 @@ export async function getStaticProps() {
   const baseURI = projects.baseURI
   const repos = projects.repositories
   const reqInit = {
-    headers: { 
+    headers: {
       'Authorization': `token ${process.env.PAT}`
     }
   }
@@ -65,10 +66,10 @@ export default function Index({ projects, setTheme }) {
       <AppBar color={!trigger ? "transparent" : "inherit"} className={classes.appBar} position="fixed">
         <Toolbar>
           <Typography variant="h6" className={classes.root}>
-            { name }
+            {name}
           </Typography>
           <IconButton edge="end" color="inherit" onClick={toggleTheme}>
-            {theme.palette.type === "dark" ? <Brightness7/> : <Brightness4/>}
+            {theme.palette.type === "dark" ? <Brightness7 /> : <Brightness4 />}
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -76,9 +77,9 @@ export default function Index({ projects, setTheme }) {
       <Container>
         <Landing />
         <Skills />
-        <Projects data={projects}/>
-        <Experience/>
-        <About/>
+        <Projects data={projects} />
+        <Experience />
+        <About />
       </Container>
     </div>
   );
