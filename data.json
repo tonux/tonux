@@ -161,7 +161,7 @@
     },
     "about": {
         "description": "I am a full-stack cross-platform app developer, pursuing my B.E in Computer Engineering from Pune Institute of Computer Technology. I strive to make meaningful applications with the best UI practices.",
-        "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--f_9_Jp3X--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/47176/a33a28c8-3ea5-46af-b81c-69f6d59d7b29.png",
+        "picture": "profile.jpeg",
         "social": [
             {
                 "alt": "tonux._.o",
