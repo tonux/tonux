@@ -77,7 +77,7 @@ export default function Index({ projects, setTheme }) {
       <Container>
         <Landing />
         <Skills />
-        <Projects data={projects} />
+
         <About />
       </Container>
     </div>
