@@ -90,10 +90,10 @@ export default function Landing() {
         <Fade in={true} style={{ transitionDelay: '100ms' }}>
           <Grid item lg={6}>
             <Image
-              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Facademysonatel%2Fstatus%2F1146347926907772929&psig=AOvVaw3dzXG2WNqGbt6I0aLfSRn1&ust=1638590635354000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPCbuvnfxvQCFQAAAAAdAAAAABAJ"
+              src="/landing.jpg"
               alt="Landing"
               width="900.94"
-              height="787"
+              height="700"
             />
           </Grid>
         </Fade>

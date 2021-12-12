@@ -160,8 +160,8 @@
         ]
     },
     "about": {
-        "description": "I am a full-stack cross-platform app developer, pursuing my B.E in Computer Engineering from Pune Institute of Computer Technology. I strive to make meaningful applications with the best UI practices.",
-        "picture": "profile.jpeg",
+      "description" : "I am skilled in planning, customer relationship management and team coordination. As my professional experience has also led me to make important decisions and has given me the ability to collaborate. Dynamic and passionate, I enjoy working in a team while knowing how to evolve autonomously for the missions that require it. Curious and flexible by nature, I assume my responsibilities with great discipline.",
+        "picture": "/tonux.jpg",
         "social": [
             {
                 "alt": "tonux._.o",
@@ -174,7 +174,7 @@
                 "link": "https://twitter.com/tonux_samb"
             },
             {
-                "alt": "tonux#4489",
+                "alt": "Tonux#7082",
                 "icon": "discord",
                 "link": "https://discord.com/"
             }
