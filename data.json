@@ -75,12 +75,10 @@
     "projects": {
         "baseURI": "https://api.github.com/repos/tonux/",
         "repositories": [
+            "countries-app-react",
+            "postcash",
             "demo-chat",
-            "Portfolio",
-            "cosmicom",
-            "Discord-Google-Drive-Bot",
-            "GitHits",
-            "1DBM"
+            "crud-springboot-mongoDB"
         ]
     },
     "experience": {
@@ -91,7 +89,7 @@
                 "type": "Full-time",
                 "startDate": "Actual",
                 "endDate": "",
-                "city": "Remote",
+                "city": "Remote/home office",
                 "state": "Montréal",
                 "country": "Canada",
                 "url": "https://www.linkedin.com/company/astek-canada/",
@@ -112,12 +110,12 @@
               "organization": "Finetech Group",
               "role": "Full Stack Developer",
               "type": "Full time",
-              "startDate": "2014-10-01",
-              "endDate": "2021-04-30",
+              "startDate": "",
+              "endDate": "",
               "city": "home office",
               "state": "Dakar",
               "country": "Senegal",
-              "url": "https://www.linkedin.com/company/groupesonatel/",
+              "url": "https://www.linkedin.com/company/finetech-groupe/",
               "thumbnail": "data:image/png;base64,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"
           },{
             "organization": "Sonatel",

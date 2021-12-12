@@ -25,13 +25,13 @@ export async function getStaticProps() {
   const repos = projects.repositories
   const reqInit = {
     headers: {
-      'Authorization': `token ${process.env.PAT}`
+      'Authorization': `token ${process.env.NEXT_PUBLIC_PAT}`
     }
   }
   const fullRepoData = await Promise.allSettled(
     repos.map(
       async name => {
-        const repo = await fetch(baseURI + name, reqInit).then(res => res.json());
+        const repo = await fetch(baseURI + name).then(res => res.json());
         const langs = await fetch(baseURI + name + "/languages", reqInit).then(res => res.json())
         return {
           ...repo,
@@ -78,7 +78,6 @@ export default function Index({ projects, setTheme }) {
         <Landing />
         <Skills />
         <Projects data={projects} />
-        <Experience />
         <About />
       </Container>
     </div>
