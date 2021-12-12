@@ -59,7 +59,7 @@ export default function Experience() {
   const classes = useStyles()
   const theme = useTheme()
   const mdDown = useMediaQuery(theme.breakpoints.down('md'))
-  const align = mdDown ? "center" : "flex-end"
+  const align = "center"
   const textAlign = mdDown ? "center" : "right"
 
   const animRef = useRef(null)
