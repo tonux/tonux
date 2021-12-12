@@ -60,7 +60,7 @@ export default function Experience() {
   const theme = useTheme()
   const mdDown = useMediaQuery(theme.breakpoints.down('md'))
   const align = "center"
-  const textAlign = mdDown ? "center" : "right"
+  const textAlign = "center"
 
   const animRef = useRef(null)
   const animate = useAnimate(animRef)
@@ -84,7 +84,7 @@ export default function Experience() {
           </Fade>
         </Hidden>
       </Grid>
-      <Grid container item xs={12} lg={6} direction="column" spacing={1} alignItems={align}>
+      <Grid container item xs={12} lg={6} direction="row" spacing={1} alignItems={align}>
         {
           Object.getOwnPropertyNames(experience).map((title, id) =>
             <Grid item key={id} className={classes.expObj}>
