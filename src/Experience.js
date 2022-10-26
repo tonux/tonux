@@ -106,41 +106,39 @@ export default function Experience() {
                     thumbnail
                   }, i) =>
                     <Grid item xs={12} sm key={i}>
-                      <Fade in={animate} style={{ transitionDelay: `${200 * i}ms` }}>
-                        <Card className={classes.card}>
-                          <CardActionArea
-                            className={classes.cardActionArea}
-                            href={url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <CardHeader
-                              avatar={
-                                <Avatar variant="rounded">
-                                  <Image
-                                    alt={`${organization} logo`}
-                                    src={thumbnail}
-                                    layout="fill"
-                                  />
-                                </Avatar>
-                              }
-                              title={organization}
-                              subheader={role + " - " + type}
-                            />
-                            <CardHeader
-                              avatar={<DateRange />}
-                              title={getHumanDiff(startDate, endDate)}
-                              subheader={`${startDate} - ${endDate}`}
-                              className={classes.cardHeader}
-                            />
-                            <CardHeader
-                              avatar={<LocationCity />}
-                              subheader={`${city}, ${state}, ${country}`}
-                              className={classes.cardHeader}
-                            />
-                          </CardActionArea>
-                        </Card>
-                      </Fade>
+                      <Card className={classes.card}>
+                        <CardActionArea
+                          className={classes.cardActionArea}
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <CardHeader
+                            avatar={
+                              <Avatar variant="rounded">
+                                <Image
+                                  alt={`${organization} logo`}
+                                  src={thumbnail}
+                                  layout="fill"
+                                />
+                              </Avatar>
+                            }
+                            title={organization}
+                            subheader={role + " - " + type}
+                          />
+                          <CardHeader
+                            avatar={<DateRange />}
+                            title={getHumanDiff(startDate, endDate)}
+                            subheader={`${startDate} - ${endDate}`}
+                            className={classes.cardHeader}
+                          />
+                          <CardHeader
+                            avatar={<LocationCity />}
+                            subheader={`${city}, ${state}, ${country}`}
+                            className={classes.cardHeader}
+                          />
+                        </CardActionArea>
+                      </Card>
                     </Grid>
                   )
                 }

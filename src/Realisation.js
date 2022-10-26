@@ -106,33 +106,31 @@ export default function Realisation() {
                     thumbnail
                   }, i) =>
                     <Grid item xs={12} sm key={i}>
-                      <Fade in={animate} style={{ transitionDelay: `${200 * i}ms` }}>
-                        <Card className={classes.card}>
-                          <CardActionArea
-                            className={classes.cardActionArea}
-                            href={url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <CardHeader
+                      <Card className={classes.card}>
+                        <CardActionArea
+                          className={classes.cardActionArea}
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <CardHeader
 
-                              title={organization}
-                              subheader={role + " - " + type}
-                            />
-                            <CardHeader
-                              avatar={<DateRange />}
-                              title={getHumanDiff(startDate, endDate)}
-                              subheader={`${startDate} - ${endDate}`}
-                              className={classes.cardHeader}
-                            />
-                            <CardHeader
-                              avatar={<LocationCity />}
-                              subheader={`${city}, ${state}, ${country}`}
-                              className={classes.cardHeader}
-                            />
-                          </CardActionArea>
-                        </Card>
-                      </Fade>
+                            title={organization}
+                            subheader={role + " - " + type}
+                          />
+                          <CardHeader
+                            avatar={<DateRange />}
+                            title={getHumanDiff(startDate, endDate)}
+                            subheader={`${startDate} - ${endDate}`}
+                            className={classes.cardHeader}
+                          />
+                          <CardHeader
+                            avatar={<LocationCity />}
+                            subheader={`${city}, ${state}, ${country}`}
+                            className={classes.cardHeader}
+                          />
+                        </CardActionArea>
+                      </Card>
                     </Grid>
                   )
                 }
