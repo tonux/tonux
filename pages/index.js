@@ -4,6 +4,7 @@ import Landing from '../src/Landing';
 import Skills from '../src/Skills';
 import Projects from '../src/Projects';
 import Experience from '../src/Experience';
+import Realisation from '../src/Realisation';
 import About from '../src/About';
 import data from '../data.json';
 import { darkTheme, lightTheme } from '../src/theme';
@@ -77,7 +78,8 @@ export default function Index({ projects, setTheme }) {
       <Container>
         <Landing />
         <Skills />
-
+        <Experience />
+        <Realisation />
         <About />
       </Container>
     </div>
