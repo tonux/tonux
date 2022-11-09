@@ -90,7 +90,7 @@ export default function Landing() {
         <Fade in={true} style={{ transitionDelay: '100ms' }}>
           <Grid item lg={6}>
             <Image
-              src="/landing.jpg"
+              src="/tonuxbg.png"
               alt="Landing"
               width="900.94"
               height="700"

@@ -142,7 +142,7 @@
                 "state": "Dakar",
                 "country": "Senegal",
                 "url": "https://www.linkedin.com/company/pisbieee/",
-                "thumbnail": "/PISB.jfif"
+                "thumbnail": "/jth.jpg"
             },
             {
                 "organization": "Weekend Startups Dakar",
@@ -154,9 +154,47 @@
                 "state": "Dakar",
                 "country": "Senegal",
                 "url": "https://www.linkedin.com/company/pictoreal/",
-                "thumbnail": "/Picto.jfif"
+                "thumbnail": "/wsd.jpg"
             }
-        ]
+        ],
+        "Trainer Experience": [
+          {
+              "organization": "Sonatel Academy",
+              "role": "Independent speaker",
+              "type": "Trainer",
+              "startDate": "",
+              "endDate": "",
+              "city": "Dakar",
+              "state": "Dakar",
+              "country": "Senegal",
+              "url": "https://orangedigitalcenter.sn/sonatel-academy/",
+              "thumbnail": "/trainer.jpg"
+          },
+          {
+              "organization": "Edacy",
+              "role": "Trainer",
+              "type": "Trainer",
+              "startDate": "",
+              "endDate": "",
+              "city": "Dakar",
+              "state": "Dakar",
+              "country": "Senegal",
+              "url": "https://www.edacy.com",
+              "thumbnail": "/trainer.jpg"
+          },
+          {
+              "organization": "SIR Informatique UCAD",
+              "role": "Trainer",
+              "type": "Trainer",
+              "startDate": "",
+              "endDate": "",
+              "city": "Dakar",
+              "state": "Dakar",
+              "country": "Senegal",
+              "url": "https://fad.fst.ucad.sn/course/index.php?categoryid=52",
+              "thumbnail": "/trainer.jpg"
+          }
+      ]
     },
     "realisations": {
       "2022 1/2": [
