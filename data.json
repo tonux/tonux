@@ -71,7 +71,15 @@
             "Android",
             "Flutter",
             "React Native"
-        ]
+        ],
+        "Devops": [
+            "Docker",
+            "Kubernetes",
+            "Jenkins",
+            "Gitlab CI",
+            "Github Actions",
+            "AWS"
+      ]
     },
     "projects": {
         "baseURI": "https://api.github.com/repos/tonux/",
