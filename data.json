@@ -151,8 +151,20 @@
                 "city": "Dakar",
                 "state": "Dakar",
                 "country": "Senegal",
-                "url": "https://www.linkedin.com/company/pisbieee/",
+                "url": "https://www.linkedin.com/in/ndongo-tonux-samb/",
                 "thumbnail": "/jth.jpg"
+            },
+            {
+                "organization": "Dakar Ruby Brigrade",
+                "role": "",
+                "type": "Member",
+                "startDate": "2011-01-01",
+                "endDate": "",
+                "city": "Dakar",
+                "state": "Dakar",
+                "country": "Senegal",
+                "url": "https://www.linkedin.com/company/global-startup-weekend-women/about/",
+                "thumbnail": "/ruby.png"
             },
             {
                 "organization": "Weekend Startups Dakar",
