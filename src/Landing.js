@@ -6,6 +6,7 @@ import simpleIcons from 'simple-icons'
 import data from '../data.json'
 import { iconify } from "./util";
 import Cancel from "@material-ui/icons/Cancel";
+import Link from "next/link";
 const { landing } = data
 
 const professionalDetails = landing.professionalDetails.map(({ alt, icon, link }) => {
@@ -66,7 +67,7 @@ export default function Landing() {
             backSpeed={50}
             loop
           />
-          
+
         </Typography>
         <Grid container direction="row" spacing={2}>
           {
@@ -85,6 +86,9 @@ export default function Landing() {
             )
           }
         </Grid>
+        <Link href="/cv_en.pdf" as={`/myfile`}>
+          <a target="_blank">Resume in English</a>
+        </Link>
       </Grid>
 
       <Hidden mdDown>
