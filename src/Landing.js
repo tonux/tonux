@@ -66,6 +66,7 @@ export default function Landing() {
             backSpeed={50}
             loop
           />
+          
         </Typography>
         <Grid container direction="row" spacing={2}>
           {

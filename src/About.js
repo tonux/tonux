@@ -60,6 +60,9 @@ export default function About() {
         <Typography variant="h5" gutterBottom component="p">
           {about.description}
         </Typography>
+        <div className="App">
+          <a href="Documents/cv_en.pdf" target="_blank">Resume in English</a>
+        </div>
       </Grid>
       <Grid container direction="column" item xs={12} lg={6} spacing={2} justifyContent="center" alignItems="center">
         <Grid item xs={12}>
