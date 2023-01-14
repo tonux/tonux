@@ -3,10 +3,10 @@
     "landing": {
         "title": "Hi, I'm Tonux",
         "subtitles": [
-            "Full-stack developer",
-            "Mobile developer 📱💻",
+            "FullStack Developer",
+            "Mobile Developer 📱💻",
             "Tech enthusiast 💻💻💻",
-            "Developer at @TonuxCorp",
+            "Founder at @TonuxCorp",
             "Mentor 💁🏻‍♂️",
             "Takk Jokk"
         ],
@@ -94,9 +94,33 @@
     },
     "experience": {
         "Work Experience": [
-            {
+          {
+            "organization": "WADA/Canada",
+            "role": "IT Consultant",
+            "type": "Full-time",
+            "startDate": "2022-11-01",
+            "endDate": "",
+            "city": "Remote/home office",
+            "state": "Montréal",
+            "country": "Canada",
+            "url": "https://www.linkedin.com/company/wada/mycompany/",
+            "thumbnail": "https://media.licdn.com/dms/image/C4D0BAQG5_Jg_kyQTpA/company-logo_200_200/0/1642541017578?e=1681948800&v=beta&t=VG72m3dYMmgNBhNTX5KF4gzb1HDd_i_FSWXCroSP8Ko"
+        },
+        {
+            "organization": "Desjardins/Canada",
+            "role": "IT Consultant",
+            "type": "Full-time",
+            "startDate": "2021-07-01",
+            "endDate": "2022-10-01",
+            "city": "Remote/home office",
+            "state": "Montréal",
+            "country": "Canada",
+            "url": "https://www.linkedin.com/company/desjardins/",
+            "thumbnail": "https://media.licdn.com/dms/image/C4E0BAQH5KfRGKSB7eg/company-logo_200_200/0/1662432419993?e=1681948800&v=beta&t=JFPZ-8mTXGVBjtTTorwp2Ef3llpGKKEyZ8KLvBKOgp4"
+        },
+         {
                 "organization": "Astek Canada",
-                "role": "Java Developer",
+                "role": "IT Consultant",
                 "type": "Full-time",
                 "startDate": "Actual",
                 "endDate": "",
@@ -157,7 +181,7 @@
             {
                 "organization": "Dakar Ruby Brigrade",
                 "role": "",
-                "type": "Member",
+                "type": "Admin, Member",
                 "startDate": "2011-01-01",
                 "endDate": "",
                 "city": "Dakar",
@@ -205,7 +229,7 @@
               "thumbnail": "/trainer.jpg"
           },
           {
-              "organization": "SIR Informatique UCAD",
+              "organization": "SIR FST/UCAD",
               "role": "Trainer",
               "type": "Trainer",
               "startDate": "",
@@ -312,7 +336,9 @@
   ]
   },
     "about": {
-      "description" : "I am skilled in planning, customer relationship management and team coordination. As my professional experience has also led me to make important decisions and has given me the ability to collaborate. Dynamic and passionate, I enjoy working in a team while knowing how to evolve autonomously for the missions that require it. Curious and flexible by nature, I assume my responsibilities with great discipline.",
+      "cv_en": "/cv_en.pdf",
+      "cv_fr": "/cv_fr.pdf",
+      "description" : "As a software developer, I am passionate about building intuitive and functional applications for web, mobile, and system design. I am constantly learning and staying up-to-date with the latest technologies to ensure that my solutions are innovative and effective. With a strong foundation in computer science and a dedication to delivering high-quality products, I am confident in my ability to develop successful software solutions for any project.",
         "picture": "/tonux.jpg",
         "social": [
             {

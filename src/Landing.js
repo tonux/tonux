@@ -86,9 +86,6 @@ export default function Landing() {
             )
           }
         </Grid>
-        <Link href="/cv_en.pdf" as={`/myfile`}>
-          <a target="_blank">Resume in English</a>
-        </Link>
       </Grid>
 
       <Hidden mdDown>
