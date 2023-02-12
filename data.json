@@ -205,7 +205,7 @@
                 "thumbnail": "/wsd.jpg"
             }
         ],
-        "Trainer Experience": [
+        "Trainer/Mentor Experience": [
           {
               "organization": "Sonatel Academy",
               "role": "Independent speaker",
@@ -241,8 +241,32 @@
               "country": "Senegal",
               "url": "https://fad.fst.ucad.sn/course/index.php?categoryid=52",
               "thumbnail": "/trainer.jpg"
+          },
+          {
+              "organization": "OpenClassrooms",
+              "role": "Mentor",
+              "type": "Learning",
+              "startDate": "",
+              "endDate": "",
+              "city": "Remote",
+              "state": "Dakar",
+              "country": "Senegal",
+              "url": "https://www.linkedin.com/school/openclassrooms/",
+              "thumbnail": "/trainer.jpg"
           }
-      ]
+          ,
+          {
+              "organization": "SpringBoard",
+              "role": "Mentor",
+              "type": "Learning",
+              "startDate": "",
+              "endDate": "",
+              "city": "Dakar",
+              "state": "Dakar",
+              "country": "Senegal",
+              "url": "https://www.linkedin.com/school/springboard/",
+              "thumbnail": "/trainer.jpg"
+          }      ]
     },
     "realisations": {
       "2022 1/2": [
