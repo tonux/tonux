@@ -221,7 +221,7 @@
           {
               "organization": "Edacy",
               "role": "Trainer",
-              "type": "Trainer",
+              "type": "Learning",
               "startDate": "",
               "endDate": "",
               "city": "Dakar",
@@ -233,7 +233,7 @@
           {
               "organization": "SIR FST/UCAD",
               "role": "Trainer",
-              "type": "Trainer",
+              "type": "Learning",
               "startDate": "",
               "endDate": "",
               "city": "Dakar",
@@ -253,8 +253,7 @@
               "country": "Senegal",
               "url": "https://www.linkedin.com/school/openclassrooms/",
               "thumbnail": "/trainer.jpg"
-          }
-          ,
+          },
           {
               "organization": "SpringBoard",
               "role": "Mentor",
@@ -266,7 +265,8 @@
               "country": "Senegal",
               "url": "https://www.linkedin.com/school/springboard/",
               "thumbnail": "/trainer.jpg"
-          }      ]
+          }      
+        ]
     },
     "realisations": {
       "2022 1/2": [
