@@ -88,19 +88,17 @@ export default function Landing() {
         </Grid>
       </Grid>
 
-      <Hidden xsDown>
-        <Fade in={true} style={{ transitionDelay: '100ms' }}>
-          <Grid item lg={6}>
-            <Image
-              src="/tonuxbg.png"
-              alt="Landing"
-              width="900.94"
-              height="700"
-              objectFit="scale-down"
-            />
-          </Grid>
-        </Fade>
-      </Hidden>
+      <Fade in={true} style={{ transitionDelay: '100ms' }}>
+        <Grid item lg={6}>
+          <Image
+            src="/tonuxbg.png"
+            alt="Landing"
+            width="900.94"
+            height="700"
+            objectFit="scale-down"
+          />
+        </Grid>
+      </Fade>
     </Grid>
   )
 }
