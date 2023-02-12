@@ -96,7 +96,7 @@ export default function Landing() {
               alt="Landing"
               width="900.94"
               height="700"
-              style={{ objectFit: 'scale-down' }}
+              style={{ objectFit: 'contain' }}
             />
           </Grid>
         </Fade>
