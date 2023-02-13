@@ -268,7 +268,7 @@
     ]
   },
   "realisations": {
-    "Achievements 1/4": [
+    "Achievements": [
       {
         "organization": "People Input",
         "role": "Evolution of a mobile money application Zamani (Niger)",
@@ -310,7 +310,7 @@
         "role": "Consultant IT",
         "type": "web and mobile application",
         "startDate": "2020-01-01",
-        "endDate": "",
+        "endDate": "2022-12-31",
         "city": "home office",
         "state": "Dakar",
         "country": "Senegal",

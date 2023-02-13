@@ -111,8 +111,7 @@ export default function Realisation() {
                           className={classes.cardActionArea}
                           href={url}
                           target="_blank"
-                          rel="noopener noreferrer"
-                        >´´´
+                          rel="noopener noreferrer">
                           <CardHeader
 
                             title={organization}
