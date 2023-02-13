@@ -105,7 +105,7 @@ export default function Realisation() {
                     url,
                     thumbnail
                   }, i) =>
-                    <Grid item xs={12} lg key={i}>
+                    <Grid item lg={3} sm key={i}>
                       <Card className={classes.card}>
                         <CardActionArea
                           className={classes.cardActionArea}
