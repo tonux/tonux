@@ -105,14 +105,14 @@ export default function Realisation() {
                     url,
                     thumbnail
                   }, i) =>
-                    <Grid item lg={3} sm key={i}>
+                    <Grid item lg={6} sm key={i}>
                       <Card className={classes.card}>
                         <CardActionArea
                           className={classes.cardActionArea}
                           href={url}
                           target="_blank"
                           rel="noopener noreferrer"
-                        >
+                        >´´´
                           <CardHeader
 
                             title={organization}
