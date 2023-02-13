@@ -67,7 +67,7 @@ export default function Realisation() {
 
   return (
     <Grid direction="row" container justifyContent="center" alignItems="center" spacing={10} className={classes.cont}>
-      <Grid item xs={12} lg={6}>
+      <Grid item xs={12} lg={2}>
         <Typography variant="h2" gutterBottom align="center">
           Portofolio
         </Typography>
@@ -84,7 +84,7 @@ export default function Realisation() {
           </Fade>
         </Hidden>
       </Grid>
-      <Grid container item xs={12} lg={6} direction="row" spacing={1} alignItems={align}>
+      <Grid container item xs={12} lg={10} direction="row" spacing={1} alignItems={align}>
         {
           Object.getOwnPropertyNames(realisations).map((title, id) =>
             <Grid item key={id} className={classes.expObj}>
