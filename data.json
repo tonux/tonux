@@ -42,7 +42,7 @@
       "TypeScript",
       "Kotlin",
       "Dart",
-      "Sql"
+      "SQL"
     ],
     "Frontend": [
       "React",
@@ -58,16 +58,6 @@
       "Spring",
       "Rubyonrails"
     ],
-    " Database and Cloud": [
-      "MongoDB",
-      "MySQL",
-      "PostgreSQL",
-      "Heroku",
-      "Firebase",
-      "Amazon Web Service",
-      "Google Cloud",
-      "Azure"
-    ],
     "Mobile": [
       {
         "alt": "ionic",
@@ -76,6 +66,16 @@
       "Android",
       "Flutter",
       "React"
+    ],
+    "Database and Cloud": [
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "Heroku",
+      "Firebase",
+      "Amazon Web Service",
+      "Google Cloud",
+      "Azure"
     ],
     "Devops": [
       "Docker",
