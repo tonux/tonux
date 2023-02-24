@@ -52,17 +52,21 @@
       "Material-UI",
       "Bootstrap"
     ],
-    "Backend, Database and Cloud": [
+    "Backend": [
       "Node.js",
       "Express",
-      "Flask",
       "Spring",
-      "Rubyonrails",
+      "Rubyonrails"
+    ],
+    " Database and Cloud": [
       "MongoDB",
       "MySQL",
       "PostgreSQL",
       "Heroku",
-      "Firebase"
+      "Firebase",
+      "Amazon Web Service",
+      "Google Cloud",
+      "Azure"
     ],
     "Mobile": [
       {
@@ -77,9 +81,10 @@
       "Docker",
       "Kubernetes",
       "Jenkins",
-      "Gitlab CI",
       "Github Actions",
-      "AWS"
+      "Gitlab",
+      "Sonar",
+      "Jira"
     ]
   },
   "projects": {
@@ -268,7 +273,7 @@
     ]
   },
   "realisations": {
-    "Achievements": [
+    "": [
       {
         "organization": "People Input",
         "role": "Evolution of a mobile money application Zamani (Niger)",
@@ -308,7 +313,7 @@
       {
         "organization": "Finetech Group",
         "role": "Consultant IT",
-        "type": "web and mobile application",
+        "type": "Web and mobile application",
         "startDate": "2020-01-01",
         "endDate": "2022-12-31",
         "city": "home office",
