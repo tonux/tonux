@@ -12,6 +12,7 @@ const useStyles = makeStyles(theme => ({
   },
   card: {
     height: '100%',
+    width: '100%'
   },
   cardHeader: {
     paddingTop: 0
@@ -105,7 +106,7 @@ export default function Realisation() {
                     url,
                     thumbnail
                   }, i) =>
-                    <Grid item lg={6} sm key={i}>
+                    <Grid item lg={6} sm={6} md={3} xs={12} key={i}>
                       <Card className={classes.card}>
                         <CardActionArea
                           className={classes.cardActionArea}

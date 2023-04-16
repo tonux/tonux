@@ -77,8 +77,8 @@ export default function Experience() {
               <Image
                 alt="Experience"
                 src="/experience.svg"
-                width="996.46"
-                height="828.18"
+                width="500"
+                height="500"
               />
             </div>
           </Fade>
@@ -106,7 +106,8 @@ export default function Experience() {
                     thumbnail
                   }, i) =>
                     <Grid item xs={12} sm key={i}>
-                      <Card className={classes.card}>
+                      <Card style={{ minWidth: '250px' }} className={classes.card}>
+                      
                         <CardActionArea
                           className={classes.cardActionArea}
                           href={url}
