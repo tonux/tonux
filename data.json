@@ -42,7 +42,7 @@
       "TypeScript",
       "Kotlin",
       "Dart",
-      "Sql"
+      "PiFileSql"
     ],
     "Frontend": [
       "React",
@@ -73,7 +73,7 @@
       "PostgreSQL",
       "Heroku",
       "Firebase",
-      "Aws",
+      "FaAws",
       "Google Cloud",
       "Azure Devops"
     ],
