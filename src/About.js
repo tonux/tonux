@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
     height: theme.spacing(Math.max(dpx, 28)),
     width: theme.spacing(Math.max(dpx, 28))
   },
-  paragraph:{
+  paragraph: {
     fontSize: 'clamp(0.5rem + 0.5vh)',
     fontWeight: '100'
   },
@@ -61,7 +61,7 @@ export default function About() {
         <Typography variant="h2" gutterBottom component="p">
           About me
         </Typography>
-        <Typography className={classes.paragraph} variant="h5" gutterBottom component="p">
+        <Typography className={classes.paragraph} variant="h5" gutterBottom component="p" align="justify" >
           {about.description}
         </Typography>
 
