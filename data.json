@@ -42,7 +42,7 @@
       "TypeScript",
       "Kotlin",
       "Dart",
-      "SQL"
+      "Sql"
     ],
     "Frontend": [
       "React",
@@ -73,9 +73,9 @@
       "PostgreSQL",
       "Heroku",
       "Firebase",
-      "Amazon Web Service",
+      "Aws",
       "Google Cloud",
-      "Azure"
+      "Azure Devops"
     ],
     "Devops": [
       "Docker",
@@ -83,7 +83,7 @@
       "Jenkins",
       "Github Actions",
       "Gitlab",
-      "Sonar",
+      "Sonarqube",
       "Jira"
     ]
   },
