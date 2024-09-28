@@ -3,12 +3,11 @@
   "landing": {
     "title": "Hi, I'm Tonux",
     "subtitles": [
-      "FullStack Developer",
-      "Mobile Developer 📱💻",
-      "Tech enthusiast 💻💻💻",
-      "Founder at @TonuxCorp",
+      "Senior Developer 📱💻",
+      "Tech enthusiast 🚀",
+      "Founder at @TonuxCorp 🏢",
       "Mentor 💁🏻‍♂️",
-      "Takk Jokk"
+      "Takk Jokk 🇸🇳"
     ],
     "professionalDetails": [
       {
@@ -42,7 +41,7 @@
       "TypeScript",
       "Kotlin",
       "Dart",
-      "PiFileSql"
+      "Sql"
     ],
     "Frontend": [
       "React",
@@ -73,7 +72,7 @@
       "PostgreSQL",
       "Heroku",
       "Firebase",
-      "FaAws",
+      "AWS",
       "Google Cloud",
       "Azure Devops"
     ],
@@ -375,7 +374,7 @@
   "about": {
     "cv_en": "/cv_en.pdf",
     "cv_fr": "/cv_fr.pdf",
-    "description": "As a software developer, I am passionate about building intuitive and functional applications for web, mobile, and system design. I am constantly learning and staying up-to-date with the latest technologies to ensure that my solutions are innovative and effective. With a strong foundation in computer science and a dedication to delivering high-quality products, I am confident in my ability to develop successful software solutions for any project.",
+    "description": "As a senior software developer, I specialize in creating intuitive and highly functional applications across web, mobile, and system design. My focus is on delivering innovative and effective solutions by staying current with emerging technologies. With a solid foundation in computer science and a commitment to excellence, I consistently produce high-quality, scalable software that meets the needs of diverse projects. I am confident in my ability to drive success through thoughtful design, architecture, and technical leadership.",
     "picture": "/tonux.jpg",
     "social": [
       {
