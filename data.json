@@ -3,9 +3,9 @@
   "landing": {
     "title": "Hi, I'm Tonux",
     "subtitles": [
-      "Senior Developer 📱💻",
+      "Senior Engineer 📱💻",
       "Tech enthusiast 🚀",
-      "Founder at @TonuxCorp 🏢",
+      "co-founder at @Dropcolis 🏢",
       "Mentor 💁🏻‍♂️",
       "Takk Jokk 🇸🇳"
     ],
@@ -55,7 +55,8 @@
       "Node.js",
       "Express",
       "Spring",
-      "Rubyonrails"
+      "Rubyonrails",
+      "Laravel"
     ],
     "Mobile": [
       {
@@ -97,6 +98,18 @@
   },
   "experience": {
     "Work Experience": [
+      {
+        "organization": "Dropcolis/Canada",
+        "role": "CTO",
+        "type": "co-founder",
+        "startDate": "2024-08-01",
+        "endDate": "",
+        "city": "Remote/home office",
+        "state": "Montréal",
+        "country": "Canada",
+        "url": "https://www.linkedin.com/company/dropcolis/",
+        "thumbnail": "data:image/png;base64,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"
+      },
       {
         "organization": "WADA/Canada",
         "role": "Senior Software Engineer",
