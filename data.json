@@ -197,6 +197,17 @@
     ],
     "Volunteer Experience": [
       {
+        "organization": "Vie publique du Sénégal",
+        "role": "Technical contributor",
+        "type": "Member",
+        "startDate": "2024-10-01",
+        "endDate": "",
+        "city": "Dakar",
+        "state": "Dakar",
+        "country": "Senegal",
+        "url": "https://www.linkedin.com/company/vie-publique-sn/posts/?feedView=all",
+        "thumbnail": "/vie-public.jpg"
+      },{
         "organization": "Jiggen Tech",
         "role": "Technical mentor",
         "type": "Member",
@@ -235,6 +246,17 @@
     ],
     "Trainer/Mentor Experience": [
       {
+        "organization": "Force N",
+        "role": "Mentor",
+        "type": "Learning",
+        "startDate": "",
+        "endDate": "",
+        "city": "Dakar",
+        "state": "Dakar",
+        "country": "Senegal",
+        "url": "http://formation.force-n.sn",
+        "thumbnail": "/trainer.jpg"
+      },{
         "organization": "Sonatel Academy",
         "role": "Independent speaker",
         "type": "Trainer",
