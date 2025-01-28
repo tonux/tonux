@@ -5,9 +5,9 @@
     "subtitles": [
       "Senior Engineer 📱💻",
       "Tech enthusiast 🚀",
-      "co-founder at @Dropcolis 🏢",
+      "co-founder at @Dropcolis 🚚📦",
       "Mentor 💁🏻‍♂️",
-      "Takk Jokk 🇸🇳"
+      "Takk Jokk 🇸🇳 🇨🇦"
     ],
     "professionalDetails": [
       {
@@ -30,14 +30,20 @@
         "icon": "gmail",
         "link": "mailto:sambndongo@gmail.com,tonuxsamb@gmail.com"
       }
+      ,
+      {
+        "alt": "Blog",
+        "icon": "blog",
+        "link": "https://tonux-dev.com"
+      }
     ]
   },
   "skills": {
     "Languages": [
-      "Python",
-      "JavaScript",
       "Java",
+      "JavaScript",
       "Ruby",
+      "Python",
       "TypeScript",
       "Kotlin",
       "Dart",
@@ -56,7 +62,8 @@
       "Express",
       "Spring",
       "Rubyonrails",
-      "Laravel"
+      "Laravel",
+      "Directus"
     ],
     "Mobile": [
       {
