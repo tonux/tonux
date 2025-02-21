@@ -5,9 +5,9 @@
     "subtitles": [
       "Senior Engineer",
       "Tech enthusiast",
-      "co-founder, CTO @Dropcolis 🚚📦",
+      "co-founder, CTO @Dropcolis",
       "Mentor 👨🏾‍💻",
-      "Takk Jokk 🚀 🇸🇳🇨🇦"
+      "Takk Jokk"
     ],
     "professionalDetails": [
       {
@@ -62,8 +62,7 @@
       "Express",
       "Spring",
       "Rubyonrails",
-      "Laravel",
-      "Directus"
+      "Laravel"    
     ],
     "Mobile": [
       {
@@ -205,7 +204,7 @@
         "organization": "TonuxCorp",
         "role": "CEO",
         "type": "Full time",
-        "startDate": "2010-10-01",
+        "startDate": "Actual",
         "endDate": "",
         "city": "home office",
         "state": "Dakar",
