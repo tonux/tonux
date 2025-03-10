@@ -12,15 +12,36 @@ const useStyles = makeStyles(theme => ({
   },
   card: {
     height: '100%',
+    transition: 'transform 0.3s ease-in-out',
+    '&:hover': {
+      transform: 'translateY(-10px)'
+    }
   },
   cardHeader: {
     paddingTop: 0
   },
   cardActionArea: {
     height: '100%',
+    background: theme.palette.type === 'dark' 
+      ? 'linear-gradient(rgba(30,30,30,0.9), rgba(30,30,30,0.9))'
+      : 'linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9))',
   },
   expObj: {
     marginBottom: theme.spacing(4)
+  },
+  expTitle: {
+    position: 'relative',
+    '&:after': {
+      content: '""',
+      position: 'absolute',
+      bottom: '-10px',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      width: '50px',
+      height: '4px',
+      background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+      borderRadius: '2px'
+    }
   }
 }))
 
@@ -88,7 +109,7 @@ export default function Experience() {
         {
           Object.getOwnPropertyNames(experience).map((title, id) =>
             <Grid item key={id} className={classes.expObj}>
-              <Typography variant="h4" align={textAlign} gutterBottom component="p">
+              <Typography variant="h4" align={textAlign} gutterBottom component="p" className={classes.expTitle}>
                 {title}
               </Typography>
               <Grid container item direction="row" spacing={1} justifyContent="center">

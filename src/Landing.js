@@ -33,16 +33,25 @@ professionalDetails.forEach(({ alt, backgroundColor }) => {
 const useStyles = makeStyles(theme => ({
   cont: {
     minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
-    paddingBottom: theme.spacing(10)
+    paddingBottom: theme.spacing(10),
+    position: 'relative',
+    overflow: 'hidden'
   },
   subtitle: {
     marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(5)
+    marginBottom: theme.spacing(5),
+    color: theme.palette.primary.main,
+    background: 'transparent',
   },
   avatar: {
     height: theme.spacing(8),
     width: theme.spacing(8),
-    padding: theme.spacing(2)
+    padding: theme.spacing(2),
+    transition: 'transform 0.2s ease-in-out',
+    '&:hover': {
+      transform: 'scale(1.1)',
+      boxShadow: theme.shadows[4]
+    }
   },
   ...iobj
 }))
@@ -56,7 +65,12 @@ export default function Landing() {
   return (
     <Grid container justifyContent="center" alignItems="center" className={classes.cont}>
       <Grid item xs={12} lg={6}>
-        <Typography variant={mdDown ? "h2" : "h1"}>
+        <Typography variant={mdDown ? "h2" : "h1"} 
+          style={{
+            fontWeight: 'bold',
+            color: theme.palette.primary.main,
+            background: 'transparent',
+          }}>
           {landing.title}
         </Typography>
         <Typography variant={mdDown ? "h5" : "h4"} component="h2" className={classes.subtitle}>

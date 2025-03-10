@@ -40,6 +40,8 @@ Object.values(wrappedSkills).forEach(oarr => {
 const useStyles = makeStyles(theme => ({
   cont: {
     minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
+    borderRadius: theme.spacing(2),
+    padding: theme.spacing(4)
   },
   skobj: {
     marginBottom: theme.spacing(4)
@@ -47,7 +49,26 @@ const useStyles = makeStyles(theme => ({
   avatar: {
     height: theme.spacing(7),
     width: theme.spacing(7),
-    padding: theme.spacing(1.5)
+    padding: theme.spacing(1.5),
+    transition: 'all 0.3s ease-in-out',
+    '&:hover': {
+      transform: 'translateY(-5px)',
+      boxShadow: theme.shadows[4]
+    }
+  },
+  skillTitle: {
+    position: 'relative',
+    '&:after': {
+      content: '""',
+      position: 'absolute',
+      bottom: '-10px',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      width: '50px',
+      height: '4px',
+      background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+      borderRadius: '2px'
+    }
   },
   ...iobj
 }))
@@ -86,7 +107,7 @@ export default function Skills() {
         {
           Object.getOwnPropertyNames(wrappedSkills).map((title, id) =>
             <Grid item key={id} className={classes.skobj}>
-              <Typography variant="h4" align={textAlign} gutterBottom component="p">
+              <Typography variant="h4" align={textAlign} gutterBottom component="p" className={classes.skillTitle}>
                 {title}
               </Typography>
               <Grid container item direction="row" spacing={1} justifyContent="center">

@@ -9,11 +9,21 @@ const useStyles = makeStyles(theme => ({
     minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
   },
   card: {
-    height: '100%'
+    height: '100%',
+    transition: 'all 0.3s ease-in-out',
+    '&:hover': {
+      transform: 'translateY(-5px)',
+      boxShadow: theme.shadows[10]
+    }
   },
   cardActionArea: {
     height: '100%',
     // display: 'grid'
+  },
+  chip: {
+    background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+    color: 'white',
+    fontWeight: 'bold'
   }
 }))
 
@@ -91,6 +101,7 @@ export default function Projects({ data }) {
                                 key={i}
                                 label={lang}
                                 size="small"
+                                className={classes.chip}
                               />
                             </Grid>
                           )

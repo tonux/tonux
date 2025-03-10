@@ -34,20 +34,50 @@ const useStyles = makeStyles(theme => ({
   cont: {
     minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
     alignSelf: 'center',
-    justifySelf: 'center'
+    justifySelf: 'center',
+    padding: theme.spacing(4)
   },
   avatar: {
     height: theme.spacing(8),
     width: theme.spacing(8),
-    padding: theme.spacing(2)
+    padding: theme.spacing(2),
+    transition: 'transform 0.2s ease-in-out',
+    '&:hover': {
+      transform: 'scale(1.1)',
+    }
   },
   dp: {
     height: theme.spacing(Math.max(dpx, 28)),
-    width: theme.spacing(Math.max(dpx, 28))
+    width: theme.spacing(Math.max(dpx, 28)),
+    boxShadow: theme.shadows[8],
+    transition: 'transform 0.3s ease-in-out',
+    '&:hover': {
+      transform: 'scale(1.03)',
+    }
   },
   paragraph: {
-    fontSize: 'clamp(0.5rem + 0.5vh)',
-    fontWeight: '100'
+    fontSize: 'clamp(1rem, 1vw + 0.5rem, 1.2rem)',
+    fontWeight: '300',
+    lineHeight: 1.8,
+    marginBottom: theme.spacing(4)
+  },
+  title: {
+    fontWeight: '600',
+    marginBottom: theme.spacing(3),
+    position: 'relative',
+    '&:after': {
+      content: '""',
+      position: 'absolute',
+      bottom: '-8px',
+      left: '0',
+      width: '60px',
+      height: '4px',
+      background: theme.palette.primary.main,
+      borderRadius: '2px'
+    }
+  },
+  socialGrid: {
+    marginTop: theme.spacing(3)
   },
   ...iobj
 }))
@@ -58,25 +88,25 @@ export default function About() {
   return (
     <Grid direction="row" container justifyContent="center" alignItems="center" className={classes.cont}>
       <Grid item xs={12} lg={6}>
-        <Typography variant="h2" gutterBottom component="p">
+        <Typography variant="h2" component="h1" className={classes.title}>
           About me
         </Typography>
-        <Typography className={classes.paragraph} variant="h5" gutterBottom component="p" align="justify" >
+        <Typography className={classes.paragraph} variant="body1" component="p" align="justify">
           {about.description}
         </Typography>
-
       </Grid>
-      <Grid container direction="column" item xs={12} lg={6} spacing={2} justifyContent="center" alignItems="center">
+      <Grid container direction="column" item xs={12} lg={6} spacing={3} justifyContent="center" alignItems="center">
         <Grid item xs={12}>
           <Avatar variant="rounded" className={classes.dp}>
             <Image
               alt="Display Picture"
               src={about.picture}
               layout="fill"
+              priority
             />
           </Avatar>
         </Grid>
-        <Grid container item xs={12} spacing={2} justifyContent="center">
+        <Grid container item xs={12} spacing={2} justifyContent="center" className={classes.socialGrid}>
           {
             socialDetails.map(({ alt, icon, link }, i) =>
               <Grid item key={i}>
