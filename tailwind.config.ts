@@ -9,37 +9,49 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Precision Engineering palette
+        // Light Editorial Monochrome palette — RGB channel vars for opacity support
         surface: {
-          DEFAULT: "#0A0A0B",     // Deep Space Black — main bg
-          card: "#161618",         // Obsidian Grey — cards/surfaces
-          elevated: "#1C1C1F",     // Slightly lighter for hover states
-          border: "rgba(255,255,255,0.06)", // Ultra-thin borders
+          DEFAULT: "rgb(var(--color-surface) / <alpha-value>)",
+          alt: "rgb(var(--color-surface-alt) / <alpha-value>)",
+          elevated: "rgb(var(--color-surface-elevated) / <alpha-value>)",
+          border: "var(--color-border)",
+          "border-strong": "var(--color-border-strong)",
         },
         content: {
-          DEFAULT: "#F2F2F2",      // Pure Snow — primary text
-          secondary: "#8E8E93",    // Silver Chrome — secondary text
-          muted: "#5A5A5E",        // Muted text
+          DEFAULT: "rgb(var(--color-content) / <alpha-value>)",
+          secondary: "rgb(var(--color-content-secondary) / <alpha-value>)",
+          muted: "rgb(var(--color-content-muted) / <alpha-value>)",
         },
-        accent: {
-          DEFAULT: "#00D4FF",      // Electric Cyan — innovation accent
-          dim: "rgba(0,212,255,0.1)",  // Cyan glow bg
-          glow: "rgba(0,212,255,0.15)",
-          hover: "#00BFEA",
+        dark: {
+          DEFAULT: "#222222",
+          text: "#FFFFFF",
+          muted: "#ABABAB",
         },
       },
       fontFamily: {
+        display: ["var(--font-outfit)", "system-ui", "sans-serif"],
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
         mono: ["var(--font-jetbrains)", "monospace"],
       },
+      fontSize: {
+        "display-hero": [
+          "clamp(4rem, 12vw, 10rem)",
+          { lineHeight: "1", letterSpacing: "-0.03em", fontWeight: "200" },
+        ],
+        "display-lg": [
+          "clamp(3rem, 6vw, 5rem)",
+          { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "300" },
+        ],
+        "display-md": [
+          "clamp(2rem, 4vw, 3.5rem)",
+          { lineHeight: "1.15", letterSpacing: "-0.02em", fontWeight: "400" },
+        ],
+      },
       borderRadius: {
-        DEFAULT: "8px",
+        DEFAULT: "12px",
       },
       transitionDuration: {
         DEFAULT: "300ms",
-      },
-      backdropBlur: {
-        nav: "20px",
       },
     },
   },

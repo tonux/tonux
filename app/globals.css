@@ -2,34 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Design Tokens (CSS Variables — RGB channels for opacity support) ─── */
+:root {
+  --color-surface: 255 255 255;
+  --color-surface-alt: 248 248 248;
+  --color-surface-elevated: 242 242 242;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-strong: rgba(0, 0, 0, 0.15);
+  --color-content: 34 34 34;
+  --color-content-secondary: 123 123 123;
+  --color-content-muted: 171 171 171;
+}
+
+.dark {
+  --color-surface: 10 10 11;
+  --color-surface-alt: 17 17 19;
+  --color-surface-elevated: 28 28 31;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.15);
+  --color-content: 242 242 242;
+  --color-content-secondary: 142 142 147;
+  --color-content-muted: 90 90 94;
+}
+
+/* ─── Base Styles ─── */
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-surface text-content antialiased;
+    @apply bg-surface text-content-secondary antialiased;
   }
 
-  /* Selection highlight with accent */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-content;
+  }
+
   ::selection {
-    @apply bg-accent/20 text-content;
+    @apply bg-content/10 text-content;
   }
 }
 
+/* ─── Component Utilities ─── */
 @layer components {
-  /* Glass card component */
-  .glass-card {
-    @apply rounded-[8px] border border-surface-border bg-surface-card backdrop-blur-sm;
+  /* Card — light bg with subtle border */
+  .card {
+    @apply rounded-[12px] border border-surface-border bg-surface transition-all duration-300;
   }
 
-  /* Glass nav */
-  .glass-nav {
-    @apply border-b border-surface-border bg-surface/80 backdrop-blur-[20px];
+  /* Card on alternate (grey) background sections */
+  .card-on-alt {
+    @apply rounded-[12px] border border-surface-border-strong bg-surface transition-all duration-300;
   }
 
-  /* Accent glow effect */
-  .accent-glow {
-    @apply shadow-[0_0_20px_rgba(0,212,255,0.1)];
+  /* Section label with dot prefix — "● About Me" */
+  .section-label {
+    @apply inline-flex items-center gap-2 text-sm text-content-secondary;
+  }
+  .section-label::before {
+    content: "";
+    @apply inline-block h-1.5 w-1.5 rounded-full bg-content;
+  }
+
+  /* Underline link with arrow — editorial CTA style */
+  .link-arrow {
+    @apply inline-flex items-center gap-1 text-sm font-medium text-content underline underline-offset-4 decoration-content/30 transition-all duration-300 hover:decoration-content;
+  }
+
+  /* Outlined pill tag */
+  .pill {
+    @apply rounded-full border border-surface-border-strong px-3 py-1 text-xs font-medium uppercase tracking-wider text-content-secondary;
+  }
+
+  /* Dark section (footer, CTA banner) */
+  .section-dark {
+    @apply bg-dark text-dark-text;
+  }
+
+  /* Watermark text (giant faded bg) */
+  .watermark {
+    @apply pointer-events-none select-none font-display font-bold uppercase tracking-wider;
+    color: rgb(var(--color-surface-elevated));
   }
 }

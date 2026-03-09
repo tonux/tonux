@@ -11,12 +11,17 @@
     "portfolio": "Portfolio",
     "about": "A propos",
     "contact": "Contact",
-    "cta": "Parlons de votre projet"
+    "cta": "Reserver un appel"
   },
   "hero": {
-    "title": "Consultant Tech Senior & CTO",
-    "subtitle": "12+ ans d'expertise au service de votre transformation digitale",
+    "greeting": "Bonjour",
+    "subtitle": "Software Consultant",
+    "intro": "— C'est Tonux, consultant tech senior & CTO",
     "description": "J'accompagne institutions, entreprises et particuliers dans la conception, le developpement et le pilotage de solutions technologiques sur mesure.",
+    "stats_years": "Annees d'experience",
+    "stats_projects": "Projets livres",
+    "scroll_down": "Defiler vers le bas",
+    "title": "Consultant Tech Senior & CTO",
     "cta_primary": "Reserver un appel decouverte",
     "cta_secondary": "Voir mes services",
     "roles": ["Senior Engineer", "Tech Enthusiast", "CTO @Dropcolis", "Mentor"]
@@ -46,7 +51,7 @@
       },
       {
         "title": "Developpement sur mesure",
-        "description": "Conception et developpement d'applications web, mobile et API. Full-stack : React/Next.js, Node.js, Ruby on Rails, Flutter, React Native."
+        "description": "Conception et developpement d'applications web, mobile et API sur mesure."
       },
       {
         "title": "Direction Technique (CTO as a Service)",
@@ -160,6 +165,27 @@
         "type": "consulting",
         "techs": ["Java", "Spring", "Angular"],
         "url": "https://www.finetechgroupe.com"
+      },
+      {
+        "title": "Jangflix",
+        "description": "Application mobile educative avec cours interactifs, quiz et systeme de badges",
+        "type": "mobile",
+        "techs": ["React Native", "Node.js", "Firebase"],
+        "url": "https://jangflix.com"
+      },
+      {
+        "title": "Simpl",
+        "description": "Application de gestion financiere pour les consommateurs et familles africaines",
+        "type": "mobile",
+        "techs": ["Flutter", "Node.js", "Firebase"],
+        "url": "https://simplfinance.io"
+      },
+      {
+        "title": "Wird Maaxuuz",
+        "description": "Plateforme digitale pour acceder au Wird Maaxuuz — chapelet virtuel, horaires de priere, boussole Qibla",
+        "type": "web",
+        "techs": ["Next.js", "PWA", "Tailwind CSS"],
+        "url": "http://wirdmaaxuuz.com"
       }
     ]
   },
@@ -191,7 +217,13 @@
     "title": "Blog",
     "subtitle": "Articles et reflexions sur la tech",
     "cta": "Lire le blog",
-    "url": "https://tonux-dev.com"
+    "url": "https://tonux-dev.com",
+    "placeholder_1": "Architecture microservices en 2026",
+    "placeholder_2": "Flutter vs React Native : mon retour",
+    "placeholder_3": "Devenir CTO : lecons apprises",
+    "category_1": "Architecture",
+    "category_2": "Mobile",
+    "category_3": "Leadership"
   },
   "contact": {
     "title": "Pret a collaborer ?",
@@ -219,7 +251,8 @@
     "tagline": "Consultant Tech Senior & CTO — Montreal, Canada",
     "links_title": "Liens rapides",
     "social_title": "Suivez-moi",
-    "copyright": "2026 TonuxCorp — Montreal, Canada"
+    "copyright": "2026 TonuxCorp — Montreal, Canada",
+    "email_display": "sambndongo@gmail.com"
   },
   "about_page": {
     "title": "A propos de moi",

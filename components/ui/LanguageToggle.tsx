@@ -18,7 +18,7 @@ export function LanguageToggle() {
     <button
       onClick={switchLocale}
       aria-label={`Switch to ${locale === "fr" ? "English" : "Francais"}`}
-      className="rounded-[8px] px-3 py-1.5 font-mono text-xs font-medium text-content-secondary transition-all duration-300 hover:bg-surface-card hover:text-accent"
+      className="rounded-[12px] px-3 py-1.5 font-mono text-xs font-medium text-content-secondary transition-all duration-300 hover:bg-surface-alt hover:text-content"
     >
       {locale === "fr" ? "EN" : "FR"}
     </button>

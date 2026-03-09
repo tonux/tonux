@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 type ButtonProps = {
   children: ReactNode;
   href?: string;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "link";
   size?: "sm" | "md" | "lg";
   external?: boolean;
   className?: string;
@@ -25,21 +25,27 @@ export function Button({
   disabled = false,
   onClick,
 }: ButtonProps) {
-  const base =
-    "inline-flex items-center justify-center font-medium rounded-[8px] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-surface";
+  const isLink = variant === "link";
+
+  const base = isLink
+    ? "inline-flex items-center gap-1 font-medium underline underline-offset-4 decoration-content/30 transition-all duration-300 hover:decoration-content text-content"
+    : "inline-flex items-center justify-center font-medium rounded-[12px] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-content/30 focus-visible:ring-offset-2 focus-visible:ring-offset-surface";
 
   const variants = {
-    primary: "bg-accent text-surface hover:bg-accent-hover accent-glow",
+    primary: "bg-content text-surface hover:opacity-80",
     secondary:
-      "border border-surface-border bg-surface-card text-content hover:bg-surface-elevated hover:border-accent/30",
-    ghost: "text-content-secondary hover:text-content hover:bg-surface-card",
+      "border border-surface-border-strong bg-surface text-content hover:bg-surface-elevated",
+    ghost: "text-content-secondary hover:text-content hover:bg-surface-alt",
+    link: "",
   };
 
-  const sizes = {
-    sm: "px-4 py-2 text-sm",
-    md: "px-6 py-3 text-sm",
-    lg: "px-8 py-4 text-base",
-  };
+  const sizes = isLink
+    ? { sm: "text-sm", md: "text-sm", lg: "text-base" }
+    : {
+        sm: "px-4 py-2 text-sm",
+        md: "px-6 py-3 text-sm",
+        lg: "px-8 py-4 text-base",
+      };
 
   const classes = cn(
     base,

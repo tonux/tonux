@@ -2,8 +2,8 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
-import { Settings, Code, Users, GraduationCap, ChevronDown } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { Settings, Code, Users, GraduationCap, ChevronDown, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const icons = [Settings, Code, Users, GraduationCap];
@@ -36,10 +36,8 @@ export function ServicesPageContent() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            Services
-          </p>
-          <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
+          <div className="section-label mx-auto w-fit">Services</div>
+          <h1 className="mt-4 font-display text-display-lg text-content">
             {t("services_page.title")}
           </h1>
           <p className="mt-4 text-lg text-content-secondary">
@@ -57,10 +55,10 @@ export function ServicesPageContent() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="glass-card p-8"
+                className="card p-8"
               >
-                <div className="mb-4 inline-flex rounded-[8px] bg-accent-dim p-3">
-                  <Icon size={24} strokeWidth={1.5} className="text-accent" />
+                <div className="mb-4 inline-flex rounded-[12px] bg-surface-alt p-3">
+                  <Icon size={24} strokeWidth={1.5} className="text-content" />
                 </div>
                 <h2 className="text-xl font-semibold text-content">
                   {service.title}
@@ -75,7 +73,7 @@ export function ServicesPageContent() {
 
         {/* Process */}
         <div className="mt-24">
-          <h2 className="text-center text-3xl font-bold text-content">
+          <h2 className="text-center font-display text-display-md text-content">
             {t("services_page.process_title")}
           </h2>
           <div className="mt-12 grid gap-4 md:grid-cols-4">
@@ -87,7 +85,7 @@ export function ServicesPageContent() {
                 transition={{ delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-[8px] bg-accent font-mono text-lg font-bold text-surface accent-glow">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-[12px] bg-content font-mono text-lg font-bold text-surface">
                   {i + 1}
                 </div>
                 <h3 className="mt-4 text-base font-semibold text-content">
@@ -103,7 +101,7 @@ export function ServicesPageContent() {
 
         {/* FAQ */}
         <div className="mt-24">
-          <h2 className="text-center text-3xl font-bold text-content">
+          <h2 className="text-center font-display text-display-md text-content">
             {t("services_page.faq_title")}
           </h2>
           <div className="mx-auto mt-12 max-w-3xl space-y-3">
@@ -115,9 +113,12 @@ export function ServicesPageContent() {
 
         {/* CTA */}
         <div className="mt-20 text-center">
-          <Button href={`/${locale}/contact`} variant="primary" size="lg">
-            {t("nav.cta")}
-          </Button>
+          <Link
+            href={`/${locale}/contact`}
+            className="link-arrow inline-flex"
+          >
+            {t("nav.cta")} <ArrowUpRight size={14} strokeWidth={1.5} />
+          </Link>
         </div>
       </div>
     </div>
@@ -127,7 +128,7 @@ export function ServicesPageContent() {
 function FAQItem({ question, answer }: { question: string; answer: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="glass-card overflow-hidden">
+    <div className="card overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
         className="flex w-full items-center justify-between p-5 text-left transition-colors duration-300 hover:bg-surface-elevated"

@@ -3,8 +3,8 @@
 import { useTranslations, useLocale } from "next-intl";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export function PortfolioPreview() {
   const t = useTranslations("portfolio");
@@ -21,7 +21,7 @@ export function PortfolioPreview() {
   }>;
 
   return (
-    <section ref={ref} className="border-t border-surface-border py-24 lg:py-32">
+    <section ref={ref} className="bg-surface-alt py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,10 +29,8 @@ export function PortfolioPreview() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            {t("title")}
-          </p>
-          <h2 className="mt-4 text-3xl font-bold text-content sm:text-4xl">
+          <div className="section-label mx-auto w-fit">{t("title")}</div>
+          <h2 className="mt-4 font-display text-display-md text-content">
             {t("subtitle")}
           </h2>
         </motion.div>
@@ -47,39 +45,48 @@ export function PortfolioPreview() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group glass-card block p-6 transition-all duration-300 hover:border-accent/20 hover:bg-surface-elevated"
+              className="group card-on-alt block overflow-hidden transition-all duration-300 hover:shadow-sm"
             >
-              <div className="flex items-start justify-between">
+              {/* Thumbnail placeholder */}
+              <div className="relative flex h-40 items-center justify-center bg-surface-elevated">
+                <span className="font-display text-5xl font-light text-content-muted">
+                  {item.title.charAt(0)}
+                </span>
+                <div className="absolute inset-0 flex items-center justify-center bg-content/0 transition-all duration-300 group-hover:bg-content/80">
+                  <ArrowUpRight
+                    size={24}
+                    strokeWidth={1.5}
+                    className="text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  />
+                </div>
+              </div>
+
+              <div className="p-5">
                 <h3 className="text-base font-semibold text-content">
                   {item.title}
                 </h3>
-                <ExternalLink
-                  size={16}
-                  strokeWidth={1.5}
-                  className="text-content-muted transition-colors duration-300 group-hover:text-accent"
-                />
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-content-secondary">
-                {item.description}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {item.techs.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-[8px] bg-accent-dim px-2.5 py-0.5 font-mono text-xs text-accent"
-                  >
-                    {tech}
-                  </span>
-                ))}
+                <p className="mt-2 text-sm leading-relaxed text-content-secondary">
+                  {item.description}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {item.techs.map((tech) => (
+                    <span key={tech} className="pill">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.a>
           ))}
         </div>
 
         <div className="mt-12 text-center">
-          <Button href={`/${locale}/portfolio`} variant="ghost" size="md">
-            {t("cta")} &rarr;
-          </Button>
+          <Link
+            href={`/${locale}/portfolio`}
+            className="link-arrow inline-flex"
+          >
+            {t("cta")} <ArrowUpRight size={14} strokeWidth={1.5} />
+          </Link>
         </div>
       </div>
     </section>

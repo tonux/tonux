@@ -2,8 +2,8 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
-import { MapPin, Clock } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { MapPin, Clock, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export function FormationPageContent() {
   const t = useTranslations();
@@ -29,10 +29,8 @@ export function FormationPageContent() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            Formation
-          </p>
-          <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
+          <div className="section-label mx-auto w-fit">Formation</div>
+          <h1 className="mt-4 font-display text-display-lg text-content">
             {t("formation_page.title")}
           </h1>
           <p className="mt-4 text-lg text-content-secondary">
@@ -45,9 +43,9 @@ export function FormationPageContent() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="mx-auto mt-16 max-w-3xl glass-card p-8"
+          className="mx-auto mt-16 max-w-3xl card p-8"
         >
-          <h2 className="text-xl font-bold text-content">
+          <h2 className="text-xl font-semibold text-content">
             {t("formation_page.approach_title")}
           </h2>
           <p className="mt-4 leading-relaxed text-content-secondary">
@@ -57,9 +55,9 @@ export function FormationPageContent() {
 
         {/* Experience */}
         <div className="mt-20">
-          <h2 className="text-center font-mono text-xs uppercase tracking-widest text-accent">
+          <div className="section-label mx-auto w-fit">
             {t("training.title")}
-          </h2>
+          </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {trainingItems.map((item, i) => (
               <motion.div
@@ -67,12 +65,12 @@ export function FormationPageContent() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * i }}
-                className="glass-card p-6 transition-all duration-300 hover:border-accent/20"
+                className="card p-6 transition-all duration-300 hover:shadow-sm"
               >
                 <h3 className="text-base font-semibold text-content">
                   {item.organization}
                 </h3>
-                <p className="mt-2 text-sm font-medium text-accent">
+                <p className="mt-2 text-sm font-medium text-content">
                   {item.role}
                 </p>
                 <p className="mt-3 inline-flex items-center gap-1.5 text-sm text-content-muted">
@@ -85,7 +83,7 @@ export function FormationPageContent() {
 
         {/* Programs */}
         <div className="mt-20">
-          <h2 className="text-center text-3xl font-bold text-content">
+          <h2 className="text-center font-display text-display-md text-content">
             {t("formation_page.programs_title")}
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -95,7 +93,7 @@ export function FormationPageContent() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * i }}
-                className="glass-card p-6"
+                className="card p-6"
               >
                 <h3 className="text-lg font-semibold text-content">
                   {program.title}
@@ -103,7 +101,7 @@ export function FormationPageContent() {
                 <p className="mt-3 text-sm leading-relaxed text-content-secondary">
                   {program.description}
                 </p>
-                <p className="mt-4 inline-flex items-center gap-1.5 font-mono text-xs text-accent">
+                <p className="mt-4 inline-flex items-center gap-1.5 text-xs text-content-muted">
                   <Clock size={14} strokeWidth={1.5} /> {program.duration}
                 </p>
               </motion.div>
@@ -112,9 +110,12 @@ export function FormationPageContent() {
         </div>
 
         <div className="mt-16 text-center">
-          <Button href={`/${locale}/contact`} variant="primary" size="lg">
-            {t("formation_page.cta")}
-          </Button>
+          <Link
+            href={`/${locale}/contact`}
+            className="link-arrow inline-flex"
+          >
+            {t("formation_page.cta")} <ArrowUpRight size={14} strokeWidth={1.5} />
+          </Link>
         </div>
       </div>
     </div>

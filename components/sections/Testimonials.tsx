@@ -18,7 +18,7 @@ export function Testimonials() {
   }>;
 
   return (
-    <section ref={ref} className="border-t border-surface-border py-24 lg:py-32">
+    <section ref={ref} className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,10 +26,8 @@ export function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            {t("title")}
-          </p>
-          <h2 className="mt-4 text-3xl font-bold text-content sm:text-4xl">
+          <div className="section-label mx-auto w-fit">{t("title")}</div>
+          <h2 className="mt-4 font-display text-display-md text-content">
             {t("subtitle")}
           </h2>
         </motion.div>
@@ -41,9 +39,9 @@ export function Testimonials() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="glass-card p-6"
+              className="card p-6"
             >
-              <Quote size={20} strokeWidth={1.5} className="text-accent/30" />
+              <Quote size={20} strokeWidth={1.5} className="text-content/10" />
               <p className="mt-4 text-sm leading-relaxed text-content-secondary">
                 {item.text}
               </p>

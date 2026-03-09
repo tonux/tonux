@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Download, Briefcase, MapPin, Calendar } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { Download, Briefcase, MapPin, Calendar, ArrowUpRight } from "lucide-react";
 
 const experiences = [
+  { org: "Pratt & Whitney", role: "Solution Architect | Mgr, Software Dev", type: "Full-time", period: "2025 - Present", location: "Montreal, Canada" },
   { org: "Dropcolis/Canada", role: "CTO", type: "Co-founder", period: "2024 - Present", location: "Montreal, Canada" },
-  { org: "WADA/Canada", role: "Senior Software Engineer", type: "Full-time", period: "2022 - Present", location: "Montreal, Canada" },
+  { org: "WADA/Canada", role: "Senior Software Engineer", type: "Full-time", period: "2022 - 2025", location: "Montreal, Canada" },
   { org: "Desjardins/Canada", role: "IT Consultant", type: "Full-time", period: "2021 - 2022", location: "Montreal, Canada" },
   { org: "Astek Canada", role: "IT Consultant", type: "Full-time", period: "2021", location: "Montreal, Canada" },
   { org: "Norma", role: "Tech Lead", type: "Consultant", period: "2021", location: "Rouen, France" },
@@ -18,10 +18,11 @@ const experiences = [
 
 const skills = {
   Languages: ["Python", "JavaScript", "Java", "Ruby", "TypeScript", "Kotlin", "Dart", "SQL"],
-  Frontend: ["React", "Next.js", "Redux", "Tailwind CSS", "Bootstrap"],
-  Backend: ["Node.js", "Express", "Spring", "Ruby on Rails", "Laravel"],
+  Frontend: ["React", "Next.js", "Nuxt.js", "Redux", "Tailwind CSS", "Bootstrap"],
+  Backend: ["Node.js", "Express", "Spring", "Ruby on Rails", "Laravel", "Django", "Flask", "Directus"],
   Mobile: ["Flutter", "React Native", "Android", "Ionic"],
-  "Database & Cloud": ["PostgreSQL", "MongoDB", "MySQL", "AWS", "Firebase", "Google Cloud", "Azure"],
+  Database: ["PostgreSQL", "MongoDB", "MySQL", "Firebase", "Redis", "DynamoDB"],
+  Cloud: ["AWS", "Azure", "Google Cloud", "Terraform", "CloudFormation", "S3", "Lambda", "EC2"],
   DevOps: ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "GitLab CI", "SonarQube"],
 };
 
@@ -43,37 +44,39 @@ export function AboutPageContent() {
           className="grid items-center gap-12 lg:grid-cols-3"
         >
           <div className="flex justify-center lg:col-span-1">
-            <div className="relative h-64 w-64 overflow-hidden rounded-[8px] border border-surface-border">
+            <div className="relative h-64 w-64 overflow-hidden rounded-[12px] border border-surface-border-strong">
               <Image
                 src="/tonux.jpg"
                 alt="Ndongo Tonux SAMB"
                 fill
-                className="object-cover"
+                className="object-cover grayscale"
               />
-              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface/80 to-transparent" />
             </div>
           </div>
           <div className="lg:col-span-2">
-            <p className="font-mono text-xs uppercase tracking-widest text-accent">
-              A propos
-            </p>
-            <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
+            <div className="section-label">A propos</div>
+            <h1 className="mt-4 font-display text-display-lg text-content">
               {t("title")}
             </h1>
             <p className="mt-6 leading-relaxed text-content-secondary">
               {t("bio")}
             </p>
             <div className="mt-6">
-              <Button href="/cv_en.pdf" variant="secondary" size="md" external>
-                <Download size={14} strokeWidth={1.5} className="mr-2" /> {t("download_cv")}
-              </Button>
+              <a
+                href="/cv_en.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-arrow inline-flex"
+              >
+                <Download size={14} strokeWidth={1.5} /> {t("download_cv")}
+              </a>
             </div>
           </div>
         </motion.div>
 
         {/* Values */}
         <div className="mt-24">
-          <h2 className="text-center text-3xl font-bold text-content">
+          <h2 className="text-center font-display text-display-md text-content">
             {t("values_title")}
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -83,7 +86,7 @@ export function AboutPageContent() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="glass-card p-6"
+                className="card p-6"
               >
                 <h3 className="text-base font-semibold text-content">
                   {v.title}
@@ -98,7 +101,7 @@ export function AboutPageContent() {
 
         {/* Experience timeline */}
         <div className="mt-24">
-          <h2 className="text-center text-3xl font-bold text-content">
+          <h2 className="text-center font-display text-display-md text-content">
             {t("experience_title")}
           </h2>
           <div className="mx-auto mt-8 max-w-3xl space-y-3">
@@ -108,16 +111,19 @@ export function AboutPageContent() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.05 }}
-                className="glass-card flex gap-4 p-5"
+                className="card flex gap-4 p-5"
               >
                 <div className="mt-1 shrink-0">
-                  <Briefcase size={18} strokeWidth={1.5} className="text-accent" />
+                  <Briefcase size={18} strokeWidth={1.5} className="text-content" />
                 </div>
-                <div>
-                  <h3 className="text-sm font-semibold text-content">
-                    {exp.org}
-                  </h3>
-                  <p className="text-sm font-medium text-accent">{exp.role}</p>
+                <div className="flex-1">
+                  <div className="flex items-start justify-between">
+                    <h3 className="text-sm font-semibold text-content">
+                      {exp.org}
+                    </h3>
+                    <span className="pill">{exp.type}</span>
+                  </div>
+                  <p className="text-sm font-medium text-content-secondary">{exp.role}</p>
                   <div className="mt-1.5 flex flex-wrap gap-3 text-xs text-content-muted">
                     <span className="flex items-center gap-1">
                       <Calendar size={12} strokeWidth={1.5} /> {exp.period}
@@ -134,24 +140,18 @@ export function AboutPageContent() {
 
         {/* Skills */}
         <div className="mt-24">
-          <h2 className="text-center text-3xl font-bold text-content">
+          <h2 className="text-center font-display text-display-md text-content">
             {t("skills_title")}
           </h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {Object.entries(skills).map(([category, items]) => (
-              <div
-                key={category}
-                className="glass-card p-5"
-              >
-                <h3 className="mb-3 font-mono text-xs uppercase tracking-widest text-accent">
+              <div key={category} className="card p-5">
+                <h3 className="section-label mb-3">
                   {category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {items.map((skill) => (
-                    <span
-                      key={skill}
-                      className="rounded-[8px] border border-surface-border bg-surface-elevated px-3 py-1 text-xs text-content-secondary"
-                    >
+                    <span key={skill} className="pill">
                       {skill}
                     </span>
                   ))}

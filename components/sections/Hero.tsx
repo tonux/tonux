@@ -1,86 +1,123 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
-
-const trustedCompanies = ["Desjardins", "Sonatel", "WADA", "Astek", "Dropcolis"];
+import { ArrowDown } from "lucide-react";
 
 export function Hero() {
   const t = useTranslations("hero");
-  const locale = useLocale();
 
   return (
-    <section className="relative overflow-hidden py-24 lg:py-36">
-      {/* Subtle radial glow */}
-      <div className="absolute left-1/2 top-0 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-accent/5 blur-[120px]" />
+    <section className="relative min-h-[90vh] overflow-hidden py-24 lg:py-32">
+      {/* Watermark background text */}
+      <div className="watermark absolute inset-0 flex items-center justify-center text-[15vw] leading-none opacity-[0.03]">
+        TONUXCORP
+      </div>
+
+      {/* Vertical text — left edge */}
+      <div className="absolute bottom-24 left-6 hidden origin-bottom-left -rotate-90 font-display text-xs uppercase tracking-[0.3em] text-content-muted lg:block">
+        {t("subtitle")}
+      </div>
+
+      {/* Year — left side */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className="absolute bottom-24 left-6 hidden font-display text-sm text-content-muted lg:bottom-auto lg:top-32 lg:block"
+      >
+        2026
+      </motion.div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-16 lg:grid-cols-2">
-          {/* Text */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="font-mono text-sm text-accent">
-              {t("subtitle")}
-            </p>
-            <h1 className="mt-4 text-5xl font-bold leading-[1.1] tracking-tight text-content sm:text-6xl lg:text-7xl">
-              {t("title")}
-            </h1>
-            <p className="mt-6 max-w-lg text-lg leading-relaxed text-content-secondary">
-              {t("description")}
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Button href={`/${locale}/contact`} variant="primary" size="lg">
-                {t("cta_primary")}
-              </Button>
-              <Button href={`/${locale}/services`} variant="secondary" size="lg">
-                {t("cta_secondary")}
-              </Button>
-            </div>
-
-            {/* Trust badges — monochrome */}
-            <div className="mt-16 border-t border-surface-border pt-8">
-              <p className="font-mono text-xs uppercase tracking-widest text-content-muted">
-                Trusted by
-              </p>
-              <div className="mt-4 flex flex-wrap items-center gap-8">
-                {trustedCompanies.map((company) => (
-                  <span
-                    key={company}
-                    className="font-mono text-sm text-content-muted/50 transition-all duration-300 hover:text-content-secondary"
-                  >
-                    {company}
-                  </span>
-                ))}
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* Left: text + stats */}
+          <div className="relative z-10">
+            {/* Stats */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mb-8 flex gap-12"
+            >
+              <div>
+                <div className="font-display text-4xl font-light text-content sm:text-5xl">
+                  +12
+                </div>
+                <div className="mt-1 text-xs text-content-muted">
+                  {t("stats_years")}
+                </div>
               </div>
-            </div>
-          </motion.div>
+              <div>
+                <div className="font-display text-4xl font-light text-content sm:text-5xl">
+                  +30
+                </div>
+                <div className="mt-1 text-xs text-content-muted">
+                  {t("stats_projects")}
+                </div>
+              </div>
+            </motion.div>
 
-          {/* Photo */}
+            {/* Massive greeting */}
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="font-display text-display-hero text-content"
+            >
+              {t("greeting")}
+            </motion.h1>
+
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="mt-6 text-lg text-content-secondary"
+            >
+              {t("intro")}
+            </motion.p>
+
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="mt-4 max-w-md text-sm leading-relaxed text-content-muted"
+            >
+              {t("description")}
+            </motion.p>
+          </div>
+
+          {/* Right: B&W photo */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex justify-center"
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative flex justify-center lg:justify-end"
           >
-            <div className="relative h-80 w-80 overflow-hidden rounded-[8px] border border-surface-border lg:h-[420px] lg:w-[420px]">
+            <div className="relative h-[400px] w-[320px] overflow-hidden rounded-[12px] lg:h-[520px] lg:w-[420px]">
               <Image
                 src="/tonux.jpg"
                 alt="Ndongo Tonux SAMB"
                 fill
-                className="object-cover"
+                className="object-cover grayscale"
                 priority
               />
-              {/* Subtle cyan glow overlay at bottom */}
-              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface/80 to-transparent" />
             </div>
           </motion.div>
         </div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-16 flex items-center gap-2 text-sm text-content-muted"
+        >
+          {t("scroll_down")} <ArrowDown size={14} strokeWidth={1.5} />
+        </motion.div>
       </div>
     </section>
   );

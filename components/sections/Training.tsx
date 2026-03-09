@@ -3,8 +3,8 @@
 import { useTranslations, useLocale } from "next-intl";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { MapPin } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { MapPin, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export function Training() {
   const t = useTranslations("training");
@@ -19,7 +19,7 @@ export function Training() {
   }>;
 
   return (
-    <section ref={ref} className="border-t border-surface-border py-24 lg:py-32">
+    <section ref={ref} className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -27,10 +27,8 @@ export function Training() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            {t("title")}
-          </p>
-          <h2 className="mt-4 text-3xl font-bold text-content sm:text-4xl">
+          <div className="section-label mx-auto w-fit">{t("title")}</div>
+          <h2 className="mt-4 font-display text-display-md text-content">
             {t("subtitle")}
           </h2>
         </motion.div>
@@ -42,12 +40,12 @@ export function Training() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass-card p-6 transition-all duration-300 hover:border-accent/20"
+              className="card p-6 transition-all duration-300 hover:shadow-sm"
             >
               <h3 className="text-base font-semibold text-content">
                 {item.organization}
               </h3>
-              <p className="mt-2 text-sm font-medium text-accent">
+              <p className="mt-2 text-sm font-medium text-content">
                 {item.role}
               </p>
               <p className="mt-3 inline-flex items-center gap-1.5 text-sm text-content-muted">
@@ -58,9 +56,12 @@ export function Training() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button href={`/${locale}/contact`} variant="primary" size="md">
-            {t("cta")}
-          </Button>
+          <Link
+            href={`/${locale}/contact`}
+            className="link-arrow inline-flex"
+          >
+            {t("cta")} <ArrowUpRight size={14} strokeWidth={1.5} />
+          </Link>
         </div>
       </div>
     </section>

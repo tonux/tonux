@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -38,10 +38,8 @@ export function PortfolioPageContent() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            Portfolio
-          </p>
-          <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
+          <div className="section-label mx-auto w-fit">Portfolio</div>
+          <h1 className="mt-4 font-display text-display-lg text-content">
             {t("title")}
           </h1>
           <p className="mt-4 text-lg text-content-secondary">
@@ -56,10 +54,10 @@ export function PortfolioPageContent() {
               key={f.key}
               onClick={() => setFilter(f.key)}
               className={cn(
-                "rounded-[8px] px-4 py-2 font-mono text-xs transition-all duration-300",
+                "rounded-full px-4 py-2 text-xs font-medium transition-all duration-300",
                 filter === f.key
-                  ? "bg-accent text-surface accent-glow"
-                  : "border border-surface-border bg-surface-card text-content-secondary hover:border-accent/30 hover:text-content"
+                  ? "bg-content text-surface"
+                  : "border border-surface-border-strong bg-surface text-content-secondary hover:text-content"
               )}
             >
               {f.label}
@@ -78,30 +76,36 @@ export function PortfolioPageContent() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.05 }}
-              className="group glass-card block p-6 transition-all duration-300 hover:border-accent/20 hover:bg-surface-elevated"
+              className="group card block overflow-hidden transition-all duration-300 hover:shadow-sm"
             >
-              <div className="flex items-start justify-between">
+              {/* Thumbnail placeholder */}
+              <div className="relative flex h-40 items-center justify-center bg-surface-elevated">
+                <span className="font-display text-5xl font-light text-content-muted">
+                  {item.title.charAt(0)}
+                </span>
+                <div className="absolute inset-0 flex items-center justify-center bg-content/0 transition-all duration-300 group-hover:bg-content/80">
+                  <ArrowUpRight
+                    size={24}
+                    strokeWidth={1.5}
+                    className="text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  />
+                </div>
+              </div>
+
+              <div className="p-5">
                 <h3 className="text-base font-semibold text-content">
                   {item.title}
                 </h3>
-                <ExternalLink
-                  size={16}
-                  strokeWidth={1.5}
-                  className="text-content-muted transition-colors duration-300 group-hover:text-accent"
-                />
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-content-secondary">
-                {item.description}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {item.techs.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-[8px] bg-accent-dim px-2.5 py-0.5 font-mono text-xs text-accent"
-                  >
-                    {tech}
-                  </span>
-                ))}
+                <p className="mt-2 text-sm leading-relaxed text-content-secondary">
+                  {item.description}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {item.techs.map((tech) => (
+                    <span key={tech} className="pill">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.a>
           ))}

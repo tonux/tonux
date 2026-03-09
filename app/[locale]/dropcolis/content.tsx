@@ -2,8 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { ExternalLink, CheckCircle } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { ArrowUpRight, CheckCircle } from "lucide-react";
 
 export function DropcolisPageContent() {
   const t = useTranslations("dropcolis_page");
@@ -19,13 +18,11 @@ export function DropcolisPageContent() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            Dropcolis
-          </p>
-          <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
+          <div className="section-label mx-auto w-fit">Dropcolis</div>
+          <h1 className="mt-4 font-display text-display-lg text-content">
             {t("title")}
           </h1>
-          <p className="mt-4 text-lg text-accent">{t("subtitle")}</p>
+          <p className="mt-4 text-lg text-content-secondary">{t("subtitle")}</p>
         </motion.div>
 
         {/* Story + Tech */}
@@ -34,9 +31,9 @@ export function DropcolisPageContent() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="glass-card p-8"
+            className="card p-8"
           >
-            <h2 className="text-xl font-bold text-content">
+            <h2 className="text-xl font-semibold text-content">
               {t("story_title")}
             </h2>
             <p className="mt-4 leading-relaxed text-content-secondary">
@@ -48,17 +45,14 @@ export function DropcolisPageContent() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
-            className="glass-card p-8"
+            className="card p-8"
           >
-            <h2 className="text-xl font-bold text-content">
+            <h2 className="text-xl font-semibold text-content">
               {t("tech_title")}
             </h2>
             <div className="mt-4 flex flex-wrap gap-2">
               {techItems.map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-[8px] bg-accent-dim px-3 py-1.5 font-mono text-xs text-accent"
-                >
+                <span key={tech} className="pill">
                   {tech}
                 </span>
               ))}
@@ -71,9 +65,9 @@ export function DropcolisPageContent() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mt-12 glass-card p-8"
+          className="mt-12 card p-8"
         >
-          <h2 className="text-xl font-bold text-content">
+          <h2 className="text-xl font-semibold text-content">
             {t("role_title")}
           </h2>
           <ul className="mt-6 space-y-4">
@@ -82,7 +76,7 @@ export function DropcolisPageContent() {
                 <CheckCircle
                   size={18}
                   strokeWidth={1.5}
-                  className="mt-0.5 shrink-0 text-accent"
+                  className="mt-0.5 shrink-0 text-content"
                 />
                 <span className="text-sm leading-relaxed text-content-secondary">
                   {item}
@@ -93,14 +87,14 @@ export function DropcolisPageContent() {
         </motion.div>
 
         <div className="mt-12 text-center">
-          <Button
+          <a
             href="https://dropcolis.ca"
-            variant="secondary"
-            size="lg"
-            external
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-arrow inline-flex"
           >
-            {t("cta")} <ExternalLink size={14} strokeWidth={1.5} className="ml-2" />
-          </Button>
+            {t("cta")} <ArrowUpRight size={14} strokeWidth={1.5} />
+          </a>
         </div>
       </div>
     </div>

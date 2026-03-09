@@ -53,7 +53,7 @@ export function ContactPageContent() {
   };
 
   const inputClasses =
-    "w-full rounded-[8px] border border-surface-border bg-surface-card px-4 py-3 text-sm text-content placeholder:text-content-muted focus:border-accent/50 focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-300";
+    "w-full rounded-[12px] border border-surface-border-strong bg-surface px-4 py-3 text-sm text-content placeholder:text-content-muted focus:border-content/40 focus:outline-none focus:ring-2 focus:ring-content/10 transition-all duration-300";
 
   return (
     <div className="py-24 lg:py-32">
@@ -63,10 +63,8 @@ export function ContactPageContent() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            Contact
-          </p>
-          <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
+          <div className="section-label mx-auto w-fit">Contact</div>
+          <h1 className="mt-4 font-display text-display-lg text-content">
             {t("title")}
           </h1>
           <p className="mt-4 text-lg text-content-secondary">
@@ -82,20 +80,20 @@ export function ContactPageContent() {
             transition={{ delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="glass-card flex items-start gap-3 p-5">
-              <Mail size={18} strokeWidth={1.5} className="mt-0.5 text-accent" />
+            <div className="card flex items-start gap-3 p-5">
+              <Mail size={18} strokeWidth={1.5} className="mt-0.5 text-content" />
               <div>
                 <p className="text-sm font-medium text-content">Email</p>
                 <a
                   href={`mailto:${t("info.email")}`}
-                  className="text-sm text-content-muted transition-colors duration-300 hover:text-accent"
+                  className="text-sm text-content-muted transition-colors duration-300 hover:text-content"
                 >
                   {t("info.email")}
                 </a>
               </div>
             </div>
-            <div className="glass-card flex items-start gap-3 p-5">
-              <MapPin size={18} strokeWidth={1.5} className="mt-0.5 text-accent" />
+            <div className="card flex items-start gap-3 p-5">
+              <MapPin size={18} strokeWidth={1.5} className="mt-0.5 text-content" />
               <div>
                 <p className="text-sm font-medium text-content">Location</p>
                 <p className="text-sm text-content-muted">
@@ -103,11 +101,11 @@ export function ContactPageContent() {
                 </p>
               </div>
             </div>
-            <div className="glass-card flex items-start gap-3 p-5">
-              <CheckCircle size={18} strokeWidth={1.5} className="mt-0.5 text-accent" />
+            <div className="card flex items-start gap-3 p-5">
+              <CheckCircle size={18} strokeWidth={1.5} className="mt-0.5 text-content" />
               <div>
                 <p className="text-sm font-medium text-content">Status</p>
-                <p className="text-sm text-accent">{t("info.availability")}</p>
+                <p className="text-sm text-content-secondary">{t("info.availability")}</p>
               </div>
             </div>
           </motion.div>
@@ -120,8 +118,8 @@ export function ContactPageContent() {
             className="lg:col-span-2"
           >
             {status === "success" ? (
-              <div className="glass-card border-accent/20 p-8 text-center">
-                <CheckCircle size={32} strokeWidth={1.5} className="mx-auto text-accent" />
+              <div className="card p-8 text-center">
+                <CheckCircle size={32} strokeWidth={1.5} className="mx-auto text-content" />
                 <p className="mt-4 text-lg font-medium text-content">
                   {t("form.success")}
                 </p>
@@ -137,7 +135,7 @@ export function ContactPageContent() {
                     className={inputClasses}
                   />
                   {errors.name && (
-                    <p className="mt-1 text-xs text-red-400">
+                    <p className="mt-1 text-xs text-red-500">
                       {t("form.name")} required
                     </p>
                   )}
@@ -153,7 +151,7 @@ export function ContactPageContent() {
                     className={inputClasses}
                   />
                   {errors.email && (
-                    <p className="mt-1 text-xs text-red-400">
+                    <p className="mt-1 text-xs text-red-500">
                       Email invalide
                     </p>
                   )}
@@ -189,14 +187,14 @@ export function ContactPageContent() {
                     className={inputClasses}
                   />
                   {errors.message && (
-                    <p className="mt-1 text-xs text-red-400">
+                    <p className="mt-1 text-xs text-red-500">
                       {t("form.message")} (min 10 chars)
                     </p>
                   )}
                 </div>
 
                 {status === "error" && (
-                  <p className="text-sm text-red-400">{t("form.error")}</p>
+                  <p className="text-sm text-red-500">{t("form.error")}</p>
                 )}
 
                 <Button
