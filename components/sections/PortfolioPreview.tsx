@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { ProjectIcon } from "@/components/ui/ProjectIcon";
 
 export function PortfolioPreview() {
   const t = useTranslations("portfolio");
@@ -47,11 +48,9 @@ export function PortfolioPreview() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group card-on-alt block overflow-hidden transition-all duration-300 hover:shadow-sm"
             >
-              {/* Thumbnail placeholder */}
+              {/* Thumbnail with favicon */}
               <div className="relative flex h-40 items-center justify-center bg-surface-elevated">
-                <span className="font-display text-5xl font-light text-content-muted">
-                  {item.title.charAt(0)}
-                </span>
+                <ProjectIcon url={item.url} title={item.title} />
                 <div className="absolute inset-0 flex items-center justify-center bg-content/0 transition-all duration-300 group-hover:bg-content/80">
                   <ArrowUpRight
                     size={24}

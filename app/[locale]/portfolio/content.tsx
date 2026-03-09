@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { ProjectIcon } from "@/components/ui/ProjectIcon";
 
 type ProjectType = "all" | "web" | "mobile" | "consulting";
 
@@ -78,11 +79,9 @@ export function PortfolioPageContent() {
               transition={{ delay: i * 0.05 }}
               className="group card block overflow-hidden transition-all duration-300 hover:shadow-sm"
             >
-              {/* Thumbnail placeholder */}
+              {/* Thumbnail with favicon */}
               <div className="relative flex h-40 items-center justify-center bg-surface-elevated">
-                <span className="font-display text-5xl font-light text-content-muted">
-                  {item.title.charAt(0)}
-                </span>
+                <ProjectIcon url={item.url} title={item.title} />
                 <div className="absolute inset-0 flex items-center justify-center bg-content/0 transition-all duration-300 group-hover:bg-content/80">
                   <ArrowUpRight
                     size={24}
