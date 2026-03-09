@@ -20,50 +20,46 @@ export function Services() {
   }>;
 
   return (
-    <section
-      ref={ref}
-      className="bg-primary-50 py-20 dark:bg-primary-950 lg:py-28"
-    >
+    <section ref={ref} className="border-t border-surface-border py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold text-primary-900 dark:text-white sm:text-4xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
             {t("title")}
-          </h2>
-          <p className="mt-4 text-lg text-primary-600 dark:text-primary-300">
-            {t("subtitle")}
           </p>
+          <h2 className="mt-4 text-3xl font-bold text-content sm:text-4xl">
+            {t("subtitle")}
+          </h2>
         </motion.div>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Bento grid */}
+        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, i) => {
             const Icon = icons[i];
             return (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               >
                 <Link
                   href={`/${locale}/services`}
-                  className="group block h-full rounded-xl border border-primary-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:border-primary-700 dark:bg-primary-900"
+                  className="group glass-card block h-full p-6 transition-all duration-300 hover:border-accent/20 hover:bg-surface-elevated"
                 >
-                  <div className="mb-4 inline-flex rounded-lg bg-accent/10 p-3 text-accent dark:bg-accent/20">
-                    <Icon size={24} />
-                  </div>
-                  <h3 className="text-lg font-semibold text-primary-900 dark:text-white">
+                  <Icon size={22} strokeWidth={1.5} className="text-accent" />
+                  <h3 className="mt-4 text-base font-semibold text-content">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm text-primary-500 dark:text-primary-400">
+                  <p className="mt-2 text-sm leading-relaxed text-content-secondary">
                     {item.description}
                   </p>
-                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent transition-colors group-hover:text-accent-600">
-                    {t("cta")} <ArrowRight size={14} />
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm text-content-muted transition-all duration-300 group-hover:text-accent">
+                    {t("cta")} <ArrowRight size={14} strokeWidth={1.5} />
                   </span>
                 </Link>
               </motion.div>

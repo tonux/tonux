@@ -19,48 +19,45 @@ export function Training() {
   }>;
 
   return (
-    <section
-      ref={ref}
-      className="bg-primary-50 py-20 dark:bg-primary-950 lg:py-28"
-    >
+    <section ref={ref} className="border-t border-surface-border py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold text-primary-900 dark:text-white sm:text-4xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
             {t("title")}
-          </h2>
-          <p className="mt-4 text-lg text-primary-600 dark:text-primary-300">
-            {t("subtitle")}
           </p>
+          <h2 className="mt-4 text-3xl font-bold text-content sm:text-4xl">
+            {t("subtitle")}
+          </h2>
         </motion.div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="rounded-xl border border-primary-200 bg-white p-6 shadow-sm dark:border-primary-700 dark:bg-primary-900"
+              className="glass-card p-6 transition-all duration-300 hover:border-accent/20"
             >
-              <h3 className="text-lg font-semibold text-primary-900 dark:text-white">
+              <h3 className="text-base font-semibold text-content">
                 {item.organization}
               </h3>
-              <p className="mt-1 text-sm font-medium text-accent">
+              <p className="mt-2 text-sm font-medium text-accent">
                 {item.role}
               </p>
-              <p className="mt-2 inline-flex items-center gap-1 text-sm text-primary-500 dark:text-primary-400">
-                <MapPin size={14} /> {item.location}
+              <p className="mt-3 inline-flex items-center gap-1.5 text-sm text-content-muted">
+                <MapPin size={14} strokeWidth={1.5} /> {item.location}
               </p>
             </motion.div>
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-12 text-center">
           <Button href={`/${locale}/contact`} variant="primary" size="md">
             {t("cta")}
           </Button>

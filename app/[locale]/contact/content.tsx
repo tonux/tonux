@@ -52,18 +52,24 @@ export function ContactPageContent() {
     setLoading(false);
   };
 
+  const inputClasses =
+    "w-full rounded-[8px] border border-surface-border bg-surface-card px-4 py-3 text-sm text-content placeholder:text-content-muted focus:border-accent/50 focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-300";
+
   return (
-    <div className="py-20">
+    <div className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <h1 className="text-4xl font-bold text-primary-900 dark:text-white sm:text-5xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
+            Contact
+          </p>
+          <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
             {t("title")}
           </h1>
-          <p className="mt-4 text-xl text-primary-600 dark:text-primary-300">
+          <p className="mt-4 text-lg text-content-secondary">
             {t("subtitle")}
           </p>
         </motion.div>
@@ -71,42 +77,36 @@ export function ContactPageContent() {
         <div className="mt-16 grid gap-12 lg:grid-cols-3">
           {/* Contact info */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="flex items-start gap-3">
-              <Mail size={20} className="mt-0.5 text-accent" />
+            <div className="glass-card flex items-start gap-3 p-5">
+              <Mail size={18} strokeWidth={1.5} className="mt-0.5 text-accent" />
               <div>
-                <p className="font-medium text-primary-900 dark:text-white">
-                  Email
-                </p>
+                <p className="text-sm font-medium text-content">Email</p>
                 <a
                   href={`mailto:${t("info.email")}`}
-                  className="text-sm text-primary-500 hover:text-accent dark:text-primary-400"
+                  className="text-sm text-content-muted transition-colors duration-300 hover:text-accent"
                 >
                   {t("info.email")}
                 </a>
               </div>
             </div>
-            <div className="flex items-start gap-3">
-              <MapPin size={20} className="mt-0.5 text-accent" />
+            <div className="glass-card flex items-start gap-3 p-5">
+              <MapPin size={18} strokeWidth={1.5} className="mt-0.5 text-accent" />
               <div>
-                <p className="font-medium text-primary-900 dark:text-white">
-                  Location
-                </p>
-                <p className="text-sm text-primary-500 dark:text-primary-400">
+                <p className="text-sm font-medium text-content">Location</p>
+                <p className="text-sm text-content-muted">
                   {t("info.location")}
                 </p>
               </div>
             </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle size={20} className="mt-0.5 text-accent" />
+            <div className="glass-card flex items-start gap-3 p-5">
+              <CheckCircle size={18} strokeWidth={1.5} className="mt-0.5 text-accent" />
               <div>
-                <p className="font-medium text-primary-900 dark:text-white">
-                  Status
-                </p>
+                <p className="text-sm font-medium text-content">Status</p>
                 <p className="text-sm text-accent">{t("info.availability")}</p>
               </div>
             </div>
@@ -114,58 +114,58 @@ export function ContactPageContent() {
 
           {/* Form */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
             className="lg:col-span-2"
           >
             {status === "success" ? (
-              <div className="rounded-xl border border-green-200 bg-green-50 p-8 text-center dark:border-green-800 dark:bg-green-950">
-                <CheckCircle size={48} className="mx-auto text-green-500" />
-                <p className="mt-4 text-lg font-medium text-green-800 dark:text-green-200">
+              <div className="glass-card border-accent/20 p-8 text-center">
+                <CheckCircle size={32} strokeWidth={1.5} className="mx-auto text-accent" />
+                <p className="mt-4 text-lg font-medium text-content">
                   {t("form.success")}
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-primary-700 dark:text-primary-300">
+                  <label className="mb-2 block text-sm font-medium text-content-secondary">
                     {t("form.name")}
                   </label>
                   <input
                     {...register("name")}
-                    className="w-full rounded-lg border border-primary-300 bg-white px-4 py-3 text-primary-900 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 dark:border-primary-600 dark:bg-primary-800 dark:text-white"
+                    className={inputClasses}
                   />
                   {errors.name && (
-                    <p className="mt-1 text-sm text-red-500">
+                    <p className="mt-1 text-xs text-red-400">
                       {t("form.name")} required
                     </p>
                   )}
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-primary-700 dark:text-primary-300">
+                  <label className="mb-2 block text-sm font-medium text-content-secondary">
                     {t("form.email")}
                   </label>
                   <input
                     type="email"
                     {...register("email")}
-                    className="w-full rounded-lg border border-primary-300 bg-white px-4 py-3 text-primary-900 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 dark:border-primary-600 dark:bg-primary-800 dark:text-white"
+                    className={inputClasses}
                   />
                   {errors.email && (
-                    <p className="mt-1 text-sm text-red-500">
+                    <p className="mt-1 text-xs text-red-400">
                       Email invalide
                     </p>
                   )}
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-primary-700 dark:text-primary-300">
+                  <label className="mb-2 block text-sm font-medium text-content-secondary">
                     {t("form.type")}
                   </label>
                   <select
                     {...register("type")}
-                    className="w-full rounded-lg border border-primary-300 bg-white px-4 py-3 text-primary-900 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 dark:border-primary-600 dark:bg-primary-800 dark:text-white"
+                    className={inputClasses}
                   >
                     <option value="">{t("form.type")}</option>
                     <option value="consulting">
@@ -180,23 +180,23 @@ export function ContactPageContent() {
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-primary-700 dark:text-primary-300">
+                  <label className="mb-2 block text-sm font-medium text-content-secondary">
                     {t("form.message")}
                   </label>
                   <textarea
                     {...register("message")}
                     rows={5}
-                    className="w-full rounded-lg border border-primary-300 bg-white px-4 py-3 text-primary-900 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 dark:border-primary-600 dark:bg-primary-800 dark:text-white"
+                    className={inputClasses}
                   />
                   {errors.message && (
-                    <p className="mt-1 text-sm text-red-500">
+                    <p className="mt-1 text-xs text-red-400">
                       {t("form.message")} (min 10 chars)
                     </p>
                   )}
                 </div>
 
                 {status === "error" && (
-                  <p className="text-sm text-red-500">{t("form.error")}</p>
+                  <p className="text-sm text-red-400">{t("form.error")}</p>
                 )}
 
                 <Button

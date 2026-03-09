@@ -1,17 +1,17 @@
 export default function NotFound() {
   return (
     <html lang="fr">
-      <body className="flex min-h-screen items-center justify-center bg-white dark:bg-gray-900">
+      <body className="flex min-h-screen items-center justify-center bg-[#0A0A0B] text-[#F2F2F2]">
         <div className="text-center">
-          <h1 className="text-6xl font-bold text-primary-900 dark:text-white">
+          <h1 className="font-mono text-6xl font-bold text-[#00D4FF]">
             404
           </h1>
-          <p className="mt-4 text-lg text-primary-600 dark:text-primary-300">
+          <p className="mt-4 text-lg text-[#8E8E93]">
             Page non trouvee
           </p>
           <a
             href="/"
-            className="mt-6 inline-block rounded-lg bg-accent px-6 py-3 text-white hover:bg-accent-600"
+            className="mt-6 inline-block rounded-[8px] bg-[#00D4FF] px-6 py-3 text-sm font-medium text-[#0A0A0B] transition-colors hover:bg-[#00BFEA]"
           >
             Retour a l&apos;accueil
           </a>

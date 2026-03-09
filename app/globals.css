@@ -8,6 +8,28 @@
   }
 
   body {
-    @apply bg-white text-primary-800 dark:bg-primary-900 dark:text-primary-100;
+    @apply bg-surface text-content antialiased;
+  }
+
+  /* Selection highlight with accent */
+  ::selection {
+    @apply bg-accent/20 text-content;
+  }
+}
+
+@layer components {
+  /* Glass card component */
+  .glass-card {
+    @apply rounded-[8px] border border-surface-border bg-surface-card backdrop-blur-sm;
+  }
+
+  /* Glass nav */
+  .glass-nav {
+    @apply border-b border-surface-border bg-surface/80 backdrop-blur-[20px];
+  }
+
+  /* Accent glow effect */
+  .accent-glow {
+    @apply shadow-[0_0_20px_rgba(0,212,255,0.1)];
   }
 }

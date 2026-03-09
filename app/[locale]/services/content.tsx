@@ -28,41 +28,44 @@ export function ServicesPageContent() {
   }>;
 
   return (
-    <div className="py-20">
+    <div className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <h1 className="text-4xl font-bold text-primary-900 dark:text-white sm:text-5xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
+            Services
+          </p>
+          <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
             {t("services_page.title")}
           </h1>
-          <p className="mt-4 text-xl text-primary-600 dark:text-primary-300">
+          <p className="mt-4 text-lg text-content-secondary">
             {t("services_page.subtitle")}
           </p>
         </motion.div>
 
         {/* Services grid */}
-        <div className="mt-16 grid gap-8 md:grid-cols-2">
+        <div className="mt-16 grid gap-4 md:grid-cols-2">
           {services.map((service, i) => {
             const Icon = icons[i];
             return (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="rounded-xl border border-primary-200 bg-white p-8 shadow-sm dark:border-primary-700 dark:bg-primary-900"
+                className="glass-card p-8"
               >
-                <div className="mb-4 inline-flex rounded-lg bg-accent/10 p-3 text-accent">
-                  <Icon size={28} />
+                <div className="mb-4 inline-flex rounded-[8px] bg-accent-dim p-3">
+                  <Icon size={24} strokeWidth={1.5} className="text-accent" />
                 </div>
-                <h2 className="text-xl font-semibold text-primary-900 dark:text-white">
+                <h2 className="text-xl font-semibold text-content">
                   {service.title}
                 </h2>
-                <p className="mt-3 text-primary-600 dark:text-primary-300">
+                <p className="mt-3 leading-relaxed text-content-secondary">
                   {service.description}
                 </p>
               </motion.div>
@@ -72,32 +75,38 @@ export function ServicesPageContent() {
 
         {/* Process */}
         <div className="mt-24">
-          <h2 className="text-center text-3xl font-bold text-primary-900 dark:text-white">
+          <h2 className="text-center text-3xl font-bold text-content">
             {t("services_page.process_title")}
           </h2>
-          <div className="mt-12 grid gap-8 md:grid-cols-4">
+          <div className="mt-12 grid gap-4 md:grid-cols-4">
             {steps.map((step, i) => (
-              <div key={i} className="text-center">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-accent text-xl font-bold text-white">
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="text-center"
+              >
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-[8px] bg-accent font-mono text-lg font-bold text-surface accent-glow">
                   {i + 1}
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-primary-900 dark:text-white">
+                <h3 className="mt-4 text-base font-semibold text-content">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm text-primary-500 dark:text-primary-400">
+                <p className="mt-2 text-sm text-content-muted">
                   {step.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
 
         {/* FAQ */}
         <div className="mt-24">
-          <h2 className="text-center text-3xl font-bold text-primary-900 dark:text-white">
+          <h2 className="text-center text-3xl font-bold text-content">
             {t("services_page.faq_title")}
           </h2>
-          <div className="mx-auto mt-12 max-w-3xl space-y-4">
+          <div className="mx-auto mt-12 max-w-3xl space-y-3">
             {faqs.map((faq, i) => (
               <FAQItem key={i} question={faq.question} answer={faq.answer} />
             ))}
@@ -118,21 +127,22 @@ export function ServicesPageContent() {
 function FAQItem({ question, answer }: { question: string; answer: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="rounded-lg border border-primary-200 dark:border-primary-700">
+    <div className="glass-card overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between p-5 text-left"
+        className="flex w-full items-center justify-between p-5 text-left transition-colors duration-300 hover:bg-surface-elevated"
       >
-        <span className="font-medium text-primary-900 dark:text-white">
+        <span className="text-sm font-medium text-content">
           {question}
         </span>
         <ChevronDown
-          size={20}
-          className={`text-primary-400 transition-transform ${open ? "rotate-180" : ""}`}
+          size={16}
+          strokeWidth={1.5}
+          className={`shrink-0 text-content-muted transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
       </button>
       {open && (
-        <div className="border-t border-primary-200 px-5 pb-5 pt-3 text-primary-600 dark:border-primary-700 dark:text-primary-300">
+        <div className="border-t border-surface-border px-5 pb-5 pt-3 text-sm leading-relaxed text-content-secondary">
           {answer}
         </div>
       )}

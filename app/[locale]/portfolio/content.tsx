@@ -31,32 +31,35 @@ export function PortfolioPageContent() {
     filter === "all" ? items : items.filter((item) => item.type === filter);
 
   return (
-    <div className="py-20">
+    <div className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          <h1 className="text-4xl font-bold text-primary-900 dark:text-white sm:text-5xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
+            Portfolio
+          </p>
+          <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
             {t("title")}
           </h1>
-          <p className="mt-4 text-xl text-primary-600 dark:text-primary-300">
+          <p className="mt-4 text-lg text-content-secondary">
             {t("subtitle")}
           </p>
         </motion.div>
 
         {/* Filters */}
-        <div className="mt-10 flex justify-center gap-3">
+        <div className="mt-12 flex justify-center gap-2">
           {filters.map((f) => (
             <button
               key={f.key}
               onClick={() => setFilter(f.key)}
               className={cn(
-                "rounded-full px-5 py-2 text-sm font-medium transition-colors",
+                "rounded-[8px] px-4 py-2 font-mono text-xs transition-all duration-300",
                 filter === f.key
-                  ? "bg-accent text-white"
-                  : "bg-primary-100 text-primary-600 hover:bg-primary-200 dark:bg-primary-800 dark:text-primary-300 dark:hover:bg-primary-700"
+                  ? "bg-accent text-surface accent-glow"
+                  : "border border-surface-border bg-surface-card text-content-secondary hover:border-accent/30 hover:text-content"
               )}
             >
               {f.label}
@@ -65,7 +68,7 @@ export function PortfolioPageContent() {
         </div>
 
         {/* Projects grid */}
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((item, i) => (
             <motion.a
               key={item.title}
@@ -75,25 +78,26 @@ export function PortfolioPageContent() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.05 }}
-              className="group rounded-xl border border-primary-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:border-primary-700 dark:bg-primary-900"
+              className="group glass-card block p-6 transition-all duration-300 hover:border-accent/20 hover:bg-surface-elevated"
             >
               <div className="flex items-start justify-between">
-                <h3 className="text-lg font-semibold text-primary-900 dark:text-white">
+                <h3 className="text-base font-semibold text-content">
                   {item.title}
                 </h3>
                 <ExternalLink
                   size={16}
-                  className="text-primary-400 transition-colors group-hover:text-accent"
+                  strokeWidth={1.5}
+                  className="text-content-muted transition-colors duration-300 group-hover:text-accent"
                 />
               </div>
-              <p className="mt-2 text-sm text-primary-500 dark:text-primary-400">
+              <p className="mt-2 text-sm leading-relaxed text-content-secondary">
                 {item.description}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {item.techs.map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-medium text-accent"
+                    className="rounded-[8px] bg-accent-dim px-2.5 py-0.5 font-mono text-xs text-accent"
                   >
                     {tech}
                   </span>

@@ -18,43 +18,40 @@ export function Testimonials() {
   }>;
 
   return (
-    <section
-      ref={ref}
-      className="bg-primary-50 py-20 dark:bg-primary-950 lg:py-28"
-    >
+    <section ref={ref} className="border-t border-surface-border py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold text-primary-900 dark:text-white sm:text-4xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
             {t("title")}
-          </h2>
-          <p className="mt-4 text-lg text-primary-600 dark:text-primary-300">
-            {t("subtitle")}
           </p>
+          <h2 className="mt-4 text-3xl font-bold text-content sm:text-4xl">
+            {t("subtitle")}
+          </h2>
         </motion.div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-16 grid gap-4 md:grid-cols-3">
           {items.map((item, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="rounded-xl border border-primary-200 bg-white p-6 shadow-sm dark:border-primary-700 dark:bg-primary-900"
+              className="glass-card p-6"
             >
-              <Quote size={24} className="text-accent/30" />
-              <p className="mt-4 text-primary-600 dark:text-primary-300">
+              <Quote size={20} strokeWidth={1.5} className="text-accent/30" />
+              <p className="mt-4 text-sm leading-relaxed text-content-secondary">
                 {item.text}
               </p>
-              <div className="mt-6 border-t border-primary-100 pt-4 dark:border-primary-800">
-                <p className="font-semibold text-primary-900 dark:text-white">
+              <div className="mt-6 border-t border-surface-border pt-4">
+                <p className="text-sm font-semibold text-content">
                   {item.name}
                 </p>
-                <p className="text-sm text-primary-500 dark:text-primary-400">
+                <p className="mt-0.5 text-xs text-content-muted">
                   {item.role} — {item.company}
                 </p>
               </div>

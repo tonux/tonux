@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 type ButtonProps = {
   children: ReactNode;
   href?: string;
-  variant?: "primary" | "secondary" | "outline";
+  variant?: "primary" | "secondary" | "ghost";
   size?: "sm" | "md" | "lg";
   external?: boolean;
   className?: string;
@@ -26,23 +26,28 @@ export function Button({
   onClick,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2";
+    "inline-flex items-center justify-center font-medium rounded-[8px] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-surface";
 
   const variants = {
-    primary: "bg-cta text-white hover:bg-cta-600 shadow-lg hover:shadow-xl",
+    primary: "bg-accent text-surface hover:bg-accent-hover accent-glow",
     secondary:
-      "bg-accent text-white hover:bg-accent-600 shadow-lg hover:shadow-xl",
-    outline:
-      "border-2 border-accent text-accent hover:bg-accent hover:text-white dark:border-accent-400 dark:text-accent-400 dark:hover:bg-accent-400 dark:hover:text-white",
+      "border border-surface-border bg-surface-card text-content hover:bg-surface-elevated hover:border-accent/30",
+    ghost: "text-content-secondary hover:text-content hover:bg-surface-card",
   };
 
   const sizes = {
     sm: "px-4 py-2 text-sm",
-    md: "px-6 py-3 text-base",
-    lg: "px-8 py-4 text-lg",
+    md: "px-6 py-3 text-sm",
+    lg: "px-8 py-4 text-base",
   };
 
-  const classes = cn(base, variants[variant], sizes[size], disabled && "opacity-50 cursor-not-allowed", className);
+  const classes = cn(
+    base,
+    variants[variant],
+    sizes[size],
+    disabled && "opacity-40 cursor-not-allowed",
+    className
+  );
 
   if (href) {
     if (external) {

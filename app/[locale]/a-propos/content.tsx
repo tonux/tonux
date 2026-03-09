@@ -34,57 +34,61 @@ export function AboutPageContent() {
   }>;
 
   return (
-    <div className="py-20">
+    <div className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header with photo */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="grid items-center gap-12 lg:grid-cols-3"
         >
           <div className="flex justify-center lg:col-span-1">
-            <div className="relative h-64 w-64 overflow-hidden rounded-2xl shadow-lg">
+            <div className="relative h-64 w-64 overflow-hidden rounded-[8px] border border-surface-border">
               <Image
                 src="/tonux.jpg"
                 alt="Ndongo Tonux SAMB"
                 fill
                 className="object-cover"
               />
+              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface/80 to-transparent" />
             </div>
           </div>
           <div className="lg:col-span-2">
-            <h1 className="text-4xl font-bold text-primary-900 dark:text-white sm:text-5xl">
+            <p className="font-mono text-xs uppercase tracking-widest text-accent">
+              A propos
+            </p>
+            <h1 className="mt-4 text-4xl font-bold text-content sm:text-5xl">
               {t("title")}
             </h1>
-            <p className="mt-6 text-lg text-primary-600 dark:text-primary-300">
+            <p className="mt-6 leading-relaxed text-content-secondary">
               {t("bio")}
             </p>
             <div className="mt-6">
-              <Button href="/cv_en.pdf" variant="outline" size="md" external>
-                <Download size={16} className="mr-2" /> {t("download_cv")}
+              <Button href="/cv_en.pdf" variant="secondary" size="md" external>
+                <Download size={14} strokeWidth={1.5} className="mr-2" /> {t("download_cv")}
               </Button>
             </div>
           </div>
         </motion.div>
 
         {/* Values */}
-        <div className="mt-20">
-          <h2 className="text-center text-3xl font-bold text-primary-900 dark:text-white">
+        <div className="mt-24">
+          <h2 className="text-center text-3xl font-bold text-content">
             {t("values_title")}
           </h2>
-          <div className="mt-8 grid gap-8 md:grid-cols-3">
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
             {values.map((v, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="rounded-xl border border-primary-200 bg-white p-6 shadow-sm dark:border-primary-700 dark:bg-primary-900"
+                className="glass-card p-6"
               >
-                <h3 className="text-lg font-semibold text-primary-900 dark:text-white">
+                <h3 className="text-base font-semibold text-content">
                   {v.title}
                 </h3>
-                <p className="mt-2 text-primary-500 dark:text-primary-400">
+                <p className="mt-2 text-sm leading-relaxed text-content-secondary">
                   {v.description}
                 </p>
               </motion.div>
@@ -93,33 +97,33 @@ export function AboutPageContent() {
         </div>
 
         {/* Experience timeline */}
-        <div className="mt-20">
-          <h2 className="text-center text-3xl font-bold text-primary-900 dark:text-white">
+        <div className="mt-24">
+          <h2 className="text-center text-3xl font-bold text-content">
             {t("experience_title")}
           </h2>
-          <div className="mx-auto mt-8 max-w-3xl space-y-6">
+          <div className="mx-auto mt-8 max-w-3xl space-y-3">
             {experiences.map((exp, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.05 }}
-                className="flex gap-4 rounded-lg border border-primary-200 bg-white p-5 shadow-sm dark:border-primary-700 dark:bg-primary-900"
+                className="glass-card flex gap-4 p-5"
               >
                 <div className="mt-1 shrink-0">
-                  <Briefcase size={20} className="text-accent" />
+                  <Briefcase size={18} strokeWidth={1.5} className="text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-primary-900 dark:text-white">
+                  <h3 className="text-sm font-semibold text-content">
                     {exp.org}
                   </h3>
                   <p className="text-sm font-medium text-accent">{exp.role}</p>
-                  <div className="mt-1 flex flex-wrap gap-3 text-sm text-primary-500 dark:text-primary-400">
+                  <div className="mt-1.5 flex flex-wrap gap-3 text-xs text-content-muted">
                     <span className="flex items-center gap-1">
-                      <Calendar size={12} /> {exp.period}
+                      <Calendar size={12} strokeWidth={1.5} /> {exp.period}
                     </span>
                     <span className="flex items-center gap-1">
-                      <MapPin size={12} /> {exp.location}
+                      <MapPin size={12} strokeWidth={1.5} /> {exp.location}
                     </span>
                   </div>
                 </div>
@@ -129,24 +133,24 @@ export function AboutPageContent() {
         </div>
 
         {/* Skills */}
-        <div className="mt-20">
-          <h2 className="text-center text-3xl font-bold text-primary-900 dark:text-white">
+        <div className="mt-24">
+          <h2 className="text-center text-3xl font-bold text-content">
             {t("skills_title")}
           </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {Object.entries(skills).map(([category, items]) => (
               <div
                 key={category}
-                className="rounded-xl border border-primary-200 bg-white p-5 shadow-sm dark:border-primary-700 dark:bg-primary-900"
+                className="glass-card p-5"
               >
-                <h3 className="mb-3 font-semibold text-primary-900 dark:text-white">
+                <h3 className="mb-3 font-mono text-xs uppercase tracking-widest text-accent">
                   {category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {items.map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full bg-primary-100 px-3 py-1 text-xs font-medium text-primary-600 dark:bg-primary-800 dark:text-primary-300"
+                      className="rounded-[8px] border border-surface-border bg-surface-elevated px-3 py-1 text-xs text-content-secondary"
                     >
                       {skill}
                     </span>

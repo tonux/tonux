@@ -10,9 +10,9 @@ export function ThemeToggle() {
     <button
       onClick={toggleTheme}
       aria-label={theme === "light" ? "Activer le mode sombre" : "Activer le mode clair"}
-      className="rounded-lg p-2 text-primary-600 transition-colors hover:bg-primary-100 dark:text-primary-300 dark:hover:bg-primary-800"
+      className="rounded-[8px] p-2 text-content-secondary transition-all duration-300 hover:bg-surface-card hover:text-content"
     >
-      {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+      {theme === "light" ? <Moon size={18} strokeWidth={1.5} /> : <Sun size={18} strokeWidth={1.5} />}
     </button>
   );
 }

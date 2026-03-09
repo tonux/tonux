@@ -12,33 +12,34 @@ export function BlogPreview() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-20 lg:py-28">
+    <section ref={ref} className="border-t border-surface-border py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold text-primary-900 dark:text-white sm:text-4xl">
+          <p className="font-mono text-xs uppercase tracking-widest text-accent">
             {t("title")}
-          </h2>
-          <p className="mt-4 text-lg text-primary-600 dark:text-primary-300">
-            {t("subtitle")}
           </p>
+          <h2 className="mt-4 text-3xl font-bold text-content sm:text-4xl">
+            {t("subtitle")}
+          </h2>
 
-          <div className="mt-10 flex justify-center">
-            <div className="rounded-2xl border border-primary-200 bg-white p-8 shadow-sm dark:border-primary-700 dark:bg-primary-900">
+          <div className="mx-auto mt-12 max-w-md">
+            <div className="glass-card p-8 text-center">
               <BookOpen
-                size={48}
-                className="mx-auto text-accent/50"
+                size={32}
+                strokeWidth={1.5}
+                className="mx-auto text-accent/40"
               />
-              <p className="mt-4 text-primary-600 dark:text-primary-300">
+              <p className="mt-4 text-sm leading-relaxed text-content-secondary">
                 {t("subtitle")}
               </p>
               <div className="mt-6">
                 <Button href={t("url")} variant="secondary" size="md" external>
-                  {t("cta")} <ExternalLink size={16} className="ml-2" />
+                  {t("cta")} <ExternalLink size={14} strokeWidth={1.5} className="ml-2" />
                 </Button>
               </div>
             </div>

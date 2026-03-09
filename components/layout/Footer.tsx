@@ -25,25 +25,20 @@ export function Footer() {
   const locale = useLocale();
 
   return (
-    <footer className="border-t border-primary-200 bg-primary-50 dark:border-primary-700 dark:bg-primary-950">
+    <footer className="border-t border-surface-border bg-surface">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
-          {/* Brand */}
           <div>
-            <Link
-              href={`/${locale}`}
-              className="text-xl font-bold text-primary-900 dark:text-white"
-            >
-              TonuxCorp
+            <Link href={`/${locale}`} className="text-lg font-bold text-content">
+              Tonux<span className="text-accent">Corp</span>
             </Link>
-            <p className="mt-2 text-sm text-primary-500 dark:text-primary-400">
+            <p className="mt-2 text-sm text-content-secondary">
               {t("footer.tagline")}
             </p>
           </div>
 
-          {/* Quick links */}
           <div>
-            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary-900 dark:text-white">
+            <h3 className="mb-3 font-mono text-xs font-medium uppercase tracking-widest text-content-secondary">
               {t("footer.links_title")}
             </h3>
             <ul className="space-y-2">
@@ -51,7 +46,7 @@ export function Footer() {
                 <li key={link.key}>
                   <Link
                     href={`/${locale}${link.href}`}
-                    className="text-sm text-primary-500 transition-colors hover:text-accent dark:text-primary-400 dark:hover:text-accent-400"
+                    className="text-sm text-content-muted transition-all duration-300 hover:text-accent"
                   >
                     {t(`nav.${link.key}`)}
                   </Link>
@@ -60,12 +55,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
           <div>
-            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary-900 dark:text-white">
+            <h3 className="mb-3 font-mono text-xs font-medium uppercase tracking-widest text-content-secondary">
               {t("footer.social_title")}
             </h3>
-            <div className="flex gap-3">
+            <div className="flex gap-2">
               {socialLinks.map((link) => (
                 <a
                   key={link.label}
@@ -73,16 +67,16 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.label}
-                  className="rounded-lg p-2 text-primary-500 transition-colors hover:bg-primary-200 hover:text-accent dark:text-primary-400 dark:hover:bg-primary-800 dark:hover:text-accent-400"
+                  className="rounded-[8px] p-2 text-content-muted transition-all duration-300 hover:bg-surface-card hover:text-accent"
                 >
-                  <link.icon size={20} />
+                  <link.icon size={18} strokeWidth={1.5} />
                 </a>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="mt-8 border-t border-primary-200 pt-8 text-center text-sm text-primary-400 dark:border-primary-700">
+        <div className="mt-8 border-t border-surface-border pt-8 text-center font-mono text-xs text-content-muted">
           &copy; {t("footer.copyright")}
         </div>
       </div>

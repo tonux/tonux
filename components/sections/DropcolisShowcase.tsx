@@ -16,56 +16,46 @@ export function DropcolisShowcase() {
   const features = t.raw("features") as string[];
 
   return (
-    <section ref={ref} className="py-20 lg:py-28">
+    <section ref={ref} className="border-t border-surface-border py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block rounded-full bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent">
+            <span className="font-mono text-xs uppercase tracking-widest text-accent">
               {t("role")}
             </span>
-            <h2 className="mt-4 text-3xl font-bold text-primary-900 dark:text-white sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-bold text-content sm:text-4xl">
               {t("title")}
             </h2>
-            <p className="mt-4 text-lg text-primary-600 dark:text-primary-300">
+            <p className="mt-4 text-lg leading-relaxed text-content-secondary">
               {t("description")}
             </p>
-            <p className="mt-3 text-primary-500 dark:text-primary-400">
+            <p className="mt-3 text-content-muted">
               {t("highlight")}
             </p>
 
             <div className="mt-8">
-              <Button
-                href={t("url")}
-                variant="secondary"
-                size="md"
-                external
-              >
-                {t("cta")} <ExternalLink size={16} className="ml-2" />
+              <Button href={t("url")} variant="secondary" size="md" external>
+                {t("cta")} <ExternalLink size={14} strokeWidth={1.5} className="ml-2" />
               </Button>
             </div>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-2 gap-3"
           >
             {features.map((feature, i) => {
               const Icon = featureIcons[i];
               return (
-                <div
-                  key={i}
-                  className="rounded-xl border border-primary-200 bg-white p-5 shadow-sm dark:border-primary-700 dark:bg-primary-900"
-                >
-                  <div className="mb-3 inline-flex rounded-lg bg-accent/10 p-2 text-accent">
-                    <Icon size={20} />
-                  </div>
-                  <p className="text-sm font-medium text-primary-700 dark:text-primary-200">
+                <div key={i} className="glass-card p-5 transition-all duration-300 hover:border-accent/20">
+                  <Icon size={20} strokeWidth={1.5} className="text-accent" />
+                  <p className="mt-3 text-sm font-medium text-content">
                     {feature}
                   </p>
                 </div>
