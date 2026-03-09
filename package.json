@@ -26,6 +26,7 @@
     "deploy": "npx vercel --prod"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.8",
     "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^25.3.5",
     "@types/react": "^19.2.14",
