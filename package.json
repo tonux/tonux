@@ -1,29 +1,37 @@
 {
-  "name": "nextjs",
-  "version": "4.0.0",
+  "name": "tonuxcorp",
+  "version": "5.0.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "latest",
-    "@material-ui/icons": "^4.11.2",
-    "@primer/octicons-react": "^12.0.0",
-    "clsx": "latest",
-    "next": "latest",
-    "next-pwa": "^5.0.5",
-    "prop-types": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-typed": "^1.2.0",
-    "simple-icons": "^4.11.0",
-    "webpack": "^4.46.0"
+    "@hookform/resolvers": "^5.2.2",
+    "@vercel/analytics": "^1.6.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.35.1",
+    "lucide-react": "^0.577.0",
+    "next": "^14.2.35",
+    "next-intl": "^4.8.3",
+    "next-sitemap": "^4.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.71.2",
+    "resend": "^6.9.3",
+    "tailwind-merge": "^3.5.0",
+    "zod": "^4.3.6"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
     "deploy": "npx vercel --prod"
   },
   "devDependencies": {
-    "@types/simple-icons": "^4.10.0"
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^25.3.5",
+    "@types/react": "^19.2.14",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
   }
 }

@@ -1,0 +1,326 @@
+{
+  "metadata": {
+    "title": "TonuxCorp — Senior Tech Consultant & CTO",
+    "description": "Senior tech consultant with 12+ years of experience. Architecture consulting, custom development, technical leadership and training."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "dropcolis": "Dropcolis",
+    "formation": "Training",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Let's talk about your project"
+  },
+  "hero": {
+    "title": "Senior Tech Consultant & CTO",
+    "subtitle": "12+ years of expertise driving your digital transformation",
+    "description": "I help institutions, businesses and individuals design, develop and manage tailored technology solutions.",
+    "cta_primary": "Book a discovery call",
+    "cta_secondary": "View my services",
+    "roles": ["Senior Engineer", "Tech Enthusiast", "CTO @Dropcolis", "Mentor"]
+  },
+  "about_summary": {
+    "title": "Who am I",
+    "description": "Senior developer and tech consultant with a strong background in designing web, mobile and system applications. I specialize in delivering innovative and high-performance solutions, backed by deep technical expertise and proven leadership.",
+    "stats": {
+      "years": "12+",
+      "years_label": "Years of experience",
+      "projects": "30+",
+      "projects_label": "Projects delivered",
+      "students": "500+",
+      "students_label": "Students trained",
+      "countries": "3",
+      "countries_label": "Countries"
+    },
+    "link": "Learn more"
+  },
+  "services": {
+    "title": "My services",
+    "subtitle": "Solutions tailored to your needs",
+    "items": [
+      {
+        "title": "IT Consulting & Architecture",
+        "description": "Technical audits, solution architecture, technology selection, and digital transformation support for businesses and institutions."
+      },
+      {
+        "title": "Custom Development",
+        "description": "Design and development of web, mobile and API applications. Full-stack: React/Next.js, Node.js, Ruby on Rails, Flutter, React Native."
+      },
+      {
+        "title": "Technical Leadership (CTO as a Service)",
+        "description": "Technical project management, best practices implementation, tech recruitment, team and product scaling."
+      },
+      {
+        "title": "Training & Mentoring",
+        "description": "Custom corporate training, bootcamps, individual mentoring. From beginner to advanced."
+      }
+    ],
+    "cta": "Learn more"
+  },
+  "dropcolis": {
+    "title": "Dropcolis Canada",
+    "role": "Co-founder & CTO",
+    "description": "Parcel delivery service in Quebec. Express 24h delivery, e-commerce fulfillment, intercity delivery and groupage.",
+    "highlight": "Complete delivery management platform with mobile app (iOS & Android) and web admin interface.",
+    "cta": "Discover Dropcolis",
+    "url": "https://dropcolis.ca",
+    "features": [
+      "Express 24h delivery",
+      "E-commerce fulfillment",
+      "Intercity delivery",
+      "iOS & Android mobile app"
+    ]
+  },
+  "training": {
+    "title": "Training & Mentoring",
+    "subtitle": "Sharing knowledge is also my mission",
+    "cta": "Looking for a trainer?",
+    "items": [
+      {
+        "organization": "SIR FST/UCAD",
+        "role": "University trainer",
+        "location": "Dakar, Senegal"
+      },
+      {
+        "organization": "Sonatel Academy",
+        "role": "Speaker and trainer",
+        "location": "Dakar, Senegal"
+      },
+      {
+        "organization": "OpenClassrooms",
+        "role": "Certified mentor",
+        "location": "Remote"
+      },
+      {
+        "organization": "SpringBoard",
+        "role": "Mentor",
+        "location": "Remote"
+      },
+      {
+        "organization": "Edacy",
+        "role": "Trainer",
+        "location": "Dakar, Senegal"
+      },
+      {
+        "organization": "Force N",
+        "role": "Mentor",
+        "location": "Dakar, Senegal"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Selected Projects",
+    "subtitle": "Recent work highlights",
+    "cta": "View all projects",
+    "all": "All",
+    "web": "Web",
+    "mobile": "Mobile",
+    "consulting": "Consulting",
+    "items": [
+      {
+        "title": "Dropcolis",
+        "description": "Parcel delivery platform in Quebec - web and mobile",
+        "type": "web",
+        "techs": ["React Native", "Node.js", "PostgreSQL"],
+        "url": "https://dropcolis.ca"
+      },
+      {
+        "title": "People Input / Zamani",
+        "description": "Mobile money application in Niger",
+        "type": "mobile",
+        "techs": ["Flutter", "Firebase", "Dart"],
+        "url": "https://play.google.com/store/apps/details?id=com.zamanitelecom.myzamani"
+      },
+      {
+        "title": "ONG Enda Oscar",
+        "description": "Data collection system for NGO",
+        "type": "web",
+        "techs": ["Ruby on Rails", "React", "PostgreSQL"],
+        "url": "https://endagrafsahel.org"
+      },
+      {
+        "title": "Cashgui",
+        "description": "Budget management mobile application",
+        "type": "mobile",
+        "techs": ["Flutter", "Firebase", "Dart"],
+        "url": "http://cashgui.netlify.app"
+      },
+      {
+        "title": "Sembass",
+        "description": "Jengu application - digital platform",
+        "type": "web",
+        "techs": ["React", "Node.js", "MongoDB"],
+        "url": "http://sembass.com"
+      },
+      {
+        "title": "Finetech Group",
+        "description": "Web and mobile applications for Finetech Group",
+        "type": "consulting",
+        "techs": ["Java", "Spring", "Angular"],
+        "url": "https://www.finetechgroupe.com"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What they say",
+    "subtitle": "Client and collaborator testimonials",
+    "items": [
+      {
+        "name": "Amadou Diallo",
+        "role": "CTO",
+        "company": "Fintech Startup",
+        "text": "Tonux turned our vision into reality. His technical expertise and ability to lead the team were key to the success of our project."
+      },
+      {
+        "name": "Marie Dupont",
+        "role": "CEO",
+        "company": "E-commerce Quebec",
+        "text": "An exceptional consultant. His dual Africa-Canada expertise brings a unique perspective and remarkable adaptability."
+      },
+      {
+        "name": "Ibrahima Sow",
+        "role": "Student",
+        "company": "Sonatel Academy",
+        "text": "The best mentor I've ever had. He knows how to share his passion and make complex concepts accessible to everyone."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles and thoughts on tech",
+    "cta": "Read the blog",
+    "url": "https://tonux-dev.com"
+  },
+  "contact": {
+    "title": "Ready to collaborate?",
+    "subtitle": "Let's discuss your project and find the best solution together.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "type": "Request type",
+      "type_consulting": "Consulting",
+      "type_dev": "Development",
+      "type_formation": "Training",
+      "type_other": "Other",
+      "message": "Your message",
+      "submit": "Send message",
+      "success": "Message sent successfully! I will get back to you as soon as possible.",
+      "error": "An error occurred. Please try again."
+    },
+    "info": {
+      "email": "sambndongo@gmail.com",
+      "location": "Montreal, Canada",
+      "availability": "Available for freelance missions"
+    }
+  },
+  "footer": {
+    "tagline": "Senior Tech Consultant & CTO — Montreal, Canada",
+    "links_title": "Quick links",
+    "social_title": "Follow me",
+    "copyright": "2026 TonuxCorp — Montreal, Canada"
+  },
+  "about_page": {
+    "title": "About me",
+    "bio": "Senior developer and tech consultant with over 12 years of experience designing and developing technology solutions. Based in Montreal, I work with clients in Canada, France and West Africa. My journey from Dakar to Rouen and then Montreal has enriched my perspective and ability to navigate multicultural environments.",
+    "experience_title": "Professional journey",
+    "skills_title": "Technical skills",
+    "values_title": "My values",
+    "values": [
+      {
+        "title": "Technical excellence",
+        "description": "Clean code, solid architecture, and best practices are at the heart of every project."
+      },
+      {
+        "title": "Communication",
+        "description": "Transparency and constant collaboration with clients to ensure success."
+      },
+      {
+        "title": "Innovation",
+        "description": "Continuous technology watch to provide the most suitable solutions."
+      }
+    ],
+    "download_cv": "Download my CV"
+  },
+  "services_page": {
+    "title": "My services",
+    "subtitle": "Technology solutions tailored to your challenges",
+    "process_title": "My work process",
+    "process_steps": [
+      {
+        "title": "Discovery",
+        "description": "In-depth discussion to understand your needs, constraints and objectives."
+      },
+      {
+        "title": "Proposal",
+        "description": "Detailed technical and commercial proposal."
+      },
+      {
+        "title": "Execution",
+        "description": "Iterative development with regular check-ins and incremental deliveries."
+      },
+      {
+        "title": "Delivery",
+        "description": "Production deployment, training and post-delivery support."
+      }
+    ],
+    "faq_title": "Frequently asked questions",
+    "faq": [
+      {
+        "question": "What types of projects do you take on?",
+        "answer": "I work on projects of all sizes: from startup MVPs to complex enterprise systems. Web, mobile, API, cloud architecture."
+      },
+      {
+        "question": "Do you work remotely?",
+        "answer": "Yes, I primarily work remotely from Montreal. I'm available for video meetings and occasional on-site visits if needed."
+      },
+      {
+        "question": "What is your availability?",
+        "answer": "My availability varies depending on current engagements. Contact me to discuss your project and check my availability."
+      }
+    ]
+  },
+  "dropcolis_page": {
+    "title": "Dropcolis Canada",
+    "subtitle": "Co-founder & CTO",
+    "story_title": "The story",
+    "story": "Dropcolis was born from the observation that Quebec's delivery market lacked a flexible and affordable solution for small and medium businesses. As CTO and co-founder, I designed and led the development of the entire technical platform.",
+    "tech_title": "Tech stack",
+    "tech_items": ["React Native", "Node.js", "PostgreSQL", "AWS", "Docker"],
+    "role_title": "My role as CTO",
+    "responsibilities": [
+      "Platform architecture and design",
+      "Mobile app development (iOS & Android)",
+      "Cloud infrastructure setup (AWS)",
+      "Tech team recruitment and management",
+      "Product roadmap definition"
+    ],
+    "cta": "Visit dropcolis.ca"
+  },
+  "formation_page": {
+    "title": "Training & Mentoring",
+    "subtitle": "Over 500 students trained in Africa and Canada",
+    "approach_title": "My teaching approach",
+    "approach": "I believe in learning by doing. My training programs combine essential theory with hands-on projects to help learners develop directly applicable skills.",
+    "programs_title": "Programs offered",
+    "programs": [
+      {
+        "title": "Full-Stack Web Development",
+        "description": "Complete training covering HTML/CSS, JavaScript, React, Node.js and databases.",
+        "duration": "3-6 months"
+      },
+      {
+        "title": "Mobile Development",
+        "description": "Learning Flutter and React Native to build cross-platform applications.",
+        "duration": "2-4 months"
+      },
+      {
+        "title": "Individual Mentoring",
+        "description": "Personalized support to develop your skills and tech career.",
+        "duration": "Custom"
+      }
+    ],
+    "cta": "Contact me for training"
+  }
+}
