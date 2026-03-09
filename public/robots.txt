@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tonuxcorp.dev
+
+# Sitemaps
+Sitemap: https://tonuxcorp.dev/sitemap.xml

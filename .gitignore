@@ -18,5 +18,5 @@ yarn-error.log*
 /.next
 
 .vercel
-
 .vscode
+out/
