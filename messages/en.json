@@ -155,8 +155,8 @@
       {
         "title": "Sembass",
         "description": "Jengu application - digital platform",
-        "type": "web",
-        "techs": ["React", "Node.js", "MongoDB"],
+        "type": "mobile",
+        "techs": ["Flutter", "Firebase"],
         "url": "http://sembass.com"
       },
       {
@@ -170,7 +170,7 @@
         "title": "Jangflix",
         "description": "Educational mobile app with interactive courses, quizzes and badge system",
         "type": "mobile",
-        "techs": ["React Native", "Node.js", "Firebase"],
+        "techs": ["Flutter", "Node.js", "Firebase"],
         "url": "https://jangflix.com"
       },
       {
@@ -186,6 +186,48 @@
         "type": "web",
         "techs": ["Next.js", "PWA", "Tailwind CSS"],
         "url": "http://wirdmaaxuuz.com"
+      },
+      {
+        "title": "RNP",
+        "description": "RNP mobile application",
+        "type": "mobile",
+        "techs": ["Flutter", "Firebase", "Directus", "PostgreSQL"],
+        "url": ""
+      },
+      {
+        "title": "DepuisleChamp",
+        "description": "DepuisleChamp web platform",
+        "type": "web",
+        "techs": ["Next.js", "Directus", "Umami"],
+        "url": ""
+      },
+      {
+        "title": "Forum Mondial de l'Eau",
+        "description": "Mobile application for the World Water Forum",
+        "type": "mobile",
+        "techs": ["Flutter"],
+        "url": ""
+      },
+      {
+        "title": "OIF x Gebeya",
+        "description": "Web platform for OIF in collaboration with Gebeya",
+        "type": "web",
+        "techs": ["Angular", "Spring Boot"],
+        "url": ""
+      },
+      {
+        "title": "IPRES",
+        "description": "Web platform for IPRES",
+        "type": "web",
+        "techs": ["Ruby on Rails"],
+        "url": ""
+      },
+      {
+        "title": "TekkiFi",
+        "description": "TekkiFi mobile application",
+        "type": "mobile",
+        "techs": ["Flutter"],
+        "url": ""
       }
     ]
   },
