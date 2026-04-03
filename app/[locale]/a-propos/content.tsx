@@ -17,6 +17,7 @@ const experiences = [
 ];
 
 const skills = {
+  "Leadership & Strategy": ["Solution Architecture", "Tech Strategy", "Software Dev Management", "Delivery Management", "Growth Engineering", "Stakeholder Alignment", "Roadmap Planning", "Team Scaling"],
   Languages: ["Python", "JavaScript", "Java", "Ruby", "TypeScript", "Kotlin", "Dart", "SQL"],
   Frontend: ["React", "Next.js", "Nuxt.js", "Redux", "Tailwind CSS", "Bootstrap"],
   Backend: ["Node.js", "Express", "Spring", "Ruby on Rails", "Laravel", "Django", "Flask", "Directus"],
