@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Download, Briefcase, MapPin, Calendar, ArrowUpRight } from "lucide-react";
 
 const experiences = [
-  { org: "Pratt & Whitney", role: "Solution Architect | Mgr, Software Dev", type: "Full-time", period: "2025 - Present", location: "Montreal, Canada" },
+  { org: "Pratt & Whitney", role: "Solution Architect | Mgr, Software Dev", type: "Full-time", period: "2025 - Present", location: "Longueuil, Canada" },
   { org: "Dropcolis/Canada", role: "CTO", type: "Co-founder", period: "2024 - Present", location: "Montreal, Canada" },
   { org: "WADA/Canada", role: "Senior Software Engineer", type: "Full-time", period: "2022 - 2025", location: "Montreal, Canada" },
   { org: "Desjardins/Canada", role: "IT Consultant", type: "Full-time", period: "2021 - 2022", location: "Montreal, Canada" },
