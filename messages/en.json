@@ -125,6 +125,27 @@
     "consulting": "Consulting",
     "items": [
       {
+        "title": "DepuisleChamp",
+        "description": "DepuisleChamp web platform — Next.js front end backed by a Directus headless CMS, with Umami analytics.",
+        "type": "web",
+        "techs": ["Next.js", "Directus", "Umami"],
+        "url": "https://depuislechamp.com"
+      },
+      {
+        "title": "Partaliane",
+        "description": "Website for Partaliane Corporate — organizational transformation: executive support, strategic coaching, training programs and retreats.",
+        "type": "web",
+        "techs": ["Next.js", "Directus", "Tailwind CSS"],
+        "url": "https://partaliane.com"
+      },
+      {
+        "title": "Traversees Interieures",
+        "description": "Editorial platform for the podcast \"Conscious conversations on leadership\" — episodes by season, content and distribution.",
+        "type": "web",
+        "techs": ["Next.js", "Directus", "Tailwind CSS"],
+        "url": "https://traversees-interieures.com"
+      },
+      {
         "title": "Dropcolis",
         "description": "Parcel delivery platform in Quebec - web and mobile",
         "type": "web",
@@ -192,13 +213,6 @@
         "description": "RNP mobile application",
         "type": "mobile",
         "techs": ["Flutter", "Firebase", "Directus", "PostgreSQL"],
-        "url": ""
-      },
-      {
-        "title": "DepuisleChamp",
-        "description": "DepuisleChamp web platform",
-        "type": "web",
-        "techs": ["Next.js", "Directus", "Umami"],
         "url": ""
       },
       {
