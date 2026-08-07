@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "TonuxCorp — Consultant Tech Senior & CTO",
-    "description": "Consultant tech senior avec 12+ ans d'experience, disponible pour missions freelance. Architecture, developpement sur mesure, direction technique (CTO as a Service) et formation."
+    "title": "TonuxCorp — Conseil & ingénierie logicielle",
+    "description": "TonuxCorp est une équipe d'experts tech basée à Montréal et Dakar. Architecture, développement sur mesure, direction technique et formation pour institutions, entreprises et startups."
   },
   "nav": {
     "home": "Accueil",
@@ -9,71 +9,138 @@
     "dropcolis": "Dropcolis",
     "formation": "Formation",
     "portfolio": "Portfolio",
-    "about": "A propos",
+    "about": "À propos",
     "contact": "Contact",
-    "cta": "Reserver un appel"
+    "cta": "Réserver un appel"
   },
   "hero": {
-    "greeting": "Bonjour",
-    "subtitle": "Software Consultant",
-    "intro": "C'est Tonux, consultant tech senior & CTO",
-    "description": "J'accompagne institutions, entreprises et particuliers dans la conception, le developpement et le pilotage de solutions technologiques sur mesure.",
-    "stats_years": "Annees d'experience",
-    "stats_projects": "Projets livres",
-    "scroll_down": "Defiler vers le bas",
-    "title": "Consultant Tech Senior & CTO",
-    "cta_primary": "Reserver un appel decouverte",
-    "cta_secondary": "Voir mes services",
-    "roles": ["Senior Engineer", "Tech Enthusiast", "CTO @Dropcolis", "Mentor"],
-    "availability": "Disponible pour missions"
+    "subtitle": "Conseil & ingénierie logicielle",
+    "availability": "Disponibles pour de nouveaux mandats",
+    "headline_lead": "Nous concevons, bâtissons et pilotons",
+    "headline_accent": "vos plateformes numériques.",
+    "intro": "TonuxCorp est une équipe d'experts tech basée à Montréal et Dakar.",
+    "description": "Un noyau d'ingénieurs seniors, renforcé par un réseau de spécialistes mobilisés projet par projet. De la stratégie à la mise en production, nous accompagnons institutions, entreprises et startups.",
+    "stats_years": "Années d'expérience",
+    "stats_projects": "Projets livrés",
+    "stats_students": "Personnes formées",
+    "stats_countries": "Pays d'intervention",
+    "scroll_down": "Défiler vers le bas",
+    "title": "Conseil & ingénierie logicielle",
+    "cta_primary": "Parlons de votre projet",
+    "cta_secondary": "Découvrir nos services",
+    "visual": {
+      "center": "TonuxCorp",
+      "nodes": [
+        "Architecture",
+        "Développement",
+        "Cloud & Data",
+        "Design",
+        "Formation"
+      ]
+    }
   },
   "about_summary": {
-    "title": "Qui suis-je",
-    "description": "Developpeur senior et consultant tech avec une solide experience dans la conception d'applications web, mobiles et systemes. Je me specialise dans la livraison de solutions innovantes et performantes, en m'appuyant sur une expertise technique approfondie et un leadership eprouve.",
+    "title": "Notre approche",
+    "headline": "L'agilité d'un studio, la capacité d'une ESN.",
+    "description": "Nous réunissons la proximité d'une équipe à taille humaine et la force d'un réseau d'experts. Chaque mandat est porté par un ingénieur senior de l'équipe cœur, qui mobilise les spécialistes nécessaires sans jamais diluer la responsabilité.",
+    "pillars": [
+      {
+        "title": "Sens des affaires",
+        "description": "Nous partons de vos enjeux métier, pas de la technologie."
+      },
+      {
+        "title": "Expertise éprouvée",
+        "description": "Plus de 12 ans de terrain sur des systèmes critiques, en Afrique, en Europe et au Canada."
+      },
+      {
+        "title": "Agilité humaine",
+        "description": "Des équipes qui s'intègrent aux vôtres et transmettent leur savoir-faire."
+      }
+    ],
     "stats": {
       "years": "12+",
-      "years_label": "Annees d'experience",
+      "years_label": "Années d'expérience",
       "projects": "30+",
-      "projects_label": "Projets livres",
+      "projects_label": "Projets livrés",
       "students": "500+",
-      "students_label": "Etudiants formes",
+      "students_label": "Personnes formées",
       "countries": "3",
-      "countries_label": "Pays"
+      "countries_label": "Pays d'intervention"
     },
-    "link": "En savoir plus"
+    "link": "En savoir plus sur TonuxCorp"
+  },
+  "team": {
+    "title": "Notre équipe",
+    "subtitle": "Un noyau d'experts, un réseau de partenaires",
+    "description": "TonuxCorp s'organise autour d'une équipe cœur d'ingénieurs seniors qui portent la relation client, l'architecture et la qualité de la livraison. Autour d'eux, un réseau de partenaires et de spécialistes indépendants est mobilisé selon les besoins de chaque projet. Vous gardez un interlocuteur unique ; nous ajustons la capacité.",
+    "badge_core": "Équipe cœur",
+    "badge_network": "Réseau",
+    "roles": [
+      {
+        "title": "Direction technique",
+        "description": "Architecture, choix technologiques, gouvernance et pilotage de vos projets.",
+        "type": "core"
+      },
+      {
+        "title": "Ingénierie logicielle",
+        "description": "Applications web, mobile et API : Next.js, Node.js, Ruby on Rails, Flutter.",
+        "type": "core"
+      },
+      {
+        "title": "Formation & mentorat",
+        "description": "Montée en compétence de vos équipes internes, avant et après la livraison.",
+        "type": "core"
+      },
+      {
+        "title": "Design & expérience",
+        "description": "Recherche utilisateur, design system, interfaces accessibles et responsives.",
+        "type": "network"
+      },
+      {
+        "title": "Cloud & Data",
+        "description": "Infrastructure, DevOps, CI/CD, observabilité et sécurité applicative.",
+        "type": "network"
+      },
+      {
+        "title": "Partenaires locaux",
+        "description": "Relais opérationnels au Sénégal, en France et au Canada.",
+        "type": "network"
+      }
+    ],
+    "cta": "Rejoindre notre réseau d'experts"
   },
   "services": {
-    "title": "Mes services",
-    "subtitle": "Des solutions adaptees a vos besoins",
+    "title": "Nos services",
+    "subtitle": "Des solutions adaptées à vos enjeux",
     "items": [
       {
-        "title": "Consulting IT & Architecture",
-        "description": "Audit technique, architecture de solutions, choix technologiques, accompagnement a la transformation digitale pour entreprises et institutions."
+        "title": "Conseil IT & Architecture",
+        "description": "Audit technique, architecture de solutions, choix technologiques et accompagnement à la transformation numérique des entreprises et institutions."
       },
       {
-        "title": "Developpement sur mesure",
-        "description": "Conception et developpement d'applications web, mobile et API sur mesure."
+        "title": "Développement sur mesure",
+        "description": "Nous concevons et développons vos applications web, mobiles et vos API, de la maquette à la mise en production."
       },
       {
-        "title": "Direction Technique (CTO as a Service)",
-        "description": "Pilotage technique de projets, mise en place de bonnes pratiques, recrutement tech, scaling d'equipes et de produits."
+        "title": "Direction technique (CTO as a Service)",
+        "description": "Pilotage technique de vos projets, mise en place des bonnes pratiques, recrutement tech et passage à l'échelle de vos équipes et produits."
       },
       {
         "title": "Formation & Mentorat",
-        "description": "Formations sur mesure pour entreprises, bootcamps, mentorat individuel. Du debutant au confirme."
+        "description": "Formations sur mesure pour les entreprises, bootcamps et mentorat individuel. Du débutant au confirmé."
       }
     ],
     "cta": "En savoir plus"
   },
   "dropcolis": {
     "title": "Dropcolis Canada",
-    "role": "Co-fondateur & CTO",
-    "description": "Service de livraison de colis au Quebec. Livraison express 24h, fulfillment e-commerce, livraison interurbaine et groupages.",
-    "highlight": "Plateforme complete de gestion de livraisons avec application mobile (iOS & Android) et interface web d'administration.",
-    "cta": "Decouvrir Dropcolis",
+    "role": "Notre startup — direction technique assurée par TonuxCorp",
+    "description": "Service de livraison de colis au Québec. Livraison express 24 h, fulfillment e-commerce, livraison interurbaine et groupages.",
+    "highlight": "Plateforme complète de gestion de livraisons conçue par nos équipes : application mobile (iOS & Android) et interface web d'administration.",
+    "cta": "Découvrir Dropcolis",
     "url": "https://dropcolis.ca",
     "features": [
-      "Livraison express 24h",
+      "Livraison express 24 h",
       "Fulfillment e-commerce",
       "Livraison interurbaine",
       "Application mobile iOS & Android"
@@ -81,44 +148,44 @@
   },
   "training": {
     "title": "Formation & Mentorat",
-    "subtitle": "Transmettre le savoir, c'est aussi ma mission",
-    "cta": "Vous cherchez un formateur ?",
+    "subtitle": "Transmettre le savoir fait aussi partie de notre mission",
+    "cta": "Vous cherchez une équipe de formateurs ?",
     "items": [
       {
         "organization": "SIR FST/UCAD",
-        "role": "Formateur universitaire",
-        "location": "Dakar, Senegal"
+        "role": "Formation universitaire",
+        "location": "Dakar, Sénégal"
       },
       {
         "organization": "Sonatel Academy",
-        "role": "Speaker et formateur",
-        "location": "Dakar, Senegal"
+        "role": "Conférences et formations",
+        "location": "Dakar, Sénégal"
       },
       {
         "organization": "OpenClassrooms",
-        "role": "Mentor certifie",
-        "location": "Remote"
+        "role": "Mentorat certifié",
+        "location": "À distance"
       },
       {
         "organization": "SpringBoard",
-        "role": "Mentor",
-        "location": "Remote"
+        "role": "Mentorat",
+        "location": "À distance"
       },
       {
         "organization": "Edacy",
-        "role": "Formateur",
-        "location": "Dakar, Senegal"
+        "role": "Formation",
+        "location": "Dakar, Sénégal"
       },
       {
         "organization": "Force N",
-        "role": "Mentor",
-        "location": "Dakar, Senegal"
+        "role": "Mentorat",
+        "location": "Dakar, Sénégal"
       }
     ]
   },
   "portfolio": {
-    "title": "Projets selectionnes",
-    "subtitle": "Quelques realisations recentes",
+    "title": "Projets sélectionnés",
+    "subtitle": "Quelques-unes de nos réalisations récentes",
     "cta": "Voir tous les projets",
     "all": "Tous",
     "web": "Web",
@@ -127,206 +194,267 @@
     "items": [
       {
         "title": "DepuisleChamp",
-        "description": "Plateforme web DepuisleChamp — front Next.js adosse a un back-office headless Directus, avec suivi d'audience Umami.",
+        "description": "Plateforme web DepuisleChamp — front Next.js adossé à un back-office headless Directus, avec suivi d'audience Umami.",
         "type": "web",
-        "techs": ["Next.js", "Directus", "Umami"],
+        "techs": [
+          "Next.js",
+          "Directus",
+          "Umami"
+        ],
         "url": "https://depuislechamp.com"
       },
       {
         "title": "Partaliane",
-        "description": "Site du cabinet Partaliane Corporate — transformation des organisations : accompagnement de dirigeants, coaching strategique, formations et retraites.",
+        "description": "Site du cabinet Partaliane Corporate — transformation des organisations : accompagnement de dirigeants, coaching stratégique, formations et retraites.",
         "type": "web",
-        "techs": ["Next.js", "Directus", "Tailwind CSS"],
+        "techs": [
+          "Next.js",
+          "Directus",
+          "Tailwind CSS"
+        ],
         "url": "https://partaliane.com"
       },
       {
         "title": "Traversees Interieures",
-        "description": "Plateforme editoriale du podcast « Conversations conscientes sur le leadership » — episodes par saison, contenus et diffusion.",
+        "description": "Plateforme éditoriale du podcast « Conversations conscientes sur le leadership » — épisodes par saison, contenus et diffusion.",
         "type": "web",
-        "techs": ["Next.js", "Directus", "Tailwind CSS"],
+        "techs": [
+          "Next.js",
+          "Directus",
+          "Tailwind CSS"
+        ],
         "url": "https://traversees-interieures.com"
       },
       {
         "title": "Dropcolis",
-        "description": "Plateforme de livraison de colis au Quebec - web et mobile",
+        "description": "Plateforme de livraison de colis au Québec — web et mobile.",
         "type": "web",
-        "techs": ["React Native", "Node.js", "PostgreSQL"],
+        "techs": [
+          "React Native",
+          "Node.js",
+          "PostgreSQL"
+        ],
         "url": "https://dropcolis.ca"
       },
       {
         "title": "People Input / Zamani",
-        "description": "Application mobile money au Niger",
+        "description": "Application de mobile money au Niger.",
         "type": "mobile",
-        "techs": ["Flutter", "Firebase", "Dart"],
+        "techs": [
+          "Flutter",
+          "Firebase",
+          "Dart"
+        ],
         "url": "https://play.google.com/store/apps/details?id=com.zamanitelecom.myzamani"
       },
       {
         "title": "ONG Enda Oscar",
-        "description": "Systeme de collecte de donnees pour ONG",
+        "description": "Système de collecte de données pour ONG.",
         "type": "web",
-        "techs": ["Ruby on Rails", "React", "PostgreSQL"],
+        "techs": [
+          "Ruby on Rails",
+          "React",
+          "PostgreSQL"
+        ],
         "url": "https://endagrafsahel.org"
       },
       {
         "title": "Cashgui",
-        "description": "Application mobile de gestion budgetaire",
+        "description": "Application mobile de gestion budgétaire.",
         "type": "mobile",
-        "techs": ["Flutter", "Firebase", "Dart"],
+        "techs": [
+          "Flutter",
+          "Firebase",
+          "Dart"
+        ],
         "url": "http://cashgui.netlify.app"
       },
       {
         "title": "Sembass",
-        "description": "Application Jengu - plateforme digitale",
+        "description": "Application Jengu — plateforme digitale.",
         "type": "mobile",
-        "techs": ["Flutter", "Firebase"],
+        "techs": [
+          "Flutter",
+          "Firebase"
+        ],
         "url": "http://sembass.com"
       },
       {
         "title": "Finetech Group",
-        "description": "Applications web et mobile pour le groupe Finetech",
+        "description": "Applications web et mobile pour le groupe Finetech.",
         "type": "consulting",
-        "techs": ["Java", "Spring", "Angular"],
+        "techs": [
+          "Java",
+          "Spring",
+          "Angular"
+        ],
         "url": "https://www.finetechgroupe.com"
       },
       {
         "title": "Jangflix",
-        "description": "Application mobile educative avec cours interactifs, quiz et systeme de badges",
+        "description": "Application mobile éducative avec cours interactifs, quiz et système de badges.",
         "type": "mobile",
-        "techs": ["Flutter", "Node.js", "Firebase"],
+        "techs": [
+          "Flutter",
+          "Node.js",
+          "Firebase"
+        ],
         "url": "https://jangflix.com"
       },
       {
         "title": "Simpl",
-        "description": "Application de gestion financiere pour les consommateurs et familles africaines",
+        "description": "Application de gestion financière pour les consommateurs et familles africaines.",
         "type": "mobile",
-        "techs": ["Flutter", "Node.js", "Firebase"],
+        "techs": [
+          "Flutter",
+          "Node.js",
+          "Firebase"
+        ],
         "url": "https://simplfinance.io"
       },
       {
         "title": "Wird Maaxuuz",
-        "description": "Plateforme digitale pour acceder au Wird Maaxuuz — chapelet virtuel, horaires de priere, boussole Qibla",
+        "description": "Plateforme digitale pour accéder au Wird Maaxuuz — chapelet virtuel, horaires de prière, boussole Qibla.",
         "type": "web",
-        "techs": ["Next.js", "PWA", "Tailwind CSS"],
+        "techs": [
+          "Next.js",
+          "PWA",
+          "Tailwind CSS"
+        ],
         "url": "http://wirdmaaxuuz.com"
       },
       {
         "title": "RNP",
         "description": "Application mobile RNP",
         "type": "mobile",
-        "techs": ["Flutter", "Firebase", "Directus", "PostgreSQL"],
+        "techs": [
+          "Flutter",
+          "Firebase",
+          "Directus",
+          "PostgreSQL"
+        ],
         "url": ""
       },
       {
         "title": "Forum Mondial de l'Eau",
-        "description": "Application mobile pour le Forum Mondial de l'Eau",
+        "description": "Application mobile pour le Forum Mondial de l'Eau.",
         "type": "mobile",
-        "techs": ["Flutter"],
+        "techs": [
+          "Flutter"
+        ],
         "url": ""
       },
       {
         "title": "OIF x Gebeya",
-        "description": "Plateforme web pour l'OIF en collaboration avec Gebeya",
+        "description": "Plateforme web pour l'OIF, en collaboration avec Gebeya.",
         "type": "web",
-        "techs": ["Angular", "Spring Boot"],
+        "techs": [
+          "Angular",
+          "Spring Boot"
+        ],
         "url": ""
       },
       {
         "title": "IPRES",
-        "description": "Plateforme web pour l'IPRES",
+        "description": "Plateforme web pour l'IPRES.",
         "type": "web",
-        "techs": ["Ruby on Rails"],
+        "techs": [
+          "Ruby on Rails"
+        ],
         "url": ""
       },
       {
         "title": "TekkiFi",
         "description": "Application mobile TekkiFi",
         "type": "mobile",
-        "techs": ["Flutter"],
+        "techs": [
+          "Flutter"
+        ],
         "url": ""
       }
     ]
   },
   "testimonials": {
     "title": "Ce qu'ils disent",
-    "subtitle": "Temoignages de clients et collaborateurs",
+    "subtitle": "Témoignages de clients et de partenaires",
     "items": [
       {
         "name": "Amadou Diallo",
         "role": "Directeur Technique",
         "company": "Startup Fintech",
-        "text": "Tonux a transforme notre vision en realite. Son expertise technique et sa capacite a piloter l'equipe ont ete determinantes pour le succes de notre projet."
+        "text": "L'équipe TonuxCorp a transformé notre vision en réalité. Leur expertise technique et leur capacité à piloter le projet ont été déterminantes pour notre succès."
       },
       {
         "name": "Marie Dupont",
         "role": "CEO",
-        "company": "E-commerce Quebec",
-        "text": "Un consultant d'exception. Sa double expertise Afrique-Canada apporte une perspective unique et une capacite d'adaptation remarquable."
+        "company": "E-commerce Québec",
+        "text": "Un partenaire d'exception. Leur double ancrage Afrique–Canada apporte une perspective unique et une capacité d'adaptation remarquable."
       },
       {
         "name": "Ibrahima Sow",
-        "role": "Etudiant",
+        "role": "Étudiant",
         "company": "Sonatel Academy",
-        "text": "Le meilleur mentor que j'ai eu. Il sait transmettre sa passion et rendre les concepts complexes accessibles a tous."
+        "text": "Les meilleurs formateurs que j'ai eus. Ils savent transmettre leur passion et rendre les concepts complexes accessibles à tous."
       }
     ]
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Articles et reflexions sur la tech",
+    "subtitle": "Articles et réflexions de nos experts",
     "cta": "Lire le blog",
     "url": "https://tonux-dev.com",
     "placeholder_1": "Architecture microservices en 2026",
-    "placeholder_2": "Flutter vs React Native : mon retour",
-    "placeholder_3": "Devenir CTO : lecons apprises",
+    "placeholder_2": "Flutter vs React Native : notre retour d'expérience",
+    "placeholder_3": "Devenir CTO : les leçons que nous avons apprises",
     "category_1": "Architecture",
     "category_2": "Mobile",
     "category_3": "Leadership"
   },
   "contact": {
-    "title": "Pret a collaborer ?",
-    "subtitle": "Discutons de votre projet et trouvons ensemble la meilleure solution.",
+    "title": "Prêt à collaborer ?",
+    "subtitle": "Parlons de votre projet et construisons ensemble la meilleure solution.",
     "form": {
       "name": "Nom complet",
       "email": "Email",
       "type": "Type de demande",
       "type_consulting": "Consulting",
-      "type_dev": "Developpement",
+      "type_dev": "Développement",
       "type_formation": "Formation",
       "type_other": "Autre",
       "message": "Votre message",
       "submit": "Envoyer le message",
-      "success": "Message envoye avec succes ! Je vous repondrai dans les plus brefs delais.",
-      "error": "Une erreur est survenue. Veuillez reessayer.",
+      "success": "Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.",
+      "error": "Une erreur est survenue. Veuillez réessayer.",
       "optional": "optionnel",
-      "budget": "Budget estime",
-      "budget_placeholder": "Selectionner une fourchette",
+      "budget": "Budget estimé",
+      "budget_placeholder": "Sélectionner une fourchette",
       "budget_s": "Moins de 2 M FCFA (5 000 $ CA)",
-      "budget_m": "2 a 8 M FCFA (5 000 a 20 000 $ CA)",
-      "budget_l": "8 a 20 M FCFA (20 000 a 50 000 $ CA)",
+      "budget_m": "2 à 8 M FCFA (5 000 à 20 000 $ CA)",
+      "budget_l": "8 à 20 M FCFA (20 000 à 50 000 $ CA)",
       "budget_xl": "Plus de 20 M FCFA (50 000 $ CA)",
-      "budget_tbd": "A definir ensemble",
-      "timeline": "Echeance souhaitee",
-      "timeline_placeholder": "Selectionner une echeance",
-      "timeline_asap": "Des que possible",
+      "budget_tbd": "À définir ensemble",
+      "timeline": "Échéance souhaitée",
+      "timeline_placeholder": "Sélectionner une échéance",
+      "timeline_asap": "Dès que possible",
       "timeline_1m": "Dans le mois",
       "timeline_3m": "Dans les 3 mois",
       "timeline_flex": "Flexible"
     },
     "info": {
       "email": "sambndongo@gmail.com",
-      "location": "Montreal, Canada",
-      "availability": "Disponible pour missions freelance"
+      "location": "Montréal, Canada",
+      "availability": "Disponibles pour de nouveaux mandats"
     },
     "cta_link": "Parlons de votre projet",
     "sticky": "Reserver un appel",
-    "mid_title": "Une mission en vue ?",
-    "mid_subtitle": "Premier echange de 30 minutes, sans engagement, pour cadrer votre besoin."
+    "mid_title": "Un projet en vue ?",
+    "mid_subtitle": "Premier échange de 30 minutes, sans engagement, pour cadrer votre besoin avec l'un de nos experts."
   },
   "footer": {
-    "tagline": "Consultant Tech Senior & CTO — Montreal, Canada",
+    "tagline": "Conseil & ingénierie logicielle — Montréal, Canada",
     "links_title": "Liens rapides",
-    "social_title": "Suivez-moi",
-    "copyright": "2026 TonuxCorp — Montreal, Canada",
+    "social_title": "Suivez-nous",
+    "copyright": "2026 TonuxCorp — Montréal, Canada",
     "email_display": "sambndongo@gmail.com"
   },
   "about_page": {
@@ -415,7 +543,13 @@
     "story_title": "L'histoire",
     "story": "Dropcolis est ne du constat que le marche de la livraison au Quebec manquait d'une solution flexible et abordable pour les petites et moyennes entreprises. En tant que CTO et co-fondateur, j'ai concu et dirige le developpement de toute la plateforme technique.",
     "tech_title": "Stack technique",
-    "tech_items": ["React Native", "Node.js", "PostgreSQL", "AWS", "Docker"],
+    "tech_items": [
+      "React Native",
+      "Node.js",
+      "PostgreSQL",
+      "AWS",
+      "Docker"
+    ],
     "role_title": "Mon role en tant que CTO",
     "responsibilities": [
       "Architecture et conception de la plateforme",

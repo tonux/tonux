@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { AboutSummary } from "@/components/sections/AboutSummary";
+import { Team } from "@/components/sections/Team";
 import { Services } from "@/components/sections/Services";
 import { DropcolisShowcase } from "@/components/sections/DropcolisShowcase";
 import { Training } from "@/components/sections/Training";
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Services />
       {/* Early conversion point — right after the visitor reads what is on offer */}
       <ContactCTA variant="light" />
+      <Team />
       <DropcolisShowcase />
       <Training />
       <PortfolioPreview />

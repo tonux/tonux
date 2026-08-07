@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "TonuxCorp — Senior Tech Consultant & CTO",
-    "description": "Senior tech consultant with 12+ years of experience, available for freelance engagements. Architecture, custom development, technical leadership (CTO as a Service) and training."
+    "title": "TonuxCorp — Software consulting & engineering",
+    "description": "TonuxCorp is a team of tech experts based in Montreal and Dakar. Architecture, custom development, technical leadership and training for institutions, companies and startups."
   },
   "nav": {
     "home": "Home",
@@ -14,62 +14,129 @@
     "cta": "Book a call"
   },
   "hero": {
-    "greeting": "Hello",
-    "subtitle": "Software Consultant",
-    "intro": "It's Tonux, a senior tech consultant & CTO",
-    "description": "I help institutions, businesses and individuals design, develop and manage tailored technology solutions.",
+    "subtitle": "Software consulting & engineering",
+    "availability": "Available for new engagements",
+    "headline_lead": "We design, build and steer",
+    "headline_accent": "your digital platforms.",
+    "intro": "TonuxCorp is a team of tech experts based in Montreal and Dakar.",
+    "description": "A core of senior engineers, backed by a network of specialists brought in project by project. From strategy to production, we support institutions, companies and startups.",
     "stats_years": "Years of experience",
     "stats_projects": "Projects delivered",
+    "stats_students": "People trained",
+    "stats_countries": "Countries served",
     "scroll_down": "Scroll down",
-    "title": "Senior Tech Consultant & CTO",
-    "cta_primary": "Book a discovery call",
-    "cta_secondary": "View my services",
-    "roles": ["Senior Engineer", "Tech Enthusiast", "CTO @Dropcolis", "Mentor"],
-    "availability": "Available for new projects"
+    "title": "Software consulting & engineering",
+    "cta_primary": "Let's talk about your project",
+    "cta_secondary": "Explore our services",
+    "visual": {
+      "center": "TonuxCorp",
+      "nodes": [
+        "Architecture",
+        "Engineering",
+        "Cloud & Data",
+        "Design",
+        "Training"
+      ]
+    }
   },
   "about_summary": {
-    "title": "Who am I",
-    "description": "Senior developer and tech consultant with a strong background in designing web, mobile and system applications. I specialize in delivering innovative and high-performance solutions, backed by deep technical expertise and proven leadership.",
+    "title": "Our approach",
+    "headline": "The agility of a studio, the capacity of a consultancy.",
+    "description": "We combine the closeness of a human-sized team with the strength of an expert network. Every engagement is led by a senior engineer from our core team, who brings in the specialists the project needs without ever diluting accountability.",
+    "pillars": [
+      {
+        "title": "Business acumen",
+        "description": "We start from your business challenges, not from the technology."
+      },
+      {
+        "title": "Proven expertise",
+        "description": "Over 12 years in the field on mission-critical systems across Africa, Europe and Canada."
+      },
+      {
+        "title": "Human agility",
+        "description": "Teams that plug into yours and hand over their know-how."
+      }
+    ],
     "stats": {
       "years": "12+",
       "years_label": "Years of experience",
       "projects": "30+",
       "projects_label": "Projects delivered",
       "students": "500+",
-      "students_label": "Students trained",
+      "students_label": "People trained",
       "countries": "3",
-      "countries_label": "Countries"
+      "countries_label": "Countries served"
     },
-    "link": "Learn more"
+    "link": "Learn more about TonuxCorp"
+  },
+  "team": {
+    "title": "Our team",
+    "subtitle": "A core of experts, a network of partners",
+    "description": "TonuxCorp is built around a core team of senior engineers who own the client relationship, the architecture and delivery quality. Around them, a network of partners and independent specialists is mobilised according to each project's needs. You keep a single point of contact; we scale the capacity.",
+    "badge_core": "Core team",
+    "badge_network": "Network",
+    "roles": [
+      {
+        "title": "Technical leadership",
+        "description": "Architecture, technology choices, governance and project steering.",
+        "type": "core"
+      },
+      {
+        "title": "Software engineering",
+        "description": "Web, mobile and API applications: Next.js, Node.js, Ruby on Rails, Flutter.",
+        "type": "core"
+      },
+      {
+        "title": "Training & mentoring",
+        "description": "Upskilling your in-house teams, before and after delivery.",
+        "type": "core"
+      },
+      {
+        "title": "Design & experience",
+        "description": "User research, design systems, accessible and responsive interfaces.",
+        "type": "network"
+      },
+      {
+        "title": "Cloud & Data",
+        "description": "Infrastructure, DevOps, CI/CD, observability and application security.",
+        "type": "network"
+      },
+      {
+        "title": "Local partners",
+        "description": "Operational presence in Senegal, France and Canada.",
+        "type": "network"
+      }
+    ],
+    "cta": "Join our expert network"
   },
   "services": {
-    "title": "My services",
-    "subtitle": "Solutions tailored to your needs",
+    "title": "Our services",
+    "subtitle": "Solutions tailored to your challenges",
     "items": [
       {
         "title": "IT Consulting & Architecture",
-        "description": "Technical audits, solution architecture, technology selection, and digital transformation support for businesses and institutions."
+        "description": "Technical audits, solution architecture, technology choices and digital transformation support for companies and institutions."
       },
       {
-        "title": "Custom Development",
-        "description": "Design and development of custom web, mobile and API applications."
+        "title": "Custom development",
+        "description": "We design and build your web, mobile and API applications, from prototype to production."
       },
       {
-        "title": "Technical Leadership (CTO as a Service)",
-        "description": "Technical project management, best practices implementation, tech recruitment, team and product scaling."
+        "title": "Technical leadership (CTO as a Service)",
+        "description": "Technical steering of your projects, best practices, tech hiring and scaling your teams and products."
       },
       {
         "title": "Training & Mentoring",
-        "description": "Custom corporate training, bootcamps, individual mentoring. From beginner to advanced."
+        "description": "Tailored corporate training, bootcamps and one-on-one mentoring. From beginner to advanced."
       }
     ],
     "cta": "Learn more"
   },
   "dropcolis": {
     "title": "Dropcolis Canada",
-    "role": "Co-founder & CTO",
+    "role": "Our startup — technical leadership by TonuxCorp",
     "description": "Parcel delivery service in Quebec. Express 24h delivery, e-commerce fulfillment, intercity delivery and groupage.",
-    "highlight": "Complete delivery management platform with mobile app (iOS & Android) and web admin interface.",
+    "highlight": "A complete delivery management platform built by our teams: mobile app (iOS & Android) and web admin interface.",
     "cta": "Discover Dropcolis",
     "url": "https://dropcolis.ca",
     "features": [
@@ -81,44 +148,44 @@
   },
   "training": {
     "title": "Training & Mentoring",
-    "subtitle": "Sharing knowledge is also my mission",
-    "cta": "Looking for a trainer?",
+    "subtitle": "Passing on knowledge is part of our mission too",
+    "cta": "Looking for a training team?",
     "items": [
       {
         "organization": "SIR FST/UCAD",
-        "role": "University trainer",
+        "role": "University training",
         "location": "Dakar, Senegal"
       },
       {
         "organization": "Sonatel Academy",
-        "role": "Speaker and trainer",
+        "role": "Talks and training",
         "location": "Dakar, Senegal"
       },
       {
         "organization": "OpenClassrooms",
-        "role": "Certified mentor",
+        "role": "Certified mentoring",
         "location": "Remote"
       },
       {
         "organization": "SpringBoard",
-        "role": "Mentor",
+        "role": "Mentoring",
         "location": "Remote"
       },
       {
         "organization": "Edacy",
-        "role": "Trainer",
+        "role": "Training",
         "location": "Dakar, Senegal"
       },
       {
         "organization": "Force N",
-        "role": "Mentor",
+        "role": "Mentoring",
         "location": "Dakar, Senegal"
       }
     ]
   },
   "portfolio": {
-    "title": "Selected Projects",
-    "subtitle": "Recent work highlights",
+    "title": "Selected projects",
+    "subtitle": "A few of our recent engagements",
     "cta": "View all projects",
     "all": "All",
     "web": "Web",
@@ -129,162 +196,223 @@
         "title": "DepuisleChamp",
         "description": "DepuisleChamp web platform — Next.js front end backed by a Directus headless CMS, with Umami analytics.",
         "type": "web",
-        "techs": ["Next.js", "Directus", "Umami"],
+        "techs": [
+          "Next.js",
+          "Directus",
+          "Umami"
+        ],
         "url": "https://depuislechamp.com"
       },
       {
         "title": "Partaliane",
         "description": "Website for Partaliane Corporate — organizational transformation: executive support, strategic coaching, training programs and retreats.",
         "type": "web",
-        "techs": ["Next.js", "Directus", "Tailwind CSS"],
+        "techs": [
+          "Next.js",
+          "Directus",
+          "Tailwind CSS"
+        ],
         "url": "https://partaliane.com"
       },
       {
         "title": "Traversees Interieures",
         "description": "Editorial platform for the podcast \"Conscious conversations on leadership\" — episodes by season, content and distribution.",
         "type": "web",
-        "techs": ["Next.js", "Directus", "Tailwind CSS"],
+        "techs": [
+          "Next.js",
+          "Directus",
+          "Tailwind CSS"
+        ],
         "url": "https://traversees-interieures.com"
       },
       {
         "title": "Dropcolis",
         "description": "Parcel delivery platform in Quebec - web and mobile",
         "type": "web",
-        "techs": ["React Native", "Node.js", "PostgreSQL"],
+        "techs": [
+          "React Native",
+          "Node.js",
+          "PostgreSQL"
+        ],
         "url": "https://dropcolis.ca"
       },
       {
         "title": "People Input / Zamani",
         "description": "Mobile money application in Niger",
         "type": "mobile",
-        "techs": ["Flutter", "Firebase", "Dart"],
+        "techs": [
+          "Flutter",
+          "Firebase",
+          "Dart"
+        ],
         "url": "https://play.google.com/store/apps/details?id=com.zamanitelecom.myzamani"
       },
       {
         "title": "ONG Enda Oscar",
         "description": "Data collection system for NGO",
         "type": "web",
-        "techs": ["Ruby on Rails", "React", "PostgreSQL"],
+        "techs": [
+          "Ruby on Rails",
+          "React",
+          "PostgreSQL"
+        ],
         "url": "https://endagrafsahel.org"
       },
       {
         "title": "Cashgui",
         "description": "Budget management mobile application",
         "type": "mobile",
-        "techs": ["Flutter", "Firebase", "Dart"],
+        "techs": [
+          "Flutter",
+          "Firebase",
+          "Dart"
+        ],
         "url": "http://cashgui.netlify.app"
       },
       {
         "title": "Sembass",
         "description": "Jengu application - digital platform",
         "type": "mobile",
-        "techs": ["Flutter", "Firebase"],
+        "techs": [
+          "Flutter",
+          "Firebase"
+        ],
         "url": "http://sembass.com"
       },
       {
         "title": "Finetech Group",
         "description": "Web and mobile applications for Finetech Group",
         "type": "consulting",
-        "techs": ["Java", "Spring", "Angular"],
+        "techs": [
+          "Java",
+          "Spring",
+          "Angular"
+        ],
         "url": "https://www.finetechgroupe.com"
       },
       {
         "title": "Jangflix",
         "description": "Educational mobile app with interactive courses, quizzes and badge system",
         "type": "mobile",
-        "techs": ["Flutter", "Node.js", "Firebase"],
+        "techs": [
+          "Flutter",
+          "Node.js",
+          "Firebase"
+        ],
         "url": "https://jangflix.com"
       },
       {
         "title": "Simpl",
         "description": "Financial management app for African consumers and families",
         "type": "mobile",
-        "techs": ["Flutter", "Node.js", "Firebase"],
+        "techs": [
+          "Flutter",
+          "Node.js",
+          "Firebase"
+        ],
         "url": "https://simplfinance.io"
       },
       {
         "title": "Wird Maaxuuz",
         "description": "Digital platform to access Wird Maaxuuz — virtual prayer beads, prayer times, Qibla compass",
         "type": "web",
-        "techs": ["Next.js", "PWA", "Tailwind CSS"],
+        "techs": [
+          "Next.js",
+          "PWA",
+          "Tailwind CSS"
+        ],
         "url": "http://wirdmaaxuuz.com"
       },
       {
         "title": "RNP",
         "description": "RNP mobile application",
         "type": "mobile",
-        "techs": ["Flutter", "Firebase", "Directus", "PostgreSQL"],
+        "techs": [
+          "Flutter",
+          "Firebase",
+          "Directus",
+          "PostgreSQL"
+        ],
         "url": ""
       },
       {
         "title": "Forum Mondial de l'Eau",
         "description": "Mobile application for the World Water Forum",
         "type": "mobile",
-        "techs": ["Flutter"],
+        "techs": [
+          "Flutter"
+        ],
         "url": ""
       },
       {
         "title": "OIF x Gebeya",
         "description": "Web platform for OIF in collaboration with Gebeya",
         "type": "web",
-        "techs": ["Angular", "Spring Boot"],
+        "techs": [
+          "Angular",
+          "Spring Boot"
+        ],
         "url": ""
       },
       {
         "title": "IPRES",
         "description": "Web platform for IPRES",
         "type": "web",
-        "techs": ["Ruby on Rails"],
+        "techs": [
+          "Ruby on Rails"
+        ],
         "url": ""
       },
       {
         "title": "TekkiFi",
         "description": "TekkiFi mobile application",
         "type": "mobile",
-        "techs": ["Flutter"],
+        "techs": [
+          "Flutter"
+        ],
         "url": ""
       }
     ]
   },
   "testimonials": {
     "title": "What they say",
-    "subtitle": "Client and collaborator testimonials",
+    "subtitle": "Words from clients and partners",
     "items": [
       {
         "name": "Amadou Diallo",
-        "role": "CTO",
-        "company": "Fintech Startup",
-        "text": "Tonux turned our vision into reality. His technical expertise and ability to lead the team were key to the success of our project."
+        "role": "Technical Director",
+        "company": "Fintech startup",
+        "text": "The TonuxCorp team turned our vision into reality. Their technical expertise and their ability to steer the project were decisive for our success."
       },
       {
         "name": "Marie Dupont",
         "role": "CEO",
         "company": "E-commerce Quebec",
-        "text": "An exceptional consultant. His dual Africa-Canada expertise brings a unique perspective and remarkable adaptability."
+        "text": "An outstanding partner. Their dual Africa–Canada footprint brings a unique perspective and remarkable adaptability."
       },
       {
         "name": "Ibrahima Sow",
         "role": "Student",
         "company": "Sonatel Academy",
-        "text": "The best mentor I've ever had. He knows how to share his passion and make complex concepts accessible to everyone."
+        "text": "The best trainers I have had. They know how to pass on their passion and make complex concepts accessible to everyone."
       }
     ]
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Articles and thoughts on tech",
+    "subtitle": "Articles and insights from our experts",
     "cta": "Read the blog",
     "url": "https://tonux-dev.com",
     "placeholder_1": "Microservices architecture in 2026",
-    "placeholder_2": "Flutter vs React Native: my take",
-    "placeholder_3": "Becoming a CTO: lessons learned",
+    "placeholder_2": "Flutter vs React Native: our take",
+    "placeholder_3": "Becoming a CTO: lessons we learned",
     "category_1": "Architecture",
     "category_2": "Mobile",
     "category_3": "Leadership"
   },
   "contact": {
     "title": "Ready to collaborate?",
-    "subtitle": "Let's discuss your project and find the best solution together.",
+    "subtitle": "Let's discuss your project and build the best solution together.",
     "form": {
       "name": "Full name",
       "email": "Email",
@@ -295,7 +423,7 @@
       "type_other": "Other",
       "message": "Your message",
       "submit": "Send message",
-      "success": "Message sent successfully! I will get back to you as soon as possible.",
+      "success": "Message sent successfully! We will get back to you as soon as possible.",
       "error": "An error occurred. Please try again.",
       "optional": "optional",
       "budget": "Estimated budget",
@@ -315,17 +443,17 @@
     "info": {
       "email": "sambndongo@gmail.com",
       "location": "Montreal, Canada",
-      "availability": "Available for freelance missions"
+      "availability": "Available for new engagements"
     },
     "cta_link": "Let's talk about your project",
     "sticky": "Book a call",
     "mid_title": "Got a project in mind?",
-    "mid_subtitle": "A 30-minute intro call, no strings attached, to scope out what you need."
+    "mid_subtitle": "A 30-minute intro call with one of our experts, no strings attached, to scope out what you need."
   },
   "footer": {
-    "tagline": "Senior Tech Consultant & CTO — Montreal, Canada",
+    "tagline": "Software consulting & engineering — Montreal, Canada",
     "links_title": "Quick links",
-    "social_title": "Follow me",
+    "social_title": "Follow us",
     "copyright": "2026 TonuxCorp — Montreal, Canada",
     "email_display": "sambndongo@gmail.com"
   },
@@ -415,7 +543,13 @@
     "story_title": "The story",
     "story": "Dropcolis was born from the observation that Quebec's delivery market lacked a flexible and affordable solution for small and medium businesses. As CTO and co-founder, I designed and led the development of the entire technical platform.",
     "tech_title": "Tech stack",
-    "tech_items": ["React Native", "Node.js", "PostgreSQL", "AWS", "Docker"],
+    "tech_items": [
+      "React Native",
+      "Node.js",
+      "PostgreSQL",
+      "AWS",
+      "Docker"
+    ],
     "role_title": "My role as CTO",
     "responsibilities": [
       "Platform architecture and design",

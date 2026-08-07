@@ -1,17 +1,26 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { NetworkVisual } from "@/components/ui/NetworkVisual";
 
 export function Hero() {
   const t = useTranslations("hero");
   const locale = useLocale();
 
+  const visual = t.raw("visual") as { center: string; nodes: string[] };
+
+  const stats = [
+    { value: "12+", label: t("stats_years") },
+    { value: "30+", label: t("stats_projects") },
+    { value: "500+", label: t("stats_students") },
+    { value: "3", label: t("stats_countries") },
+  ];
+
   return (
-    <section className="relative min-h-[90vh] overflow-hidden py-24 lg:py-32">
+    <section className="relative overflow-hidden py-20 lg:py-28">
       {/* Watermark background text */}
       <div className="watermark absolute inset-0 flex items-center justify-center text-[15vw] leading-none opacity-[0.03]">
         TONUXCORP
@@ -27,14 +36,14 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className="absolute bottom-24 left-6 hidden font-display text-sm text-content-muted lg:bottom-auto lg:top-32 lg:block"
+        className="absolute left-6 top-32 hidden font-display text-sm text-content-muted lg:block"
       >
         2026
       </motion.div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Left: text + stats */}
+          {/* Left: positioning statement */}
           <div className="relative z-10">
             {/* Availability badge */}
             <motion.div
@@ -52,47 +61,23 @@ export function Hero() {
               </span>
             </motion.div>
 
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="mb-8 flex gap-12"
-            >
-              <div>
-                <div className="font-display text-4xl font-light text-content sm:text-5xl">
-                  +12
-                </div>
-                <div className="mt-1 text-xs text-content-muted">
-                  {t("stats_years")}
-                </div>
-              </div>
-              <div>
-                <div className="font-display text-4xl font-light text-content sm:text-5xl">
-                  +30
-                </div>
-                <div className="mt-1 text-xs text-content-muted">
-                  {t("stats_projects")}
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Massive greeting */}
+            {/* Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="font-display text-display-hero text-content"
+              className="max-w-2xl font-display text-display-md text-content"
             >
-              {t("greeting")}
+              {t("headline_lead")}{" "}
+              <span className="text-accent-strong">{t("headline_accent")}</span>
             </motion.h1>
 
-            {/* Subtitle */}
+            {/* Intro */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-6 text-lg text-content-secondary"
+              className="mt-6 max-w-xl text-lg text-content-secondary"
             >
               {t("intro")}
             </motion.p>
@@ -102,7 +87,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-4 max-w-md text-sm leading-relaxed text-content-muted"
+              className="mt-4 max-w-xl text-sm leading-relaxed text-content-muted"
             >
               {t("description")}
             </motion.p>
@@ -124,31 +109,40 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Right: B&W photo */}
+          {/* Right: expertise constellation (replaces the founder portrait) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative flex justify-center lg:justify-end"
+            className="relative z-10 px-6 sm:px-10 lg:px-0"
           >
-            <div className="relative h-[400px] w-[320px] overflow-hidden rounded-[12px] lg:h-[520px] lg:w-[420px]">
-              <Image
-                src="/tonux.jpg"
-                alt="Ndongo Tonux SAMB"
-                fill
-                className="object-cover grayscale"
-                priority
-              />
-            </div>
+            <NetworkVisual center={visual.center} nodes={visual.nodes} />
           </motion.div>
         </div>
+
+        {/* Key figures band */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="relative z-10 mt-16 grid grid-cols-2 gap-y-8 border-t border-surface-border pt-10 sm:grid-cols-4"
+        >
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <div className="font-display text-4xl font-light text-content sm:text-5xl">
+                {stat.value}
+              </div>
+              <div className="mt-1 text-xs text-content-muted">{stat.label}</div>
+            </div>
+          ))}
+        </motion.div>
 
         {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-16 flex items-center gap-2 text-sm text-content-muted"
+          className="relative z-10 mt-12 flex items-center gap-2 text-sm text-content-muted"
         >
           {t("scroll_down")} <ArrowDown size={14} strokeWidth={1.5} />
         </motion.div>
