@@ -4,25 +4,36 @@
 
 /* ─── Design Tokens (CSS Variables — RGB channels for opacity support) ─── */
 :root {
+  /* Surfaces — white re-anchored on the brand navy */
   --color-surface: 255 255 255;
-  --color-surface-alt: 248 248 248;
-  --color-surface-elevated: 242 242 242;
-  --color-border: rgba(0, 0, 0, 0.08);
-  --color-border-strong: rgba(0, 0, 0, 0.15);
-  --color-content: 34 34 34;
-  --color-content-secondary: 123 123 123;
-  --color-content-muted: 171 171 171;
+  --color-surface-alt: 246 248 250;
+  --color-surface-elevated: 236 241 246;
+  --color-border: rgba(11, 31, 56, 0.1);
+  --color-border-strong: rgba(11, 31, 56, 0.18);
+  /* Text — brand navy #0B1F38 and its tints */
+  --color-content: 11 31 56;
+  --color-content-secondary: 78 100 128;
+  --color-content-muted: 107 124 145;
+  /* Accent — brand cyan #00E5FF is only 1.54:1 on white, so it is reserved
+     for dark surfaces; --color-accent-strong is its readable light-mode twin. */
+  --color-accent: 0 229 255;
+  --color-accent-strong: 3 121 140;
+  --color-accent-ink: 6 13 24;
 }
 
 .dark {
-  --color-surface: 10 10 11;
-  --color-surface-alt: 17 17 19;
-  --color-surface-elevated: 28 28 31;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-strong: rgba(255, 255, 255, 0.15);
-  --color-content: 242 242 242;
-  --color-content-secondary: 142 142 147;
-  --color-content-muted: 90 90 94;
+  --color-surface: 6 13 24;
+  --color-surface-alt: 11 21 36;
+  --color-surface-elevated: 18 38 63;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-strong: rgba(255, 255, 255, 0.18);
+  --color-content: 242 246 250;
+  --color-content-secondary: 138 156 178;
+  --color-content-muted: 107 124 145;
+  /* On navy the brand cyan clears 12.66:1 — no substitute needed */
+  --color-accent: 0 229 255;
+  --color-accent-strong: 0 229 255;
+  --color-accent-ink: 6 13 24;
 }
 
 /* ─── Base Styles ─── */
@@ -62,12 +73,12 @@
   }
   .section-label::before {
     content: "";
-    @apply inline-block h-1.5 w-1.5 rounded-full bg-content;
+    @apply inline-block h-1.5 w-1.5 rounded-full bg-accent-strong;
   }
 
   /* Underline link with arrow — editorial CTA style */
   .link-arrow {
-    @apply inline-flex items-center gap-1 text-sm font-medium text-content underline underline-offset-4 decoration-content/30 transition-all duration-300 hover:decoration-content;
+    @apply inline-flex items-center gap-1 text-sm font-medium text-content underline underline-offset-4 decoration-accent-strong/40 transition-all duration-300 hover:decoration-accent-strong;
   }
 
   /* Outlined pill tag */

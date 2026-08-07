@@ -23,8 +23,8 @@ export function MobileCTABar() {
         className="flex w-full items-center justify-center gap-1.5 rounded-[12px] bg-content px-6 py-3.5 text-sm font-medium text-surface transition-all duration-300 hover:opacity-80"
       >
         <span className="relative flex h-2 w-2" aria-hidden="true">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-          <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
         </span>
         {t("sticky")}
         <ArrowUpRight size={15} strokeWidth={1.5} />

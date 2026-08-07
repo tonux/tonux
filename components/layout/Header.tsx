@@ -6,6 +6,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { LanguageToggle } from "@/components/ui/LanguageToggle";
+import { Logo } from "@/components/ui/Logo";
 
 const navItems = [
   { key: "about", href: "/a-propos" },
@@ -25,9 +26,10 @@ export function Header() {
         {/* Logo */}
         <Link
           href={`/${locale}`}
-          className="font-display text-lg font-semibold text-content"
+          aria-label="TonuxCorp"
+          className="flex items-center transition-opacity duration-300 hover:opacity-80"
         >
-          TonuxCorp
+          <Logo priority />
         </Link>
 
         {/* Desktop nav — centered */}

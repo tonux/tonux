@@ -109,8 +109,8 @@ export function ContactPageContent() {
                 <p className="text-sm font-medium text-content">Status</p>
                 <p className="mt-1 inline-flex items-center gap-2 text-sm text-content-secondary">
                   <span className="relative flex h-2 w-2" aria-hidden="true">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-60" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-strong opacity-60" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-strong" />
                   </span>
                   {t("info.availability")}
                 </p>

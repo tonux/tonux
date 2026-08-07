@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; background: #060D18; }
+  a { color: #00E5FF; text-decoration: none; }
+  a:hover { color: #7FF0FF; }
+</style>
+</helmet>
+
+<section style="display:flex; flex-direction:column; gap:28px; padding:56px 48px; font-family:Inter, sans-serif; background:#060D18; min-height:100vh;">
+
+  <div style="display:flex; flex-direction:column; gap:8px; max-width:760px;">
+    <div style="font-size:10px; letter-spacing:1.4px; text-transform:uppercase; color:#4E6480; font-weight:600;">Turn 1 — Identity directions</div>
+    <div style="font-family:'Space Grotesk',sans-serif; font-size:30px; font-weight:500; color:#FFFFFF; letter-spacing:-0.5px;">TonuxCorp — three marks</div>
+    <div style="font-size:14px; line-height:1.6; color:#8A9CB2; text-wrap:pretty;">Deep navy, neon cyan, crisp white. Each mark is built on a strict geometric grid, holds at 16px, and works in one flat color. Reference them in chat as <a href="#1a">1a</a>, <a href="#1b">1b</a>, <a href="#1c">1c</a>.</div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start;">
+
+    <div id="1a" style="width:432px; display:flex; flex-direction:column; gap:0; background:#0B1524; border:1px solid #17263B; border-radius:16px; overflow:hidden;">
+      <div style="display:flex; align-items:baseline; gap:12px; padding:20px 24px 14px 24px;">
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.6px; color:#060D18; background:#00E5FF; border-radius:999px; padding:3px 9px;">1a</div>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:16px; font-weight:500; color:#FFFFFF;">The Bracket T</div>
+      </div>
+      <div style="padding:0 24px 18px 24px; font-size:13px; line-height:1.6; color:#7E90A8; text-wrap:pretty;">A monogram set inside code brackets. Literal enough to read as software instantly, abstract enough to survive as a standalone glyph.</div>
+
+      <div style="position:relative; display:flex; align-items:center; justify-content:center; height:300px; background:#060D18; border-top:1px solid #17263B; border-bottom:1px solid #17263B;">
+        <svg width="216" height="216" viewBox="0 0 120 120" fill="none">
+          <path d="M44 26 L20 60 L44 94" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M76 26 L100 60 L76 94" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M46 40 H74" stroke="#00E5FF" stroke-width="9" stroke-linecap="square"></path>
+          <path d="M60 40 V86" stroke="#00E5FF" stroke-width="9" stroke-linecap="square"></path>
+        </svg>
+        <sc-if value="{{ showGrid }}" hint-placeholder-val="{{ false }}">
+          <svg width="216" height="216" viewBox="0 0 120 120" fill="none" style="position:absolute; opacity:0.5;">
+            <circle cx="60" cy="60" r="52" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.5"></circle>
+            <rect x="20" y="20" width="80" height="80" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.5"></rect>
+            <path d="M60 4 V116 M4 60 H116" stroke="#00E5FF" stroke-width="0.5" opacity="0.35"></path>
+          </svg>
+        </sc-if>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:14px; padding:24px; background:#060D18; border-bottom:1px solid #17263B;">
+        <svg width="42" height="42" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <path d="M44 26 L20 60 L44 94" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M76 26 L100 60 L76 94" stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M46 40 H74" stroke="#00E5FF" stroke-width="9" stroke-linecap="square"></path>
+          <path d="M60 40 V86" stroke="#00E5FF" stroke-width="9" stroke-linecap="square"></path>
+        </svg>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:25px; letter-spacing:-0.8px; color:#FFFFFF; font-weight:600;">Tonux<span style="font-weight:300; color:#8A9CB2;">Corp</span></div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:14px; padding:24px; background:#FFFFFF;">
+        <svg width="42" height="42" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <path d="M44 26 L20 60 L44 94" stroke="#0B1F38" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M76 26 L100 60 L76 94" stroke="#0B1F38" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M46 40 H74" stroke="#0B1F38" stroke-width="9" stroke-linecap="square"></path>
+          <path d="M60 40 V86" stroke="#0B1F38" stroke-width="9" stroke-linecap="square"></path>
+        </svg>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:25px; letter-spacing:-0.8px; color:#0B1F38; font-weight:600;">Tonux<span style="font-weight:300; color:#6B7C91;">Corp</span></div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:22px; padding:20px 24px; background:#0B1524;">
+        <svg width="30" height="30" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <path d="M44 26 L20 60 L44 94" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M76 26 L100 60 L76 94" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M46 40 H74" stroke="#00E5FF" stroke-width="10" stroke-linecap="square"></path>
+          <path d="M60 40 V86" stroke="#00E5FF" stroke-width="10" stroke-linecap="square"></path>
+        </svg>
+        <svg width="18" height="18" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <path d="M38 22 L12 60 L38 98" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M82 22 L108 60 L82 98" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M42 36 H78" stroke="#00E5FF" stroke-width="13" stroke-linecap="square"></path>
+          <path d="M60 36 V90" stroke="#00E5FF" stroke-width="13" stroke-linecap="square"></path>
+        </svg>
+        <div style="font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#4E6480; font-weight:600; margin-left:auto;">30 / 18 px</div>
+      </div>
+    </div>
+
+    <div id="1b" style="width:432px; display:flex; flex-direction:column; gap:0; background:#0B1524; border:1px solid #17263B; border-radius:16px; overflow:hidden;">
+      <div style="display:flex; align-items:baseline; gap:12px; padding:20px 24px 14px 24px;">
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.6px; color:#060D18; background:#00E5FF; border-radius:999px; padding:3px 9px;">1b</div>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:16px; font-weight:500; color:#FFFFFF;">The Stack</div>
+      </div>
+      <div style="padding:0 24px 18px 24px; font-size:13px; line-height:1.6; color:#7E90A8; text-wrap:pretty;">An isometric solid split by a cyan diagonal — the slash from <span style="font-family:'Space Grotesk',sans-serif; color:#B8C7D9;">&lt;/&gt;</span> cutting a cube. Reads as structure, architecture, built systems.</div>
+
+      <div style="position:relative; display:flex; align-items:center; justify-content:center; height:300px; background:#060D18; border-top:1px solid #17263B; border-bottom:1px solid #17263B;">
+        <svg width="216" height="216" viewBox="0 0 120 120" fill="none">
+          <path d="M60 20 L98 42 L60 64 L22 42 Z" fill="#00E5FF"></path>
+          <path d="M22 46 L60 68 L60 100 L22 78 Z" fill="#1F4E72"></path>
+          <path d="M98 46 L98 78 L60 100 L60 68 Z" fill="#FFFFFF"></path>
+        </svg>
+        <sc-if value="{{ showGrid }}" hint-placeholder-val="{{ false }}">
+          <svg width="216" height="216" viewBox="0 0 120 120" fill="none" style="position:absolute; opacity:0.5;">
+            <circle cx="60" cy="60" r="52" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.5"></circle>
+            <rect x="20" y="20" width="80" height="80" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.5"></rect>
+            <path d="M60 4 V116 M4 60 H116" stroke="#00E5FF" stroke-width="0.5" opacity="0.35"></path>
+          </svg>
+        </sc-if>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:14px; padding:24px; background:#060D18; border-bottom:1px solid #17263B;">
+        <svg width="42" height="42" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <path d="M60 20 L98 42 L60 64 L22 42 Z" fill="#00E5FF"></path>
+          <path d="M22 46 L60 68 L60 100 L22 78 Z" fill="#1F4E72"></path>
+          <path d="M98 46 L98 78 L60 100 L60 68 Z" fill="#FFFFFF"></path>
+        </svg>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:25px; letter-spacing:-0.8px; color:#FFFFFF; font-weight:600;">Tonux<span style="font-weight:300; color:#8A9CB2;">Corp</span></div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:14px; padding:24px; background:#FFFFFF;">
+        <svg width="42" height="42" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <path d="M60 20 L98 42 L60 64 L22 42 Z" fill="#0B1F38"></path>
+          <path d="M22 46 L60 68 L60 100 L22 78 Z" fill="#0B1F38" opacity="0.45"></path>
+          <path d="M98 46 L98 78 L60 100 L60 68 Z" fill="#0B1F38" opacity="0.75"></path>
+        </svg>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:25px; letter-spacing:-0.8px; color:#0B1F38; font-weight:600;">Tonux<span style="font-weight:300; color:#6B7C91;">Corp</span></div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:22px; padding:20px 24px; background:#0B1524;">
+        <svg width="30" height="30" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <path d="M60 20 L98 42 L60 64 L22 42 Z" fill="#00E5FF"></path>
+          <path d="M22 46 L60 68 L60 100 L22 78 Z" fill="#1F4E72"></path>
+          <path d="M98 46 L98 78 L60 100 L60 68 Z" fill="#FFFFFF"></path>
+        </svg>
+        <svg width="18" height="18" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <path d="M60 20 L98 42 L60 64 L22 42 Z" fill="#00E5FF"></path>
+          <path d="M22 46 L60 68 L60 100 L22 78 Z" fill="#1F4E72"></path>
+          <path d="M98 46 L98 78 L60 100 L60 68 Z" fill="#FFFFFF"></path>
+        </svg>
+        <div style="font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#4E6480; font-weight:600; margin-left:auto;">30 / 18 px</div>
+      </div>
+    </div>
+
+    <div id="1c" style="width:432px; display:flex; flex-direction:column; gap:0; background:#0B1524; border:1px solid #17263B; border-radius:16px; overflow:hidden;">
+      <div style="display:flex; align-items:baseline; gap:12px; padding:20px 24px 14px 24px;">
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.6px; color:#060D18; background:#00E5FF; border-radius:999px; padding:3px 9px;">1c</div>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:16px; font-weight:500; color:#FFFFFF;">The Prompt</div>
+      </div>
+      <div style="padding:0 24px 18px 24px; font-size:13px; line-height:1.6; color:#7E90A8; text-wrap:pretty;">Chevron and cursor bar — the terminal prompt, the oldest and most durable symbol in software. One shape, no detail to lose at small sizes.</div>
+
+      <div style="position:relative; display:flex; align-items:center; justify-content:center; height:300px; background:#060D18; border-top:1px solid #17263B; border-bottom:1px solid #17263B;">
+        <svg width="216" height="216" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="50" fill="#0F2B47"></circle>
+          <path d="M40 40 L62 60 L40 80" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+          <rect x="68" y="72" width="20" height="8" rx="4" fill="#00E5FF"></rect>
+        </svg>
+        <sc-if value="{{ showGrid }}" hint-placeholder-val="{{ false }}">
+          <svg width="216" height="216" viewBox="0 0 120 120" fill="none" style="position:absolute; opacity:0.5;">
+            <circle cx="60" cy="60" r="50" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.6"></circle>
+            <rect x="24" y="24" width="72" height="72" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.5"></rect>
+            <path d="M60 4 V116 M4 60 H116" stroke="#00E5FF" stroke-width="0.5" opacity="0.35"></path>
+          </svg>
+        </sc-if>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:14px; padding:24px; background:#060D18; border-bottom:1px solid #17263B;">
+        <svg width="42" height="42" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <circle cx="60" cy="60" r="50" fill="#0F2B47"></circle>
+          <path d="M40 40 L62 60 L40 80" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+          <rect x="68" y="72" width="20" height="8" rx="4" fill="#00E5FF"></rect>
+        </svg>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:25px; letter-spacing:-0.8px; color:#FFFFFF; font-weight:600;">Tonux<span style="font-weight:300; color:#8A9CB2;">Corp</span></div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:14px; padding:24px; background:#FFFFFF;">
+        <svg width="42" height="42" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <circle cx="60" cy="60" r="50" fill="#0B1F38"></circle>
+          <path d="M40 40 L62 60 L40 80" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+          <rect x="68" y="72" width="20" height="8" rx="4" fill="#FFFFFF"></rect>
+        </svg>
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:25px; letter-spacing:-0.8px; color:#0B1F38; font-weight:600;">Tonux<span style="font-weight:300; color:#6B7C91;">Corp</span></div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:22px; padding:20px 24px; background:#0B1524;">
+        <svg width="30" height="30" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <circle cx="60" cy="60" r="52" fill="#0F2B47"></circle>
+          <path d="M40 40 L62 60 L40 80" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+          <rect x="68" y="71" width="20" height="9" rx="4.5" fill="#00E5FF"></rect>
+        </svg>
+        <svg width="18" height="18" viewBox="0 0 120 120" fill="none" style="flex:none;">
+          <circle cx="60" cy="60" r="56" fill="#0F2B47"></circle>
+          <path d="M42 42 L62 60 L42 78" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+          <rect x="70" y="70" width="18" height="10" rx="5" fill="#00E5FF"></rect>
+        </svg>
+        <div style="font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#4E6480; font-weight:600; margin-left:auto;">30 / 18 px</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; padding:28px 32px; background:#0B1524; border:1px solid #17263B; border-radius:16px;">
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font-size:10px; letter-spacing:1.4px; text-transform:uppercase; color:#4E6480; font-weight:600;">Palette</div>
+      <div style="display:flex; gap:12px;">
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="width:88px; height:56px; border-radius:8px; background:#060D18; border:1px solid #17263B;"></div>
+          <div style="font-size:11px; color:#8A9CB2; font-family:'Space Grotesk',sans-serif;">#060D18</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="width:88px; height:56px; border-radius:8px; background:#0F2B47;"></div>
+          <div style="font-size:11px; color:#8A9CB2; font-family:'Space Grotesk',sans-serif;">#0F2B47</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="width:88px; height:56px; border-radius:8px; background:#00E5FF;"></div>
+          <div style="font-size:11px; color:#8A9CB2; font-family:'Space Grotesk',sans-serif;">#00E5FF</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="width:88px; height:56px; border-radius:8px; background:#FFFFFF;"></div>
+          <div style="font-size:11px; color:#8A9CB2; font-family:'Space Grotesk',sans-serif;">#FFFFFF</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <div style="font-size:10px; letter-spacing:1.4px; text-transform:uppercase; color:#4E6480; font-weight:600;">Wordmark</div>
+      <div style="font-family:'Space Grotesk',sans-serif; font-size:34px; letter-spacing:-1.1px; color:#FFFFFF; font-weight:600; line-height:1;">Tonux<span style="font-weight:300; color:#8A9CB2;">Corp</span></div>
+      <div style="font-size:12px; line-height:1.6; color:#7E90A8; max-width:320px; text-wrap:pretty;">Space Grotesk 600 / 300, tracking −1.1px at display size. Neutral grotesque with just enough character to avoid looking generic, and no era stamp on it.</div>
+    </div>
+  </div>
+
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showGrid&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Construction&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { showGrid: this.props.showGrid ?? false };
+  }
+}
+</script>
+</body>
+</html>

@@ -44,8 +44,8 @@ export function Hero() {
               className="mb-6 inline-flex items-center gap-2 rounded-full border border-surface-border-strong bg-surface px-3 py-1.5"
             >
               <span className="relative flex h-2 w-2" aria-hidden="true">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-60" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-strong opacity-60" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-strong" />
               </span>
               <span className="text-xs font-medium text-content">
                 {t("availability")}

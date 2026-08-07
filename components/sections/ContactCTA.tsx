@@ -66,7 +66,7 @@ export function ContactCTA({ variant = "dark" }: ContactCTAProps) {
             className={cn(
               "inline-flex shrink-0 items-center justify-center gap-1 rounded-[12px] font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
               isDark
-                ? "mt-8 bg-dark-text px-8 py-4 text-base text-dark hover:opacity-80 focus-visible:ring-white/40 focus-visible:ring-offset-dark"
+                ? "mt-8 bg-accent px-8 py-4 text-base text-accent-ink hover:opacity-80 focus-visible:ring-accent/50 focus-visible:ring-offset-dark"
                 : "bg-content px-6 py-3 text-sm text-surface hover:opacity-80 focus-visible:ring-content/30 focus-visible:ring-offset-surface"
             )}
           >

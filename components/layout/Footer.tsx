@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Logo } from "@/components/ui/Logo";
 
 const socialLinks = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/ndongo-tonux-samb/", label: "LinkedIn" },
@@ -26,6 +27,10 @@ export function Footer() {
     <footer className="section-dark">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         {/* Top row: nav links + email */}
+        <Link href={`/${locale}`} aria-label="TonuxCorp" className="mb-10 inline-flex">
+          <Logo theme="dark" className="h-9 w-auto lg:h-10" />
+        </Link>
+
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
           <div className="flex flex-wrap items-center gap-6">
             {quickLinks.map((link) => (

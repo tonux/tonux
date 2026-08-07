@@ -22,14 +22,21 @@ const config: Config = {
           secondary: "rgb(var(--color-content-secondary) / <alpha-value>)",
           muted: "rgb(var(--color-content-muted) / <alpha-value>)",
         },
+        // Brand accent — cyan #00E5FF. `accent` is the raw brand colour (dark
+        // surfaces only); `accent-strong` is theme-aware and safe for text.
+        accent: {
+          DEFAULT: "rgb(var(--color-accent) / <alpha-value>)",
+          strong: "rgb(var(--color-accent-strong) / <alpha-value>)",
+          ink: "rgb(var(--color-accent-ink) / <alpha-value>)",
+        },
         dark: {
-          DEFAULT: "#222222",
+          DEFAULT: "#060D18",
           text: "#FFFFFF",
-          muted: "#ABABAB",
+          muted: "#8A9CB2",
         },
       },
       fontFamily: {
-        display: ["var(--font-outfit)", "system-ui", "sans-serif"],
+        display: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
         mono: ["var(--font-jetbrains)", "monospace"],
       },

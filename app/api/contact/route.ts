@@ -22,7 +22,7 @@ export async function POST(request: Request) {
       const resend = new Resend(resendApiKey);
 
       await resend.emails.send({
-        from: "TonuxCorp <onboarding@resend.dev>",
+        from: "TonuxCorp <notifications@tonuxcorp.dev>",
         to: ["sambndongo@gmail.com"],
         subject: `[TonuxCorp] Nouveau message de ${data.name} — ${data.type}`,
         html: `
