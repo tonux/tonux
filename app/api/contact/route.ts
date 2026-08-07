@@ -5,6 +5,8 @@ const schema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
   type: z.string().min(1),
+  budget: z.string().optional(),
+  timeline: z.string().optional(),
   message: z.string().min(10),
 });
 
@@ -28,6 +30,8 @@ export async function POST(request: Request) {
           <p><strong>Nom:</strong> ${data.name}</p>
           <p><strong>Email:</strong> ${data.email}</p>
           <p><strong>Type:</strong> ${data.type}</p>
+          <p><strong>Budget:</strong> ${data.budget || "non renseigne"}</p>
+          <p><strong>Echeance:</strong> ${data.timeline || "non renseignee"}</p>
           <p><strong>Message:</strong></p>
           <p>${data.message}</p>
         `,

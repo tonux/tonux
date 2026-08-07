@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "TonuxCorp — Senior Tech Consultant & CTO",
-    "description": "Senior tech consultant with 12+ years of experience. Architecture consulting, custom development, technical leadership and training."
+    "description": "Senior tech consultant with 12+ years of experience, available for freelance engagements. Architecture, custom development, technical leadership (CTO as a Service) and training."
   },
   "nav": {
     "home": "Home",
@@ -24,7 +24,8 @@
     "title": "Senior Tech Consultant & CTO",
     "cta_primary": "Book a discovery call",
     "cta_secondary": "View my services",
-    "roles": ["Senior Engineer", "Tech Enthusiast", "CTO @Dropcolis", "Mentor"]
+    "roles": ["Senior Engineer", "Tech Enthusiast", "CTO @Dropcolis", "Mentor"],
+    "availability": "Available for new projects"
   },
   "about_summary": {
     "title": "Who am I",
@@ -295,13 +296,31 @@
       "message": "Your message",
       "submit": "Send message",
       "success": "Message sent successfully! I will get back to you as soon as possible.",
-      "error": "An error occurred. Please try again."
+      "error": "An error occurred. Please try again.",
+      "optional": "optional",
+      "budget": "Estimated budget (CAD)",
+      "budget_placeholder": "Select a range",
+      "budget_s": "Under $5,000",
+      "budget_m": "$5,000 to $20,000",
+      "budget_l": "$20,000 to $50,000",
+      "budget_xl": "Over $50,000",
+      "budget_tbd": "To be defined together",
+      "timeline": "Preferred timeline",
+      "timeline_placeholder": "Select a timeline",
+      "timeline_asap": "As soon as possible",
+      "timeline_1m": "Within a month",
+      "timeline_3m": "Within 3 months",
+      "timeline_flex": "Flexible"
     },
     "info": {
       "email": "sambndongo@gmail.com",
       "location": "Montreal, Canada",
       "availability": "Available for freelance missions"
-    }
+    },
+    "cta_link": "Let's talk about your project",
+    "sticky": "Book a call",
+    "mid_title": "Got a project in mind?",
+    "mid_subtitle": "A 30-minute intro call, no strings attached, to scope out what you need."
   },
   "footer": {
     "tagline": "Senior Tech Consultant & CTO — Montreal, Canada",
@@ -367,6 +386,26 @@
       {
         "question": "What is your availability?",
         "answer": "My availability varies depending on current engagements. Contact me to discuss your project and check my availability."
+      }
+    ],
+    "engagement_title": "How I work with clients",
+    "engagement_note": "Rates depend on scope and engagement length. Get in touch for a costed proposal.",
+    "engagement_items": [
+      {
+        "label": "Engagement model",
+        "value": "Time and materials or fixed price, depending on scope"
+      },
+      {
+        "label": "Availability",
+        "value": "Open to new engagements, part-time or full-time"
+      },
+      {
+        "label": "Ways of working",
+        "value": "Remote, with occasional on-site visits"
+      },
+      {
+        "label": "Regions covered",
+        "value": "Canada, France and West Africa"
       }
     ]
   },

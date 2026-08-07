@@ -13,6 +13,8 @@ const schema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
   type: z.string().min(1),
+  budget: z.string().optional(),
+  timeline: z.string().optional(),
   message: z.string().min(10),
 });
 
@@ -105,7 +107,13 @@ export function ContactPageContent() {
               <CheckCircle size={18} strokeWidth={1.5} className="mt-0.5 text-content" />
               <div>
                 <p className="text-sm font-medium text-content">Status</p>
-                <p className="text-sm text-content-secondary">{t("info.availability")}</p>
+                <p className="mt-1 inline-flex items-center gap-2 text-sm text-content-secondary">
+                  <span className="relative flex h-2 w-2" aria-hidden="true">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-60" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                  </span>
+                  {t("info.availability")}
+                </p>
               </div>
             </div>
           </motion.div>
@@ -175,6 +183,41 @@ export function ContactPageContent() {
                     </option>
                     <option value="other">{t("form.type_other")}</option>
                   </select>
+                </div>
+
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <label className="mb-2 block text-sm font-medium text-content-secondary">
+                      {t("form.budget")}{" "}
+                      <span className="font-normal text-content-muted">
+                        ({t("form.optional")})
+                      </span>
+                    </label>
+                    <select {...register("budget")} className={inputClasses}>
+                      <option value="">{t("form.budget_placeholder")}</option>
+                      <option value="<5k">{t("form.budget_s")}</option>
+                      <option value="5k-20k">{t("form.budget_m")}</option>
+                      <option value="20k-50k">{t("form.budget_l")}</option>
+                      <option value=">50k">{t("form.budget_xl")}</option>
+                      <option value="tbd">{t("form.budget_tbd")}</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="mb-2 block text-sm font-medium text-content-secondary">
+                      {t("form.timeline")}{" "}
+                      <span className="font-normal text-content-muted">
+                        ({t("form.optional")})
+                      </span>
+                    </label>
+                    <select {...register("timeline")} className={inputClasses}>
+                      <option value="">{t("form.timeline_placeholder")}</option>
+                      <option value="asap">{t("form.timeline_asap")}</option>
+                      <option value="1m">{t("form.timeline_1m")}</option>
+                      <option value="3m">{t("form.timeline_3m")}</option>
+                      <option value="flexible">{t("form.timeline_flex")}</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div>

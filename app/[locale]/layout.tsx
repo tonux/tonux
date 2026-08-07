@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { MobileCTABar } from "@/components/layout/MobileCTABar";
 import "@/app/globals.css";
 
 const inter = Inter({
@@ -85,11 +86,12 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
-            <div className="flex min-h-screen flex-col">
+            <div className="flex min-h-screen flex-col pb-[68px] lg:pb-0">
               <Header />
               <main className="flex-1">{children}</main>
               <Footer />
             </div>
+            <MobileCTABar />
           </ThemeProvider>
         </NextIntlClientProvider>
         <Analytics />

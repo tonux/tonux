@@ -27,6 +27,11 @@ export function ServicesPageContent() {
     answer: string;
   }>;
 
+  const engagement = t.raw("services_page.engagement_items") as Array<{
+    label: string;
+    value: string;
+  }>;
+
   return (
     <div className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -69,6 +74,36 @@ export function ServicesPageContent() {
               </motion.div>
             );
           })}
+        </div>
+
+        {/* Engagement terms */}
+        <div className="mt-24">
+          <h2 className="text-center font-display text-display-md text-content">
+            {t("services_page.engagement_title")}
+          </h2>
+          <div className="mx-auto mt-12 max-w-4xl">
+            <dl className="grid gap-px overflow-hidden rounded-[12px] border border-surface-border bg-surface-border sm:grid-cols-2">
+              {engagement.map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.08 }}
+                  className="bg-surface p-6"
+                >
+                  <dt className="text-xs uppercase tracking-wider text-content-muted">
+                    {item.label}
+                  </dt>
+                  <dd className="mt-2 text-sm leading-relaxed text-content">
+                    {item.value}
+                  </dd>
+                </motion.div>
+              ))}
+            </dl>
+            <p className="mt-6 text-center text-sm text-content-secondary">
+              {t("services_page.engagement_note")}
+            </p>
+          </div>
         </div>
 
         {/* Process */}
@@ -115,9 +150,9 @@ export function ServicesPageContent() {
         <div className="mt-20 text-center">
           <Link
             href={`/${locale}/contact`}
-            className="link-arrow inline-flex"
+            className="inline-flex items-center justify-center gap-1 rounded-[12px] bg-content px-8 py-4 text-base font-medium text-surface transition-all duration-300 hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-content/30 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
           >
-            {t("nav.cta")} <ArrowUpRight size={14} strokeWidth={1.5} />
+            {t("contact.cta_link")} <ArrowUpRight size={16} strokeWidth={1.5} />
           </Link>
         </div>
       </div>

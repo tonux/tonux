@@ -1,12 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/Button";
 
 export function Hero() {
   const t = useTranslations("hero");
+  const locale = useLocale();
 
   return (
     <section className="relative min-h-[90vh] overflow-hidden py-24 lg:py-32">
@@ -34,6 +36,22 @@ export function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left: text + stats */}
           <div className="relative z-10">
+            {/* Availability badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="mb-6 inline-flex items-center gap-2 rounded-full border border-surface-border-strong bg-surface px-3 py-1.5"
+            >
+              <span className="relative flex h-2 w-2" aria-hidden="true">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-60" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+              </span>
+              <span className="text-xs font-medium text-content">
+                {t("availability")}
+              </span>
+            </motion.div>
+
             {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -88,6 +106,22 @@ export function Hero() {
             >
               {t("description")}
             </motion.p>
+
+            {/* Calls to action */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="mt-8 flex flex-wrap items-center gap-3"
+            >
+              <Button href={`/${locale}/contact`} variant="primary" size="lg">
+                {t("cta_primary")}
+                <ArrowUpRight size={16} strokeWidth={1.5} className="ml-1" />
+              </Button>
+              <Button href={`/${locale}/services`} variant="secondary" size="lg">
+                {t("cta_secondary")}
+              </Button>
+            </motion.div>
           </div>
 
           {/* Right: B&W photo */}

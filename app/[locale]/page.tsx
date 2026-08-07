@@ -14,6 +14,8 @@ export default function HomePage() {
       <Hero />
       <AboutSummary />
       <Services />
+      {/* Early conversion point — right after the visitor reads what is on offer */}
+      <ContactCTA variant="light" />
       <DropcolisShowcase />
       <Training />
       <PortfolioPreview />

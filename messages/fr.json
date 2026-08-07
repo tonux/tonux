@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "TonuxCorp — Consultant Tech Senior & CTO",
-    "description": "Consultant tech senior avec 12+ ans d'experience. Accompagnement en architecture, developpement sur mesure, direction technique et formation."
+    "description": "Consultant tech senior avec 12+ ans d'experience, disponible pour missions freelance. Architecture, developpement sur mesure, direction technique (CTO as a Service) et formation."
   },
   "nav": {
     "home": "Accueil",
@@ -24,7 +24,8 @@
     "title": "Consultant Tech Senior & CTO",
     "cta_primary": "Reserver un appel decouverte",
     "cta_secondary": "Voir mes services",
-    "roles": ["Senior Engineer", "Tech Enthusiast", "CTO @Dropcolis", "Mentor"]
+    "roles": ["Senior Engineer", "Tech Enthusiast", "CTO @Dropcolis", "Mentor"],
+    "availability": "Disponible pour missions"
   },
   "about_summary": {
     "title": "Qui suis-je",
@@ -295,13 +296,31 @@
       "message": "Votre message",
       "submit": "Envoyer le message",
       "success": "Message envoye avec succes ! Je vous repondrai dans les plus brefs delais.",
-      "error": "Une erreur est survenue. Veuillez reessayer."
+      "error": "Une erreur est survenue. Veuillez reessayer.",
+      "optional": "optionnel",
+      "budget": "Budget estime (CAD)",
+      "budget_placeholder": "Selectionner une fourchette",
+      "budget_s": "Moins de 5 000 $",
+      "budget_m": "5 000 $ a 20 000 $",
+      "budget_l": "20 000 $ a 50 000 $",
+      "budget_xl": "Plus de 50 000 $",
+      "budget_tbd": "A definir ensemble",
+      "timeline": "Echeance souhaitee",
+      "timeline_placeholder": "Selectionner une echeance",
+      "timeline_asap": "Des que possible",
+      "timeline_1m": "Dans le mois",
+      "timeline_3m": "Dans les 3 mois",
+      "timeline_flex": "Flexible"
     },
     "info": {
       "email": "sambndongo@gmail.com",
       "location": "Montreal, Canada",
       "availability": "Disponible pour missions freelance"
-    }
+    },
+    "cta_link": "Parlons de votre projet",
+    "sticky": "Reserver un appel",
+    "mid_title": "Une mission en vue ?",
+    "mid_subtitle": "Premier echange de 30 minutes, sans engagement, pour cadrer votre besoin."
   },
   "footer": {
     "tagline": "Consultant Tech Senior & CTO — Montreal, Canada",
@@ -367,6 +386,26 @@
       {
         "question": "Quelles sont vos disponibilites ?",
         "answer": "Ma disponibilite varie selon mes engagements en cours. Contactez-moi pour discuter de votre projet et verifier ma disponibilite."
+      }
+    ],
+    "engagement_title": "Modalites d'intervention",
+    "engagement_note": "Le tarif depend du perimetre et de la duree de la mission. Ecrivez-moi pour recevoir une proposition chiffree.",
+    "engagement_items": [
+      {
+        "label": "Format",
+        "value": "Regie ou forfait, selon le cadrage du projet"
+      },
+      {
+        "label": "Disponibilite",
+        "value": "Ouvert aux missions, a temps partiel comme a temps plein"
+      },
+      {
+        "label": "Mode de travail",
+        "value": "Remote, avec deplacements ponctuels sur site"
+      },
+      {
+        "label": "Zones couvertes",
+        "value": "Canada, France et Afrique de l'Ouest"
       }
     ]
   },

@@ -49,13 +49,13 @@ export function Header() {
           <ThemeToggle />
           <Link
             href={`/${locale}/contact`}
-            className="link-arrow ml-2"
+            className="ml-2 inline-flex items-center justify-center gap-1 rounded-[12px] bg-content px-5 py-2.5 text-sm font-medium text-surface transition-all duration-300 hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-content/30 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
           >
             {t("cta")} <ArrowUpRight size={14} strokeWidth={1.5} />
           </Link>
         </div>
 
-        {/* Mobile menu button */}
+        {/* Mobile menu button — no CTA here: the sticky MobileCTABar covers it */}
         <div className="flex items-center gap-2 lg:hidden">
           <LanguageToggle />
           <ThemeToggle />
@@ -85,9 +85,9 @@ export function Header() {
           <Link
             href={`/${locale}/contact`}
             onClick={() => setMobileOpen(false)}
-            className="mt-3 block px-3 py-3 text-base font-medium text-content"
+            className="mt-3 flex items-center justify-center gap-1 rounded-[12px] bg-content px-3 py-3 text-base font-medium text-surface"
           >
-            {t("cta")} ↗
+            {t("cta")} <ArrowUpRight size={16} strokeWidth={1.5} />
           </Link>
         </nav>
       )}
