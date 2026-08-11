@@ -40,7 +40,7 @@ export async function generateMetadata({
       template: `%s | TonuxCorp`,
     },
     description: t("description"),
-    metadataBase: new URL("https://tonuxcorp.dev"),
+    metadataBase: new URL("https://tonuxcorp.com"),
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -51,7 +51,7 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: `https://tonuxcorp.dev/${locale}`,
+      url: `https://tonuxcorp.com/${locale}`,
       siteName: "TonuxCorp",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       type: "website",

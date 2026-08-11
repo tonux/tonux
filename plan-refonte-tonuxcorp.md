@@ -1,4 +1,4 @@
-# Plan de Refonte — tonuxcorp.dev
+# Plan de Refonte — tonuxcorp.com
 
 ## Contexte & Diagnostic du Site Actuel
 
@@ -28,7 +28,7 @@ Le site actuel est une single-page application minimaliste avec les sections sui
 
 ## Vision de la Refonte
 
-**Transformer tonuxcorp.dev d'un portfolio de développeur en une plateforme professionnelle de consultant tech senior**, orientée conversion de prospects, qui met en valeur 3 piliers :
+**Transformer tonuxcorp.com d'un portfolio de développeur en une plateforme professionnelle de consultant tech senior**, orientée conversion de prospects, qui met en valeur 3 piliers :
 
 1. **Consulting & Freelance** (pilier principal — attirer des clients)
 2. **Entrepreneuriat Tech** (CTO de Dropcolis Canada)
@@ -213,7 +213,7 @@ Chaque carte → lien vers une page dédiée
 ### Option recommandée : Blog intégré dans Next.js
 1. Migrer les articles existants de tonux-dev.com en fichiers MDX dans le repo Next.js
 2. Créer des composants MDX custom (code blocks avec syntax highlighting, callouts, etc.)
-3. Mettre en place des redirections 301 de tonux-dev.com vers tonuxcorp.dev/blog
+3. Mettre en place des redirections 301 de tonux-dev.com vers tonuxcorp.com/blog
 4. Conserver tonux-dev.com comme redirection ou alias
 
 ### Alternative : Blog externe avec intégration
@@ -227,12 +227,12 @@ Chaque carte → lien vers une page dédiée
 
 ### Structure des URLs
 ```
-tonuxcorp.dev/fr/          → Accueil FR
-tonuxcorp.dev/en/          → Accueil EN
-tonuxcorp.dev/fr/services  → Services FR
-tonuxcorp.dev/en/services  → Services EN
-tonuxcorp.dev/fr/blog/...  → Blog FR
-tonuxcorp.dev/en/blog/...  → Blog EN
+tonuxcorp.com/fr/          → Accueil FR
+tonuxcorp.com/en/          → Accueil EN
+tonuxcorp.com/fr/services  → Services FR
+tonuxcorp.com/en/services  → Services EN
+tonuxcorp.com/fr/blog/...  → Blog FR
+tonuxcorp.com/en/blog/...  → Blog EN
 ```
 
 ### Implémentation
@@ -261,7 +261,7 @@ tonuxcorp.dev/en/blog/...  → Blog EN
 ## Structure du Projet Next.js
 
 ```
-tonuxcorp.dev/
+tonuxcorp.com/
 ├── app/
 │   ├── [locale]/
 │   │   ├── layout.tsx
