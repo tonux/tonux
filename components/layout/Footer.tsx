@@ -16,6 +16,7 @@ const quickLinks = [
   { key: "services", href: "/services" },
   { key: "portfolio", href: "/portfolio" },
   { key: "about", href: "/a-propos" },
+  { key: "sabiq", href: "/sabiq" },
   { key: "contact", href: "/contact" },
 ];
 

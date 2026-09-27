@@ -11,7 +11,8 @@
     "portfolio": "Portfolio",
     "about": "À propos",
     "contact": "Contact",
-    "cta": "Réserver un appel"
+    "cta": "Réserver un appel",
+    "sabiq": "Sabiq"
   },
   "hero": {
     "subtitle": "Conseil & ingénierie logicielle",
@@ -584,5 +585,146 @@
       }
     ],
     "cta": "Me contacter pour une formation"
+  },
+  "sabiq_page": {
+    "meta_title": "Sabiq — Prière, Coran, Jeûne",
+    "meta_description": "Sabiq aide les musulmans à prier à l'heure, lire le Coran avec la bonne prononciation, tenir leurs jeûnes et être utiles à leur société. Une app TonuxCorp.",
+    "label": "Application mobile · TonuxCorp",
+    "icon_alt": "Icône de l'application Sabiq",
+    "tagline": "Devance-toi, chaque jour.",
+    "subtitle": "Prière, Coran, jeûne et bonnes actions — avec discipline, sans complaisance. Tes données restent sur ton téléphone.",
+    "badge_ios": "iPhone · bientôt",
+    "badge_android": "Android · bientôt",
+    "verse": "« Rivalisez donc dans les bonnes œuvres. » — Coran 2:148",
+    "meaning": "Sābiq désigne celui qui devance dans le bien. L'app est née d'un besoin simple : tenir sa prière, retrouver la prononciation des lettres du Coran, jeûner sans se laisser distraire par le téléphone, et rester utile aux autres.",
+    "features": [
+      {
+        "title": "Prière",
+        "text": "Horaires précis selon ta position, check-in après chaque prière, adhan et rappels de plus en plus fermes tant que tu n'as pas prié. Une série de jours à 5/5 pour garder le rythme."
+      },
+      {
+        "title": "Coran",
+        "text": "Lecture avec le tajwid en couleur, prononciation mot par mot, enregistrement de ta voix pour la comparer au récitateur, fiches des lettres (makharij) et révision des mots à 1, 3 puis 7 jours."
+      },
+      {
+        "title": "Jeûne",
+        "text": "Lundi, jeudi et jours blancs, alarme du suhoor, heure de l'iftar, mode Ramadan et compteur des jours à rattraper. Le jeûne digital réduit l'écran au profit du Coran et du dhikr."
+      },
+      {
+        "title": "Mode Focus",
+        "text": "Bloque les applis qui te distraient jusqu'à ton check-in de prière, pendant ton jeûne ou pendant une session que tu choisis. Le téléphone, les messages et Sabiq restent accessibles."
+      },
+      {
+        "title": "Utile à ta société",
+        "text": "Une bonne action proposée chaque jour, un journal d'aumône privé et un calculateur de zakat."
+      }
+    ],
+    "screens_title": "Aperçu",
+    "screenshot_alts": [
+      "Écran Aujourd'hui avec la prochaine prière",
+      "Lecture d'Al-Fatiha avec le tajwid en couleur",
+      "Fiche d'un mot avec comparaison de la voix",
+      "Suivi du jeûne en mode sombre",
+      "Écran de blocage du Mode Focus",
+      "Bonne action du jour, aumône et zakat"
+    ],
+    "privacy_title": "Ta vie privée d'abord",
+    "privacy_points": [
+      "Aucun compte à créer.",
+      "Aucune publicité, aucun outil de suivi.",
+      "Tes prières, lectures, jeûnes et dons restent sur ton téléphone.",
+      "Ta position et ta voix ne quittent pas ton appareil."
+    ],
+    "privacy_cta": "Lire la politique de confidentialité",
+    "support": "Une question, un bug, une idée ?"
+  },
+  "sabiq_privacy": {
+    "title": "Politique de confidentialité de Sabiq",
+    "updated": "En vigueur le 28 septembre 2026",
+    "intro": "Sabiq est une application mobile éditée par TonuxCorp (Montréal, Canada). Elle a été conçue pour fonctionner sans compte et sans serveur : tes données restent sur ton téléphone. Cette page explique précisément ce que l'app utilise, pourquoi, et ce qui sort de ton appareil.",
+    "sections": [
+      {
+        "title": "Ce que nous collectons",
+        "paragraphs": [
+          "TonuxCorp ne collecte aucune donnée personnelle par l'application. Il n'y a ni compte, ni serveur Sabiq, ni publicité, ni outil d'analyse ou de suivi, ni vente ou partage de données avec des tiers."
+        ]
+      },
+      {
+        "title": "Données enregistrées sur ton téléphone",
+        "paragraphs": [
+          "Pour fonctionner, l'app enregistre localement, dans son espace privé sur ton appareil :"
+        ],
+        "items": [
+          "tes check-ins de prière, ta série et tes prières à rattraper ;",
+          "ta progression de lecture du Coran et les mots à réviser ;",
+          "tes jeûnes, intentions et jours à rattraper ;",
+          "ton journal d'aumône et tes calculs de zakat ;",
+          "tes réglages (méthode de calcul, notifications, thème, Mode Focus) et le nom de ta ville."
+        ]
+      },
+      {
+        "title": "Localisation",
+        "paragraphs": [
+          "Si tu l'autorises, Sabiq utilise ta position approximative pour calculer les horaires de prière. Le calcul se fait sur ton téléphone. Pour afficher le nom de ta ville, les coordonnées sont transmises au service de géocodage intégré au système (Apple sur iPhone, Google sur Android), selon leurs propres règles de confidentialité. Tu peux refuser et choisir ta ville à la main."
+        ]
+      },
+      {
+        "title": "Microphone",
+        "paragraphs": [
+          "La fonction « Compare ta voix » enregistre ta récitation d'un mot pour que tu puisses l'écouter et la comparer à celle du récitateur. L'enregistrement reste dans un dossier temporaire de ton téléphone ; il n'est jamais envoyé ni partagé."
+        ]
+      },
+      {
+        "title": "Mode Focus (blocage des applis)",
+        "paragraphs": [
+          "Sur iPhone, le Mode Focus utilise l'API Temps d'écran d'Apple (Family Controls) : tu choisis les applis dans le sélecteur d'Apple, et Sabiq ne reçoit que des jetons anonymes, sans voir le nom des applis ni ton usage.",
+          "Sur Android, avec ta permission « Accès aux données d'utilisation », l'app détecte quelle appli est au premier plan uniquement pour afficher l'écran de blocage pendant les périodes que tu as choisies. Ces informations sont traitées sur l'appareil, ne sont pas conservées dans un historique et ne sont jamais transmises."
+        ]
+      },
+      {
+        "title": "Notifications",
+        "paragraphs": [
+          "Les rappels (adhan, prières, suhoor, jeûnes) sont des notifications locales programmées sur ton téléphone. Aucun service de notification à distance n'est utilisé."
+        ]
+      },
+      {
+        "title": "Contenus téléchargés",
+        "paragraphs": [
+          "Le texte du Coran, les traductions et les récitations audio sont téléchargés depuis des services publics (api.quran.com, audio.qurancdn.com et everyayah.com) puis gardés en cache sur ton téléphone. Comme pour toute connexion internet, ces services reçoivent ton adresse IP et les informations techniques de la requête ; aucune donnée personnelle ne leur est envoyée par Sabiq."
+        ]
+      },
+      {
+        "title": "Sauvegarde",
+        "paragraphs": [
+          "La sauvegarde automatique de ton téléphone (iCloud ou Google) peut inclure les données de Sabiq, selon tes réglages système. L'export manuel crée un fichier que tu enregistres où tu veux : il contient tes données en clair, y compris ton journal d'aumône. Garde-le dans un endroit privé."
+        ]
+      },
+      {
+        "title": "Conservation et suppression",
+        "paragraphs": [
+          "Tes données restent sur ton appareil tant que l'app est installée. Pour tout effacer, supprime l'application ; les éventuelles copies dans ta sauvegarde iCloud ou Google se gèrent depuis les réglages de ton téléphone. TonuxCorp ne détient aucune copie : il n'y a donc rien à supprimer de notre côté."
+        ]
+      },
+      {
+        "title": "Enfants",
+        "paragraphs": [
+          "Sabiq n'est pas destinée aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant."
+        ]
+      },
+      {
+        "title": "Tes droits",
+        "paragraphs": [
+          "Comme aucune donnée n'est collectée par TonuxCorp, tu gardes le contrôle total de tes informations directement dans l'app et sur ton téléphone. Pour toute question sur cette politique ou sur tes droits (Loi 25 au Québec, LPRPDE au Canada, RGPD en Europe), écris-nous."
+        ]
+      },
+      {
+        "title": "Modifications",
+        "paragraphs": [
+          "Si l'app évolue et que cette politique change, la nouvelle version sera publiée sur cette page avec sa date d'entrée en vigueur."
+        ]
+      }
+    ],
+    "contact_title": "Contact",
+    "contact_text": "TonuxCorp — Ndongo Samb, Montréal (Québec), Canada."
   }
 }

@@ -11,7 +11,8 @@
     "portfolio": "Portfolio",
     "about": "About",
     "contact": "Contact",
-    "cta": "Book a call"
+    "cta": "Book a call",
+    "sabiq": "Sabiq"
   },
   "hero": {
     "subtitle": "Software consulting & engineering",
@@ -584,5 +585,146 @@
       }
     ],
     "cta": "Contact me for training"
+  },
+  "sabiq_page": {
+    "meta_title": "Sabiq — Prayer, Quran, Fasting",
+    "meta_description": "Sabiq helps Muslims pray on time, read the Quran with correct pronunciation, keep their fasts and be useful to their community. An app by TonuxCorp.",
+    "label": "Mobile app · TonuxCorp",
+    "icon_alt": "Sabiq app icon",
+    "tagline": "Get ahead, every day.",
+    "subtitle": "Prayer, Quran, fasting and good deeds — with discipline, without complacency. Your data stays on your phone.",
+    "badge_ios": "iPhone · coming soon",
+    "badge_android": "Android · coming soon",
+    "verse": "“So race to all that is good.” — Quran 2:148",
+    "meaning": "Sābiq means the one who is first in doing good. The app grew out of a simple need: keep up with prayer, relearn how to pronounce the letters of the Quran, fast without being distracted by the phone, and stay useful to others.",
+    "features": [
+      {
+        "title": "Prayer",
+        "text": "Accurate times for your location, a check-in after each prayer, adhan and reminders that get firmer until you have prayed. A 5/5 day streak keeps you on track."
+      },
+      {
+        "title": "Quran",
+        "text": "Reading with colour-coded tajweed, word-by-word pronunciation, voice recording to compare with the reciter, letter guides (makharij) and word review at 1, 3 then 7 days."
+      },
+      {
+        "title": "Fasting",
+        "text": "Mondays, Thursdays and the white days, suhoor alarm, iftar time, Ramadan mode and a make-up day counter. Digital fasting trades screen time for Quran and dhikr."
+      },
+      {
+        "title": "Focus mode",
+        "text": "Blocks distracting apps until you check in your prayer, while you fast, or during a session you choose. Phone, messages and Sabiq always stay available."
+      },
+      {
+        "title": "Useful to your community",
+        "text": "A good deed suggested every day, a private charity journal and a zakat calculator."
+      }
+    ],
+    "screens_title": "Preview",
+    "screenshot_alts": [
+      "Today screen with the next prayer",
+      "Reading Al-Fatiha with colour-coded tajweed",
+      "Word sheet with voice comparison",
+      "Fasting tracker in dark mode",
+      "Focus mode blocking screen",
+      "Good deed of the day, charity and zakat"
+    ],
+    "privacy_title": "Your privacy first",
+    "privacy_points": [
+      "No account to create.",
+      "No ads, no tracking tools.",
+      "Your prayers, reading, fasts and donations stay on your phone.",
+      "Your location and your voice never leave your device."
+    ],
+    "privacy_cta": "Read the privacy policy",
+    "support": "A question, a bug, an idea?"
+  },
+  "sabiq_privacy": {
+    "title": "Sabiq Privacy Policy",
+    "updated": "Effective September 28, 2026",
+    "intro": "Sabiq is a mobile app published by TonuxCorp (Montréal, Canada). It is designed to work without an account and without a server: your data stays on your phone. This page explains exactly what the app uses, why, and what leaves your device.",
+    "sections": [
+      {
+        "title": "What we collect",
+        "paragraphs": [
+          "TonuxCorp does not collect any personal data through the app. There is no account, no Sabiq server, no advertising, no analytics or tracking tool, and no sale or sharing of data with third parties."
+        ]
+      },
+      {
+        "title": "Data stored on your phone",
+        "paragraphs": [
+          "To work, the app stores the following locally, in its private storage on your device:"
+        ],
+        "items": [
+          "your prayer check-ins, streak and prayers to make up;",
+          "your Quran reading progress and words to review;",
+          "your fasts, intentions and days to make up;",
+          "your charity journal and zakat calculations;",
+          "your settings (calculation method, notifications, theme, Focus mode) and your city name."
+        ]
+      },
+      {
+        "title": "Location",
+        "paragraphs": [
+          "If you allow it, Sabiq uses your approximate location to calculate prayer times. The calculation runs on your phone. To show your city name, the coordinates are sent to the geocoding service built into the operating system (Apple on iPhone, Google on Android), under their own privacy terms. You can decline and pick your city manually."
+        ]
+      },
+      {
+        "title": "Microphone",
+        "paragraphs": [
+          "The “Compare your voice” feature records your recitation of a word so you can play it back and compare it with the reciter. The recording stays in a temporary folder on your phone; it is never uploaded or shared."
+        ]
+      },
+      {
+        "title": "Focus mode (app blocking)",
+        "paragraphs": [
+          "On iPhone, Focus mode uses Apple's Screen Time API (Family Controls): you pick apps in Apple's picker, and Sabiq only receives anonymous tokens, without seeing app names or your usage.",
+          "On Android, with your “Usage access” permission, the app detects which app is in the foreground only to show the blocking screen during the periods you chose. This information is processed on the device, is not kept as a history and is never transmitted."
+        ]
+      },
+      {
+        "title": "Notifications",
+        "paragraphs": [
+          "Reminders (adhan, prayers, suhoor, fasts) are local notifications scheduled on your phone. No remote push service is used."
+        ]
+      },
+      {
+        "title": "Downloaded content",
+        "paragraphs": [
+          "The Quran text, translations and audio recitations are downloaded from public services (api.quran.com, audio.qurancdn.com and everyayah.com) and cached on your phone. As with any internet connection, these services receive your IP address and the technical details of the request; Sabiq sends them no personal data."
+        ]
+      },
+      {
+        "title": "Backup",
+        "paragraphs": [
+          "Your phone's automatic backup (iCloud or Google) may include Sabiq's data, depending on your system settings. Manual export creates a file you save wherever you like: it contains your data in plain text, including your charity journal. Keep it somewhere private."
+        ]
+      },
+      {
+        "title": "Retention and deletion",
+        "paragraphs": [
+          "Your data stays on your device as long as the app is installed. To erase everything, delete the app; any copies in your iCloud or Google backup are managed from your phone settings. TonuxCorp holds no copy, so there is nothing to delete on our side."
+        ]
+      },
+      {
+        "title": "Children",
+        "paragraphs": [
+          "Sabiq is not intended for children under 13 and does not knowingly collect any data about them."
+        ]
+      },
+      {
+        "title": "Your rights",
+        "paragraphs": [
+          "Since TonuxCorp collects no data, you keep full control of your information directly in the app and on your phone. For any question about this policy or your rights (Quebec Law 25, Canada's PIPEDA, the EU GDPR), contact us."
+        ]
+      },
+      {
+        "title": "Changes",
+        "paragraphs": [
+          "If the app evolves and this policy changes, the new version will be published on this page with its effective date."
+        ]
+      }
+    ],
+    "contact_title": "Contact",
+    "contact_text": "TonuxCorp — Ndongo Samb, Montréal (Quebec), Canada."
   }
 }
