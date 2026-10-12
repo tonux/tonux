@@ -19,6 +19,7 @@ export function PortfolioPreview() {
     type: string;
     techs: string[];
     url: string;
+    logo?: string;
   }>;
 
   return (
@@ -50,7 +51,7 @@ export function PortfolioPreview() {
             >
               {/* Thumbnail with favicon */}
               <div className="relative flex h-40 items-center justify-center bg-surface-elevated">
-                <ProjectIcon url={item.url} title={item.title} />
+                <ProjectIcon url={item.url} title={item.title} logo={item.logo} />
                 <div className="absolute inset-0 flex items-center justify-center bg-content/0 transition-all duration-300 group-hover:bg-content/80">
                   <ArrowUpRight
                     size={24}

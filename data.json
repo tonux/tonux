@@ -341,8 +341,8 @@
         "city": "Dakar",
         "state": "Dakar",
         "country": "Senegal",
-        "url": "http://cashgui.netlify.app",
-        "thumbnail": "https://cashgui.netlify.app/assets/img/logo.svg"
+        "url": "https://cashgui.com",
+        "thumbnail": "/projects/cashgui.svg"
       }, 
       {
         "organization": "Sembass",

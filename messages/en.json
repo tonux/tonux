@@ -224,7 +224,19 @@
           "Directus",
           "Tailwind CSS"
         ],
-        "url": "https://traversees-interieures.com"
+        "url": "https://traversees-interieures.com",
+        "logo": "https://d2xsxph8kpxj0f.cloudfront.net/310519663192429428/J9NHzEakfBiquxBcpfY2mP/logo-traversees-interieures_50660c19.png"
+      },
+      {
+        "title": "Éditions Naatal",
+        "description": "Website for Naatal, a Dakar-based publishing house — showcasing the Senghor books and perpetual planners, launching December 2026.",
+        "type": "web",
+        "techs": [
+          "Next.js",
+          "React"
+        ],
+        "url": "https://naatal-editions.com",
+        "logo": "/projects/naatal.svg"
       },
       {
         "title": "Dropcolis",
@@ -268,7 +280,8 @@
           "Firebase",
           "Dart"
         ],
-        "url": "http://cashgui.netlify.app"
+        "url": "https://cashgui.com",
+        "logo": "/projects/cashgui.svg"
       },
       {
         "title": "Sembass",

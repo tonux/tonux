@@ -10,15 +10,35 @@ function getDomain(url: string): string {
   }
 }
 
-export function ProjectIcon({ url, title }: { url: string; title: string }) {
+export function ProjectIcon({
+  url,
+  title,
+  logo,
+}: {
+  url: string;
+  title: string;
+  logo?: string;
+}) {
   const [errored, setErrored] = useState(false);
   const domain = getDomain(url);
 
-  if (errored || !domain) {
+  if (errored || (!logo && !domain)) {
     return (
       <span className="font-display text-5xl font-light text-content-muted">
         {title.charAt(0)}
       </span>
+    );
+  }
+
+  if (logo) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={logo}
+        alt={title}
+        onError={() => setErrored(true)}
+        className="h-20 w-auto max-w-[160px] rounded-[12px] object-contain"
+      />
     );
   }
 
