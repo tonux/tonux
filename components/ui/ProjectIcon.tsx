@@ -37,7 +37,7 @@ export function ProjectIcon({
         src={logo}
         alt={title}
         onError={() => setErrored(true)}
-        className="h-20 w-auto max-w-[160px] rounded-[12px] object-contain"
+        className="h-20 w-auto max-w-[220px] rounded-[12px] object-contain"
       />
     );
   }

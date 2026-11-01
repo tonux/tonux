@@ -202,7 +202,8 @@
           "Directus",
           "Umami"
         ],
-        "url": "https://depuislechamp.com"
+        "url": "https://depuislechamp.com",
+        "logo": "https://www.depuislechamp.com/brand/champ-anim-c.svg"
       },
       {
         "title": "Partaliane",
@@ -213,7 +214,8 @@
           "Directus",
           "Tailwind CSS"
         ],
-        "url": "https://partaliane.com"
+        "url": "https://partaliane.com",
+        "logo": "https://d2xsxph8kpxj0f.cloudfront.net/310519663192429428/5aqsTg8U9MwnniT63BjTfy/LogoPartaliane_edac20ba.png"
       },
       {
         "title": "Traversees Interieures",
