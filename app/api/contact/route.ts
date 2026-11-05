@@ -23,7 +23,7 @@ export async function POST(request: Request) {
 
       await resend.emails.send({
         from: "TonuxCorp <notifications@tonuxcorp.dev>",
-        to: ["sambndongo@gmail.com"],
+        to: ["projets@tonuxcorp.com"],
         subject: `[TonuxCorp] Nouveau message de ${data.name} — ${data.type}`,
         html: `
           <h2>Nouveau message de contact</h2>

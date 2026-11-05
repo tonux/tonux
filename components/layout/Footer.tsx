@@ -46,10 +46,10 @@ export function Footer() {
           </div>
 
           <a
-            href="mailto:sambndongo@gmail.com"
+            href="mailto:projets@tonuxcorp.com"
             className="font-display text-2xl font-light text-dark-text transition-opacity duration-300 hover:opacity-70 lg:text-3xl"
           >
-            sambndongo@gmail.com
+            projets@tonuxcorp.com
           </a>
         </div>
 

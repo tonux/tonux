@@ -79,10 +79,10 @@ export default async function SabiqPrivacyPage({
             {t("contact_text")}
           </p>
           <a
-            href="mailto:sambndongo@gmail.com?subject=Sabiq%20-%20confidentialit%C3%A9"
+            href="mailto:projets@tonuxcorp.com?subject=Sabiq%20-%20confidentialit%C3%A9"
             className="link-arrow mt-4 inline-flex"
           >
-            sambndongo@gmail.com
+            projets@tonuxcorp.com
           </a>
         </div>
       </article>

@@ -167,10 +167,10 @@ export function SabiqPageContent() {
         <div className="mt-12 text-center">
           <p className="text-content-secondary">{t("support")}</p>
           <a
-            href="mailto:sambndongo@gmail.com?subject=Sabiq"
+            href="mailto:projets@tonuxcorp.com?subject=Sabiq"
             className="link-arrow mt-2 inline-flex"
           >
-            sambndongo@gmail.com
+            projets@tonuxcorp.com
           </a>
         </div>
       </div>
